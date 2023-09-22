@@ -1,13 +1,635 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='uk'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to HyperskillUA site</title>
+    <title>JetBrains Academy українською. Уроки для початківців із сайту Hyperskill</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='Онлайн-уроки для початківців від Hyperskill: Java, Python, Kotlin, JavaScript, Golang, Data Science, SQL, Java Desktop Application Розробник, Command Line and Unix Shell, SQL with Python, Spring Security for Java Backend Розробникs, Android Development with Kotlin, Django , Алгоритми машинного навчання з нуля, HTML та CSS, Flask Розробник, Обробка природної мови, Комп&#8217;ютерні алгоритми та структури даних, Лінійна алгебра, Git, Математика для машинного навчання, Advanced Java, SQL для бекенд-розробників, Pandas для аналізу даних, Scala, Біоінформатика, Node.js, Практичні алгоритми для Python, Ktor, MongoDB, чат-боти та системи діалогу, Calculus, Frontend, Backend тощо. Безкоштовні курси Hyperskill українською. Вивчити мову програмування та веб-розробку. Готові рішення та відповіді до завдань. Основи HTML5, CSS3, PHP. Найкращий сайт для веброзробників' />
+    <meta property='og:title' content='w3schoolsua.github.io/hyperskill/index.html' />
+    <meta property='og:locale' content='en' />
+    <meta property='og:description' content='JetBrains Academy українською. Уроки для початківців із сайту Hyperskill' />
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+    <link rel='alternate' hreflang='en' href='https://w3schoolsua.github.io/hyperskill/index.html' />
+    <link rel='stylesheet' href='styles/w3.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel='stylesheet' href='styles/fa.css'>
+    <link rel='stylesheet' href='styles/hyperskill-style.css'>
+    <!--Search Console--><meta name="google-site-verification" content="Zi87wUigec4p_hsrZRZa5Jw-Z0PBmPm_i_L6em_cz0U" /><!--/Search Console-->
+    <!--web--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!--/web-->
+    <!--w3--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script><!--/w3-->
 </head>
 <body>
-    <h1><a href="index_en.html">Welcome to HyperSkillEn.TheBest</a> site!</h1>
-    <p>Lessons from the Hyperskill site in Ukrainian with answers to tasks.</p>
-    <p>You can also visit our W3Schools website in Ukrainian at the link: <a href="https://w3schoolsua.github.io/" target="_blank">https://w3schoolsua.github.io/</a></p>
+<div class='w3-row w3-padding w3-hide-medium w3-hide-small'>
+    <div class='w3-col s5 notranslate' style='margin:4px 0 6px 0'><a class='w3schools-logo' href='index.html'>HyperSkillUA<span class='dotcom'>.українською</span></a>
+    </div>
+    <div class='w3-col s7 w3-margin-top w3-wide w3-hide-medium w3-hide-small'>
+        <div class='w3-right' style='position:relative;top:5px;'>НАЙКРАЩИЙ САЙТ ДЛЯ РОЗРОБНИКІВ</div>
+    </div>
+</div>
+<div class='w3-hide-large w3-hide-large w3-padding-16'>
+    <div class='w3-center notranslate'><a class='w3schools-logo' href='index.html'>HyperSkillUA<span class='dotcom'>.українською</span></a>
+    </div>
+    <div class='w3-center w3-wide w3-hide-small' style='margin:14px 0 -5px 0'>НАЙКРАЩИЙ САЙТ ДЛЯ РОЗРОБНИКІВ</div>
+</div>
+<!--Top menu-->
+<div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
+    <!--script для верхнього меню при адаптиві-->
+    <a class='w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm' href='javascript:void(0)' onclick='w3_open()'><i class='fa fa-bars'></i></a> <!--/end script-->
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16' href='javascript:void(0)' onclick="w3_open_nav('tutorials')" id='navbtn_tutorials'>ПІДРУЧНИКИ W3SchoolsUA <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16' href='javascript:void(0)' onclick="w3_open_nav('references')" id='navbtn_references'>ДОВІДНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16' href='javascript:void(0)' onclick="w3_open_nav('examples')" id='navbtn_examples'>ПРИКЛАДИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small' href='javascript:void(0)' onclick="w3_open_nav('exercises')" id='navbtn_exercises'>ВПРАВИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-hide-medium w3-hide-small' href='https://w3schoolsua.github.io/tryiteditor/index.html' target='_blank'>РЕДАКТОР КОДУ</a>
+    <div style='display: block;position:absolute;z-index:4;right:52px;height:44px;width: 280px; background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
+        <!--W3SchoolsUA-Google-Search-->
+        <script async src="https://cse.google.com/cse.js?cx=751c3d18bb8a64f00"></script><div class="gcse-search"></div>
+        <!--/W3SchoolsUA-Google-Search-->
+    </div>
+    <a class='w3-bar-item w3-button barex w3-hover-white w3-padding-16 w3-right' href='index_en.html'>En</a>
+</div>
+<!--/Top menu-->
+<!--menu left-sidebar-->
+<nav class='w3-sidebar w3-collapse aliceblue w3-card-2' id='mySidenav'>
+    <div class='w3-bar-block'>
+        <div class='w3-container'>
+            <h4 class='w3-margin-top'>Hyperskill Підручники:</h4>
+        </div>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/8' target='_blank' rel='nofollow'>Введення в Java</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/2' target='_blank' rel='nofollow'>Python Ядро</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/18' target='_blank' rel='nofollow'>Kotlin Ядро</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/6' target='_blank' rel='nofollow'>Введення в Python</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/5' target='_blank' rel='nofollow'>Frontend Ядро</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/3' target='_blank' rel='nofollow'>Kotlin Розробник</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/12' target='_blank' rel='nofollow'>Java Backend Розробник</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/17' target='_blank' rel='nofollow'>Java Розробник</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/32' target='_blank' rel='nofollow'>Введення в JavaScript</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/25' target='_blank' rel='nofollow'>Введення в Go</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/15' target='_blank' rel='nofollow'>Java Ядро</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/28' target='_blank' rel='nofollow'>Введення в Науку про дані</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/31' target='_blank' rel='nofollow'>Введення в SQL</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/9' target='_blank' rel='nofollow'>Розробник настільних програм Java</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/26' target='_blank' rel='nofollow'>Введення в Командний рядок і оболонку Unix</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/30' target='_blank' rel='nofollow'>SQL із Python</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/38' target='_blank' rel='nofollow'>Spring Security для розробників Java Backend</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/16' target='_blank' rel='nofollow'>Розробка Android з Kotlin</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/11' target='_blank' rel='nofollow'>Введення в Django</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/42' target='_blank' rel='nofollow'>Алгоритми машинного навчання з нуля</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/34' target='_blank' rel='nofollow'>Введення в HTML та CSS</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/29' target='_blank' rel='nofollow'>Розробник Flask</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/10' target='_blank' rel='nofollow'>Введення в Обробку природної мови</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/41' target='_blank' rel='nofollow'>Введення в Комп&#8217;ютерні алгоритми та структури даних</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/27' target='_blank' rel='nofollow'>Введення в Лінійну алгебру</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/48' target='_blank' rel='nofollow'>Введення в Git</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/33' target='_blank' rel='nofollow'>Математика для машинного навчання</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/35' target='_blank' rel='nofollow'>Розширена Java</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/40' target='_blank' rel='nofollow'>SQL для бекенд-розробників</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/44' target='_blank' rel='nofollow'>Pandas для аналізу даних</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/37' target='_blank' rel='nofollow'>Kotlin Backend Розробник із Spring Boot</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/50' target='_blank' rel='nofollow'>Основні навички для бекенд-розробників</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/23' target='_blank' rel='nofollow'>Введення в Scala</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/69' target='_blank' rel='nofollow'>Введення в Kotlin</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/70' target='_blank' rel='nofollow'>Введення в Spring Boot із Java</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/57' target='_blank' rel='nofollow'>Введення в Math</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/49' target='_blank' rel='nofollow'>Введення в Біоінформатику</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/58' target='_blank' rel='nofollow'>Python ООП</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/55' target='_blank' rel='nofollow'>Введення в Node.js</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/54' target='_blank' rel='nofollow'>Практика алгоритмів з Python</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/59' target='_blank' rel='nofollow'>Python для науки</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/47' target='_blank' rel='nofollow'>Алгоритмічне мислення для розробників</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/45' target='_blank' rel='nofollow'>Введення в Ktor</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/65' target='_blank' rel='nofollow'>JavaScript Ядро</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/60' target='_blank' rel='nofollow'>Введення в MongoDB</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/62' target='_blank' rel='nofollow'>Аналіз даних у біоінформатиці</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/79' target='_blank' rel='nofollow'>Чат-боти та системи діалогу</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/61' target='_blank' rel='nofollow'>SQL для аналізу даних</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/85' target='_blank' rel='nofollow'>Введення в Calculus</a>
+        <a class='w3-bar-item w3-button w3-border' href='https://hyperskill.org/tracks/71' target='_blank' rel='nofollow'>Ядро біоінформатики</a>
+    </div>
+</nav>
+<!--/menu left-sidebar-->
+
+<!--menu top при менших екранах-->
+<div id='myAccordion' class='w3-card-2 w3-light-grey w3-center w3-hide-large' style='display:none;cursor:default'>
+    <a href='javascript:void(0)' onclick='w3_close()' class='w3-button w3-xlarge w3-right'>&times;</a><br>
+    <div class='w3-container w3-padding-32'>
+        <a class='w3-button w3-block w3-large w3-wide' onclick="open_xs_menu('tutorials');" href='javascript:void(0);'>ПІДРУЧНИКИ
+            <i class='fa fa-caret-down'></i></a>
+        <div id='sectionxs_tutorials' class='w3-white w3-show'></div>
+        <a class='w3-button w3-block w3-large w3-wide' onclick="open_xs_menu('references')" href='javascript:void(0);'>ДОВІДНИКИ
+            <i class='fa fa-caret-down'></i></a>
+        <div id='sectionxs_references' class='w3-white w3-show'></div>
+        <a class='w3-button w3-block w3-large w3-wide' onclick="open_xs_menu('examples')" href='javascript:void(0);'>ПРИКЛАДИ
+            <i class='fa fa-caret-down'></i></a>
+        <div id='sectionxs_examples' class='w3-white w3-show'></div>
+        <a class='w3-button w3-block w3-large w3-wide' onclick="open_xs_menu('exercises')" href='javascript:void(0);'>ВПРАВИ
+            <i class='fa fa-caret-down'></i></a>
+        <div id='sectionxs_exercises' class='w3-white w3-show'></div>
+        <a class='w3-button w3-block w3-large w3-wide' href='https://w3schoolsua.github.io/tryiteditor/index.html'>РЕДАКТОР КОДУ</a>
+    </div>
+</div>
+<!--/menu top-->
+
+<!--розгортаюче menu top-->
+<nav id="nav_tutorials" class="w3-dark-grey w3-card-2 w3-hide-small navex">
+    <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+    <div class='w3-row-padding w3-bar-block'>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>HTML & CSS</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/index_en.html'>Вивчити HTML</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/index_en.html'>Вивчити CSS</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_rwd_intro_en.html'>Вивчити RWD</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_ver_en.html'>Вивчити Bootstrap</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3css/index_en.html'>Вивчити W3.CSS</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/colors/index_en.html'>Вивчити Кольори</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/icons/index_en.html'>Вивчити Іконки</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/index_en.html'>Вивчити Графіку</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/svg_intro_en.html'>Вивчити SVG</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/canvas_intro_en.html'>Вивчити Canvas</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/howto/index_en.html'>Вивчити Як зробити</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sass/index_en.html'>Вивчити Sass</a>
+            <h3 class='w3-margin-top'>Програмування</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/index_en.html'>Вивчити Python</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/index_en.html'>Вивчити Java</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/index_en.html'>Вивчити C++</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/index_en.html'>Вивчити C#</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/r/index_en.html'>Вивчити R</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/kotlin/index_en.html'>Вивчити Kotlin</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/go/index_en.html'>Вивчити Go</a>
+            <div class="w3-hide-large w3-hide-small">
+                <h3 class='w3-margin-top'>XML Підручники</h3>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/index_en.html'>Вивчити XML</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/ajax_intro_en.html'>Вивчити XML AJAX</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/dom_intro_en.html'>Вивчити XML DOM</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_dtd_intro_en.html'>Вивчити XML DTD</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/schema_intro_en.html'>Вивчити XML Schema</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xsl_intro_en.html'>Вивчити XSLT</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xpath_intro_en.html'>Вивчити XPath</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xquery_intro_en.html'>Вивчити XQuery</a>
+            </div>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>JavaScript</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/index_en.html'>Вивчити JavaScript</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/react/index_en.html'>Вивчити React</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/index_en.html'>Вивчити jQuery</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/vue/index_en.html'>Вивчити Vue</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/angular/index_en.html'>Вивчити AngularJS</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_json_intro_en.html'>Вивчити JSON</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_ajax_intro_en.html'>Вивчити AJAX</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_htmldom_en.html'>Вивчити HTML-DOM</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/appml/index_en.html'>Вивчити AppML</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3js/index_en.html'>Вивчити W3.JS</a>
+            <h3 class='w3-margin-top'>Аналітика даних</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/ai/index_en.html'>Вивчити ШІ</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_ml_getting_started_en.html'>Вивчити Машинне навчання</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/gen_ai/index_en.html'>Вивчити Генеративний ШІ</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/chatgpt-3-5/index_en.html'>Вивчити ChatGPT-3.5</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/chatgpt-4/index_en.html'>Вивчити ChatGPT-4</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bard/index_en.html'>Вивчити Google Bard</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/datascience/index_en.html'>Вивчити Наука про дані</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/numpy/index_en.html'>Вивчити NumPy</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/pandas/index_en.html'>Вивчити Pandas</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/scipy/index_en.html'>Вивчити SciPy</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/matplotlib_intro_en.html'>Вивчити Matplotlib</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/statistics/index_en.html'>Вивчити Статистику</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/excel/index_en.html'>Вивчити Excel</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/googlesheets/index_en.html'>Вивчити Google таблиці</a>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>Серверна сторона</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/index_en.html'>Вивчити SQL</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/mysql/index_en.html'>Вивчити MySQL</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/index_en.html'>Вивчити PHP</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/asp/index_en.html'>Вивчити ASP</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/nodejs/index_en.html'>Вивчити Node.js</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/nodejs/nodejs_raspberrypi_en.html'>Вивчити Raspberry Pi</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/git/index_en.html'>Вивчити Git</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/githubpages/quickstart.html'>Вивчити GitHub Pages</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/mongodb/index_en.html'>Вивчити MongoDB</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/aws/index_en.html'>Вивчити AWS</a>
+            <h3 class='w3-margin-top'>Web Building</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/where_to_start_en.html'>З чого почати</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3css/w3css_templates_en.html'>Web Шаблони</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/browsers/index_en.html'>Web Статистика</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/index_en.html'>Web Сертифікати</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tryit/index_en.html'>Редактор коду</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/whatis/index_en.html'>Веброзробка</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cybersecurity/index_en.html'>Кібербезпека</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/accessibility/index_en.html'>Доступність</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/https://www.w3schools.com/typingspeed/default.asp' target='_blank' rel='nofollow'>Тест швидкості друку</a>
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+            <h3 class='w3-margin-top'>XML Підручники</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/index_en.html'>Вивчити XML</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/ajax_intro_en.html'>Вивчити XML AJAX</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/dom_intro_en.html'>Вивчити XML DOM</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_dtd_intro_en.html'>Вивчити XML DTD</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/schema_intro_en.html'>Вивчити XML Schema</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xsl_intro_en.html'>Вивчити XSLT</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xpath_intro_en.html'>Вивчити XPath</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xquery_intro_en.html'>Вивчити XQuery</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_references" class="w3-dark-grey w3-card-2 w3-hide-small navex">
+    <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+    <div class='w3-row-padding w3-bar-block'>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>HTML</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tags/index_en.html'>HTML Довідник тегів</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tags/ref_html_browsersupport_en.html'>Підтримка браузерами</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tags/ref_eventattributes_en.html'>HTML Довідник подій</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/colors/index_en.html'>HTML Довідник кольору</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tags/ref_attributes_en.html'>HTML Довідник атрибутів</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/tags/ref_canvas_en.html'>HTML Довідник Canvas</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/svg_reference_en.html'>HTML Довідник SVG</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/google_maps_reference_en.html'>Довідник Google Maps</a>
+            <h3 class='w3-margin-top'>CSS</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cssref/index_en.html'>CSS Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cssref/css3_browsersupport_en.html'>CSS Підтримка браузерами</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cssref/css_selectors_en.html'>CSS Довідник селекторів</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_ref_all_classes_en.html'>Довідник Bootstrap 3</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap4/bootstrap_ref_all_classes_en.html'>Довідник Bootstrap 4</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3css/w3css_references_en.html'>Довідник W3.CSS</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/icons/icons_reference_en.html'>Довідник іконок</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sass/sass_functions_string_en.html'>Довідник Sass</a>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>JavaScript</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jsref/index_en.html'>JavaScript Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jsref/index_en.html'>HTML DOM Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_ref_overview_en.html'>jQuery Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/angular/angular_ref_directives_en.html'>AngularJS Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/appml/appml_reference_en.html'>AppML Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3js/w3js_references_en.html'>W3.JS Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/readyscripts/index_en.html'>JS Готові скрипти</a>
+            <h3 class='w3-margin-top'>Програмування</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_reference_en.html'>Python Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_ref_keywords_en.html'>Java Довідник</a>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>Серверна сторона</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_ref_keywords_en.html'>SQL Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_ref_overview_en.html'>PHP Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/asp/asp_ref_response_en.html'>ASP Довідник</a>
+            <h3 class='w3-margin-top'>XML</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/dom_nodetype_en.html'>XML DOM Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/dom_http_en.html'>XML Http Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xsl_elementref_en.html'>XSLT Довідник</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/schema_elements_ref_en.html'>XML Schema Довідник</a>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>Character Sets</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/index_en.html'>HTML Набори символів</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_ascii_en.html'>HTML ASCII</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_ansi_en.html'>HTML ANSI</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_ansi_en.html'>HTML Windows-1252</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_8859_en.html'>HTML ISO-8859-1</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_symbols_en.html'>HTML Символи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/charsets/ref_html_utf8_en.html'>HTML UTF-8</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_examples" class="w3-dark-grey w3-card-2 w3-hide-small navex">
+    <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+    <div class='w3-row-padding w3-bar-block'>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>HTML & CSS</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/html_examples_en.html'>HTML Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_examples_en.html'>CSS Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3css/w3css_examples_en.html'>W3.CSS Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_examples_en.html'>Bootstrap Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/howto/index_en.html'>How To Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/svg_examples_en.html'>SVG Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3css/w3css_templates_en.html'>Web Шаблони</a>
+            <div class="w3-hide-large w3-hide-small">
+                <h3 class='w3-margin-top'>Вікторини</h3>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/html_quiz_en.html' target='_top'>HTML Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_quiz_en.html' target='_top'>CSS Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_quiz_en.html' target='_top'>JavaScript Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_quiz_en.html' target='_top'>SQL Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_quiz_en.html' target='_top'>PHP Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_quiz_en.html' target='_top'>Python Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_quiz_en.html' target='_top'>jQuery Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_quiz_en.html' target='_top'>Bootstrap Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_quiz_en.html' target='_top'>Java Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/cpp_quiz_en.html' target='_top'>C++ Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/cs_quiz_en.html' target='_top'>C# Вікторина</a>
+                <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_quiz_en.html' target='_top'>XML Вікторина</a>
+            </div>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>JavaScript</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_examples_en.html' target='_top'>JavaScript Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_dom_examples_en.html' target='_top'>HTML DOM Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_examples_en.html' target='_top'>jQuery Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/angular/angular_examples_en.html' target='_top'>AngularJS Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_ajax_examples_en.html' target='_top'>AJAX Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/w3js/w3js_examples_en.html' target='_top'>W3.JS Приклади</a>
+            <h3 class='w3-margin-top'>Programming</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_examples_en.html' target='_top'>Python Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_examples_en.html' target='_top'>Java Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/cpp_examples_en.html' target='_top'>C++ Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/cs_examples_en.html' target='_top'>C# Приклади</a>
+        </div>
+        <div class='w3-col l3 m6'>
+            <h3 class='w3-margin-top'>Серверна сторона</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_examples_en.html' target='_top'>SQL Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_examples_en.html' target='_top'>PHP Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/asp/asp_examples_en.html' target='_top'>ASP Приклади</a>
+            <h3 class='w3-margin-top'>XML</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_examples_en.html' target='_top'>XML Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xsl_examples_en.html' target='_top'>XSLT Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xpath_examples_en.html' target='_top'>XPath Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/schema_example_en.html' target='_top'>XML Schema Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/ajax_examples_en.html' target='_top'>AJAX Приклади</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/graphics/svg_examples_en.html' target='_top'>SVG Приклади</a>
+        </div>
+        <div class="w3-col l3 m6 w3-hide-medium">
+            <h3 class='w3-margin-top'>Вікторини</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/html_quiz_en.html' target='_top'>HTML Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_quiz_en.html' target='_top'>CSS Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_quiz_en.html' target='_top'>JavaScript Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_quiz_en.html' target='_top'>SQL Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_quiz_en.html' target='_top'>PHP Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_quiz_en.html' target='_top'>Python Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_quiz_en.html' target='_top'>jQuery Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_quiz_en.html' target='_top'>Bootstrap Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_quiz_en.html' target="_top">Java Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/cpp_quiz_en.html' target="_top">C++ Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/cs_quiz_en.html' target="_top">C# Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_quiz_en.html' target='_top'>XML Вікторина</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_exercises" class="w3-dark-grey w3-card-2 w3-hide-small w3-hide-medium navex">
+    <span onclick="w3_close_nav('exercises')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
+    <div class='w3-row-padding w3-bar-block'>
+        <div class="w3-col l4 m12">
+            <h3 class='w3-margin-top'>Вправи</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/html_exercises_en.html'>HTML Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_exercises_en.html'>CSS Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_exercises_en.html'>JavaScript Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_exercises_en.html'>SQL Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_exercises_en.html'>PHP Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_exercises_en.html'>Python Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_exercises_en.html'>jQuery Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_exercises_en.html'>Java Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_exercises_en.html'>Bootstrap Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/cpp_exercises_en.html'>C++ Вправи</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/cs_exercises_en.html'>C# Вправи</a>
+        </div>
+        <div class="w3-col l4 m12">
+            <h3 class='w3-margin-top'>Вікторини</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/html/html_quiz_en.html' target='_top'>HTML Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/css/css_quiz_en.html' target='_top'>CSS Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/js/js_quiz_en.html' target='_top'>JavaScript Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/sql/sql_quiz_en.html' target='_top'>SQL Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/php/php_quiz_en.html' target='_top'>PHP Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/python/python_quiz_en.html' target='_top'>Python Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/jquery/jquery_quiz_en.html' target='_top'>jQuery Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/bootstrap/bootstrap_quiz_en.html' target='_top'>Bootstrap Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/java/java_quiz_en.html' target="_top">Java Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cpp/cpp_quiz_en.html' target="_top">C++ Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cs/cs_quiz_en.html' target="_top">C# Вікторина</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/xml/xml_quiz_en.html' target='_top'>XML Вікторина</a>
+        </div>
+        <div class="w3-col l4 m12">
+            <h3 class='w3-margin-top'>Сертифікати</h3>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_html_new_en.html' target='_top'>HTML Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_css_en.html' target='_top'>CSS Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_javascript_en.html' target='_top'>JavaScript Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_frontend_en.html' target='_top'>Front-End Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_sql_en.html' target='_top'>SQL Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_php_en.html' target='_top'>PHP Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_python_en.html' target='_top'>Python Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_bootstrap_en.html' target='_top'>Bootstrap Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_jquery_en.html' target='_top'>jQuery Сертифікат</a>
+            <a class='w3-bar-item w3-button' href='https://w3schoolsua.github.io/cert/cert_xml_en.html' target='_top'>XML Сертифікат</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<!--/menu left-->
+<!-- MAIN -->
+<div class='w3-main' id='belowtopnav'>
+    <div class='w3-row' style="background: #223322">
+        <div class='w3-col l12 m12' id='main'>
+            <div class="adver_adup">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- adup_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>            <div class="ws-black w3-center" style="padding-top:0;padding-bottom:0;">
+                <div class="w3-content" style="padding-left:20px;padding-right:20px;max-width:1400px">
+                    <h1 style="font-size:45px;font-weight:700;text-shadow: 2px 2px 2px #000" class="textsmallerscreens">Яка ваша мета навчання?</h1>
+                    <h3 style="margin-top:20px;color:#fff">Дослідіть усі треки:</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="ws-black">
+                <div class="timeline" style="max-width:1200px">
+
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="htmlcss/index.html" class="mylink descmob" title="Введення в HTML та CSS"><h3 class="w3-light-blue w3-round textdescmob">HTML / CSS</h3></a>
+                                <h4>Введення в HTML та CSS</h4>
+                                <p style="font-size:17px;font-weight:500">Ознайомлення з основами розробки інтерфейсу, від функціональності браузера до створення сучасних адаптивних вебсайтів.</p>
+                                <a href="htmlcss/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;" title="Введення в HTML та CSS">Вивчити HTML/CSS</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="htmlcss/index.html" class="mylink" title="Введення в HTML та CSS">
+                                <div class="content w3-light-blue jscont">
+                                    <h2 class="h2content">HTML / CSS</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="js/index.html" class="mylink descmob" title="Введення в JavaScript Підручник"><h3 class="w3-yellow w3-round textdescmob">JavaScript</h3></a>
+                                <h4>Введення в JavaScript</h4>
+                                <p style="font-size:17px;font-weight:500">Відкрийте для себе можливості JavaScript, популярної мови зовнішнього інтерфейсу, широко відомої своєю зручністю для початківців, починаючи з основ і просуваючись до створення вашого першого самостійного проєкту.</p>
+                                <a href="js/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;" title="Введення в JavaScript Підручник">Вивчити JavaScript</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="js/index.html" class="mylink" title="JavaScript Підручник">
+                                <div class="content w3-yellow jscont">
+                                    <h2 class="h2content">JavaScript</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue">
+                                <a href="java/index.html" class="mylink descmob" title="Введення в Java Підручник"><h3 class="w3-light-green textdescmob">Java</h3></a>
+                                <h4>Введення в Java</h4>
+                                <p style="font-size:17px;font-weight:500">Готові ступити у світ Java? Вивчіть синтаксис, маніпуляції з цілими числами, операції з рядками та масивами, цикли, умови та концепції об&#8217;єктно-орієнтованого програмування.</p>
+                                <a href="java/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0" title="Введення в Java">Вивчити Java</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="java/index.html" class="mylink" title="Введення в Java">
+                                <div class="content w3-light-green">
+                                    <h2 class="h2content">Java</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue">
+                                <a href="python/index.html" class="mylink descmob"  title="Введення в Python Підручник"><h3 class="ws-pink textdescmob">Python</h3></a>
+                                <h4>Введення в Python</h4>
+                                <p style="font-size:17px;font-weight:500">Розпочніть свою подорож у розробці з Python, отримавши фундаментальне розуміння основ і основних концепцій мови.</p>
+                                <a href="python/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0"  title="Введення в Python Підручник">Вивчити Python</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="python/index.html" class="mylink" title="Go To CSS Підручник">
+                                <div class="content ws-pink">
+                                    <h2 class="h2content">Python</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="go/index.html" class="mylink descmob" title="Введення в Go"><h3 class="w3-lime w3-round textdescmob">Golang</h3></a>
+                                <h4>Введення в Go</h4>
+                                <p style="font-size:17px;font-weight:500">Розпочніть свою пригоду з програмування Go та відкрийте для себе простоту та швидкість цієї сучасної мови, вивчаючи основні концепції, синтаксис і те, як створювати базові програми CLI.</p>
+                                <a href="go/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;"  title="Введення в Go">Вивчити Golang</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="go/index.html" class="mylink" title="Введення в Go">
+                                <div class="content w3-lime jscont">
+                                    <h2 class="h2content">Golang</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="datascience/index.html" class="mylink descmob" title="Введення в Науку про дані"><h3 class="ws-turquoise w3-round textdescmob">Наука про дані</h3></a>
+                                <h4>Введення в Науку про дані</h4>
+                                <p style="font-size:17px;font-weight:500">Отримайте основні навички статистики та машинного навчання. Зосередьтеся на попередній обробці даних, аналізі, візуалізації, перевірці гіпотез і створенні моделі машинного навчання.</p>
+                                <a href="datascience/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;" title="Введення в Науку про дані">Вивчити Науку про дані</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="datascience/index.html" class="mylink" title="Введення в Науку про дані">
+                                <div class="content ws-turquoise jscont">
+                                    <h2 class="h2content">Наука про дані</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="sql/index.html" class="mylink descmob" title="Введення в SQL Підручник"><h3 class="w3-orange w3-round textdescmob">SQL</h3></a>
+                                <h4>Введення в SQL</h4>
+                                <p style="font-size:17px;font-weight:500">Приєднайтеся до цього треку, щоб отримати основні навички SQL, що дозволить маркетологам, менеджерам із продуктів, аналітикам і розробникам ефективно збирати й аналізувати дані.</p>
+                                <a href="sql/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;"  title="Введення в SQL">Вивчити SQL</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="sql/index.html" class="mylink" title="Введення в SQL">
+                                <div class="content w3-orange jscont">
+                                    <h2 class="h2content">SQL</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <div class="container right">
+                            <div class="content w3-pale-blue jscont">
+                                <a href="django/index.html" class="mylink descmob" title="Введення в Django"><h3 class="w3-pale-red w3-round textdescmob">Django</h3></a>
+                                <h4>Введення в Django</h4>
+                                <p style="font-size:17px;font-weight:500">Відкрийте для себе можливості веброзробки за допомогою Django та Python. Ознайомтеся з основами, розробляйте складні програми та прокладайте собі шлях до досвідченого веброзробника.</p>
+                                <a href="django/index.html" class="ws-btn tut-button shadow-black-1" style="margin-left:0;"  title="Введення в Django">Вивчити Django</a>
+                            </div>
+                        </div>
+                        <div class="container left ws-hide-900">
+                            <a href="django/index.html" class="mylink" title="Введення в Django">
+                                <div class="content w3-pale-red jscont">
+                                    <h2 class="h2content">Django</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br class="w3-hide-small">
+                </div>
+            </div>
+            <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>            <div class="w3-pale-green" style="padding:15px;margin-top:-55px;">
+                <div class="w3-padding" style="font-size: 1.2em">
+                    <h2 style="font-size:40px;font-weight:700;padding: 20px" class="w3-center shadow-black-1">Що таке Hyperskill Platform JetBrains Academy?</h2>
+                    <p>Платформа JetBrains Academy Hyperskill – це онлайн-навчальна платформа, розроблена JetBrains. Вона забезпечує практичний підхід до навчання програмуванню через проєктні курси та інтерактивні вправи з кодування. Вона пропонує різноманітні курси з різних мов і технологій програмування, зокрема Java, Kotlin, Python, Frontend, Go, Scala, SQL, Машинне навчання тощо.</p>
+                    <p>Платформа розроблена для всіх, хто хоче навчитися або вдосконалити свої навички програмування, незалежно від рівня їхнього досвіду. Вона призначена для початківців, які тільки починають свій шлях програмування, а також для учнів середнього та просунутого рівня, які хочуть покращити свої знання та братися за складніші проєкти.</p>
+                    <p>Платформа JetBrains Academy Hyperskill пропонує структуровану навчальну програму з покроковими шляхами навчання, реальними проєктами та спільнотою підтримки. Вона забезпечує практичний і захоплюючий досвід навчання, допомагаючи учням розвивати практичні навички та набути впевненості у своїх здібностях програмування.</p>
+                    <p>Незалежно від того, чи ви студент, професіонал, який прагне підвищити кваліфікацію, чи просто хтось, хто цікавиться кодуванням, Hyperskill Platform JetBrains Academy може стати цінним ресурсом, який допоможе вам ефективно та результативно навчитися програмуванню.</p>
+                    <p>Ось деякі з переваг використання Hyperskill Platform JetBrains Academy:</p>
+                    <ul>
+                        <li><b>Проєктне навчання</b>: Hyperskill фокусується на проєктному навчанні, яке є перевіреним способом навчитися програмувати. Працюючи над реальними проєктами, учні можуть отримати практичний досвід і розвинути навички, необхідні для успішного програмування.</li>
+                        <li><b>Всеосяжні та захоплюючі навчальні матеріали</b>: Hyperskill пропонує вичерпні та захоплюючі навчальні матеріали, зокрема відеоуроки, інтерактивні вправи та реальні проєкти. Ці матеріали розроблено, щоб допомогти учням навчатися у своєму власному темпі та опанувати необхідні навички.</li>
+                        <li><b>Інтегроване середовище розробки (IDE)</b>: Hyperskill інтегровано з різними JetBrains IDE, які надають учням допомогу в інтелектуальному кодуванні, як-от аналіз коду, рефакторинг і доповнення коду. Це допомагає учням писати кращий код і легше виявляти та виправляти помилки.</li>
+                        <li><b>Миттєвий відгук</b>: Hyperskill забезпечує миттєвий відгук про роботу учнів, що допомагає їм визначити свої сильні та слабкі сторони та вдосконалити свої навички.</li>
+                        <li><b>Досвідчені наставники</b>: учні, які навчаються в Hyperskill, мають доступ до досвідчених наставників, які можуть надати їм вказівки та підтримку.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ws-pink">
+                <div class="w3-center" style="padding:30px;max-width:770px;margin:auto">
+                    <h2 style="font-size:65px;font-weight:700;color:black;" class="textsmallerscreens">Hello,<br>Front-End Розробник!</h2>
+                    <h3 style="margin-top:45px;">Людей, які створюють вебсайти та вебпрограми, заробляючи на життя, називають <strong>Front-End Розробниками</strong>.</h3>
+                    <h3 style="margin-top:45px;"><b>Порада:</b> Багато Front-End Розробників також мають базові знання про різні фреймворки та бібліотеки CSS і JavaScript, наприклад <a href="https://w3schoolsua.github.io/bootstrap5/bootstrap_get_started.html" title="Перейти на Bootstrap 5 Підручник">Bootstrap</a>, <a href="https://w3schoolsua.github.io/sass/sass_intro.html" title="Перейти на SASS Підручник">SASS (CSS pre-processor)</a>, <a href="https://w3schoolsua.github.io/jquery/jquery_intro.html" title="Перейти на jQuery Підручник">jQuery</a> та <a href="https://w3schoolsua.github.io/react/react_intro.html" title="Перейти на React Підручник">React</a>,<br> і популярна система контролю версій, <a href="https://w3schoolsua.github.io/git/git_intro.html" title="Перейти на Git Підручник">Git</a>.</h3>
+                </div>
+            </div>
+            <div class="w3-center w3-pale-blue" style="padding:30px;margin-top:-5px;">
+                <div style="max-width:760px;margin:auto;color:black!important;">
+                    <h2 style="font-size:65px;font-weight:700" class="textsmallerscreens shadow-black-1">А як щодо Back-End?</h2>
+                    <h3 style="margin-top:45px;">
+                        <strong>Front-end</strong> розробка відноситься до <strong>клієнтської сторони</strong> (як <b>виглядає веб-сторінка</b>).<br>
+                        <strong>Back-end</strong> розробка відноситься до <strong>серверної сторони</strong> (як <b>працює веб-сторінка</b>).
+                    </h3>
+                    <h3 style="margin-top:45px;">Фронт-енд (інтерфейсний) код використовується для створення <b>статичних</b> вебсайтів, метою яких є відображення вебсторінки. Однак, якщо ви хочете зробити свій вебсайт <b>динамічним</b> (керувати файлами та базами даних, додавати контактні форми, контролювати доступ користувачів тощо), вам потрібно вивчити мову програмування, як-от <a href="https://w3schoolsua.github.io/php/php_intro.html" title="Перейти до PHP Підручника">PHP</a> або <a href="https://w3schoolsua.github.io/python/python_intro.html" title="Перейти до Python Підручника">Python</a>, і використовувати <a href="https://w3schoolsua.github.io/sql/sql_intro.html" title="Перейти до SQL Підручника">SQL</a>, щоб спілкуватися з базами даних.</h3>
+                    <h3 style="margin-top:25px">Список інших популярних мов можна знайти на нашому сайті <a href="https://w3schoolsua.github.io/index.html" title="Перейти на головну сторінку W3schools українською">W3SchoolsUA українською</a>.</h3>
+                </div>
+                <img src="images/point.png" style="width: 100%;height: 1px" alt="point">
+                <div style="font-size: .8em">
+                    <p>Цей сайт створено для особистого використання та навчання автора. Матеріали взяті з оригінального сайту <a href="https://hyperskill.org/" target="_blank" rel="nofollow">Hyperskill</a> і адаптовані для зручності використання. Рекомендується проходити навчання безпосередньо на вебсайті <strong>Hyperskill</strong> і використовувати матеріали з цього вебсайту як допоміжні матеріали. До кожного уроку також подано готові відповіді до тестових завдань.</p>
+                    <p>Зверніть увагу! Деякі навчальні статті на сайті створені за допомогою штучного інтелекту (ChatGPT&Bard), тому можуть містити помилки. Адміністратор сайту не несе відповідальності за використання матеріалів і прикладів на цьому сайті. Ви також можете використовувати наведений на сайті програмний код на власний ризик.</p>
+                    <p>Наразі сайт продовжує розвиватися та наповнюватися матеріалами в міру можливості, тому деякі посилання можуть тимчасово не працювати. Деякі уроки все ще відсутні.</p>
+                    <p>Ви також можете відвідати <a href="https://w3schoolsua.github.io/index.html" target="_blank">вебсайт W3SchoolsUA українською</a>, щоб переглянути інші уроки з програмування та веброзробки.</p>
+                </div>
+            </div>
+            <!--Скрипт для верхнього меню -->
+            <script src='scripts/index_topmenu.js'></script>
+            <!-- / Скрипт для верхнього меню -->
+            <!--[if lt IE 9]>
+            <script src='cdn/html5shiv/3.7.3/html5shiv.js'></script>
+            <script src='cdn/respond/1.4.2/respond.min.js'></script>
+            <![endif]-->
+            <div class="adver_addown">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 </body>
 </html>
