@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<link rel='icon' href='../favicon.ico' type='image/x-icon'>
+<link rel='stylesheet' href='../styles/w3.css'>
+<link rel='stylesheet' href='../styles/external.css'>
+<meta property='og:image' content='../images/w3schools_logo_436_2.png'>
+<meta property='og:image:type' content='image/png'>
+<meta property='og:image:width' content='436'>
+<meta property='og:image:height' content='228'>
+<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'><title>HTML basics. What is HTML? Short history. Lessons for beginners. Tutorial from Hyperskill</title>
+<meta name='description' content='HTML basics. Theory. What is HTML? Short history. HTML today. Advantages of HTML. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
+<div class='w3-container top'>
+    <a class='w3schools-logo notranslate' href='../index_en.html'>HyperSkillEN<span class='dotcom w3-hide-small'>.TheBest</span></a>
+    <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">SIMPLE THE BEST SITE FOR DEVELOPERS</div>
+</div>
+<div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
+    <!--W3SchoolsUA-Google-Search-->
+    <script async src='https://cse.google.com/cse.js?cx=751c3d18bb8a64f00'></script><div class='gcse-search'></div>
+    <!--/W3SchoolsUA-Google-Search-->
+</div>
+<!--Top menu-->
+<div class='w3-card-2 topnav notranslate' id='topnav'>
+    <div style='overflow:auto;'>
+        <div class='w3-bar w3-left' style='width:100%;overflow:hidden;height:44px'>
+            <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Меню'></a>
+            <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../index_en.html' title='main'></a>
+            <a class='w3-bar-item w3-button' href='../34/index_en.html' title='HTML Tutorial'>HTML/CSS</a>
+            <a class='w3-bar-item w3-button' href='../32/index_en.html' title='JavaScript Tutorial'>JAVASCRIPT</a>
+            <a class='w3-bar-item w3-button' href='../31/index_en.html' title='SQL Tutorial'>SQL</a>
+            <a class='w3-bar-item w3-button' href='../8/index_en.html' title='Java Tutorial'>JAVA</a>
+            <a class='w3-bar-item w3-button' href='../6/index_en.html' title='Python Tutorial'>PYTHON</a>
+            <a class='w3-bar-item w3-button' href='../25/index_en.html' title='How To'>Golang</a>
+            <a class='w3-bar-item w3-button' href='../28/index_en.html' title='W3.CSS Tutorial'>Data Science</a>
+            <a class='w3-bar-item w3-button' href='../11/index_en.html' title='jQuery Tutorial'>Django</a>
+            <a class='w3-bar-item w3-button w3-right' target='_blank' href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' title='Download books for free from Google drive'>Books</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='open_search(this)' title='Search'>&#128269;</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='changecodetheme(this)' title='Dark theme'>&#9681;</a>
+            <a class='w3-bar-item w3-button' id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='More tutorials'>More <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+        </div>
+        <div id='nav_tutorials' class='w3-bar-block w3-card-2' style='display:none;'>
+            <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style='position:absolute;right:0;font-weight:bold;'>&times;</span>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'>
+                    <h3>Tutorials:</h3>
+                    <a class='w3-bar-item w3-button' href='../8/index_en.html'>Introduction to Java</a>
+                    <a class='w3-bar-item w3-button' href='../2/index_en.html'>Python Core</a>
+                    <a class='w3-bar-item w3-button' href='../18/index_en.html'>Kotlin Core</a>
+                    <a class='w3-bar-item w3-button' href='../6/index_en.html'>Introduction to Python</a>
+                    <a class='w3-bar-item w3-button' href='../5/index_en.html'>Frontend Core</a>
+                    <a class='w3-bar-item w3-button' href='../3/index_en.html'>Kotlin Developer</a>
+                    <a class='w3-bar-item w3-button' href='../12/index_en.html'>Java Backend Developer</a>
+                    <a class='w3-bar-item w3-button' href='../17/index_en.html'>Java Developer</a>
+                    <a class='w3-bar-item w3-button' href='../32/index_en.html'>Introduction to JavaScript</a>
+                    <a class='w3-bar-item w3-button' href='../25/index_en.html'>Introduction to Go</a>
+                    <a class='w3-bar-item w3-button' href='../15/index_en.html'>Java Core</a>
+                    <a class='w3-bar-item w3-button' href='../28/index_en.html'>Introduction to Data Science</a>
+                    <a class='w3-bar-item w3-button' href='../31/index_en.html'>Introduction to SQL</a>
+                    <div class='w3-hide-large w3-hide-small'>
+                        <a class='w3-bar-item w3-button' href='../9/index_en.html'>Java Desktop Application Developer</a>
+                        <a class='w3-bar-item w3-button' href='../26/index_en.html'>Introduction to Command Line and Unix Shell</a>
+                        <a class='w3-bar-item w3-button' href='../30/index_en.html'>SQL with Python</a>
+                        <a class='w3-bar-item w3-button' href='../38/index_en.html'>Spring Security for Java Backend Developers</a>
+                        <a class='w3-bar-item w3-button' href='../16/index_en.html'>Android Development with Kotlin</a>
+                        <a class='w3-bar-item w3-button' href='../11/index_en.html'>Introduction to Django</a>
+                        <a class='w3-bar-item w3-button' href='../42/index_en.html'>Machine Learning Algorithms from Scratch</a>
+                        <a class='w3-bar-item w3-button' href='../34/index_en.html'>Introduction to HTML and CSS</a>
+                        <a class='w3-bar-item w3-button' href='../29/index_en.html'>Flask Developer</a>
+                        <a class='w3-bar-item w3-button' href='../10/index_en.html'>Introduction to Natural Language Processing</a>
+                        <a class='w3-bar-item w3-button' href='../41/index_en.html'>Introduction to Computer Algorithms and Data Structures</a>
+                        <a class='w3-bar-item w3-button' href='../27/index_en.html'>Introduction to Linear Algebra</a>
+                        <a class='w3-bar-item w3-button' href='../48/index_en.html'>Introduction to Git</a>
+                    </div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../9/index_en.html'>Java Desktop Application Developer</a>
+                    <a class='w3-bar-item w3-button' href='../26/index_en.html'>Introduction to Command Line and Unix Shell</a>
+                    <a class='w3-bar-item w3-button' href='../30/index_en.html'>SQL with Python</a>
+                    <a class='w3-bar-item w3-button' href='../38/index_en.html'>Spring Security for Java Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../16/index_en.html'>Android Development with Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../11/index_en.html'>Introduction to Django</a>
+                    <a class='w3-bar-item w3-button' href='../42/index_en.html'>Machine Learning Algorithms from Scratch</a>
+                    <a class='w3-bar-item w3-button' href='../34/index_en.html'>Introduction to HTML and CSS</a>
+                    <a class='w3-bar-item w3-button' href='../29/index_en.html'>Flask Developer</a>
+                    <a class='w3-bar-item w3-button' href='../10/index_en.html'>Introduction to Natural Language Processing</a>
+                    <a class='w3-bar-item w3-button' href='../41/index_en.html'>Introduction to Computer Algorithms and Data Structures</a>
+                    <a class='w3-bar-item w3-button' href='../27/index_en.html'>Introduction to Linear Algebra</a>
+                    <a class='w3-bar-item w3-button' href='../48/index_en.html'>Introduction to Git</a>
+                    <div class='w3-hide-small'><br class='w3-hide-medium w3_hide-small'><br class='w3-hide-medium w3_hide-small'></div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../33/index_en.html'>Math for Machine Learning</a>
+                    <a class='w3-bar-item w3-button' href='../35/index_en.html'>Advanced Java</a>
+                    <a class='w3-bar-item w3-button' href='../40/index_en.html'>SQL for Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../44/index_en.html'>Pandas for Data Analysis</a>
+                    <a class='w3-bar-item w3-button' href='../37/index_en.html'>Kotlin Backend Developer with Spring Boot</a>
+                    <a class='w3-bar-item w3-button' href='../50/index_en.html'>Essential Skills for Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../23/index_en.html'>Introduction to Scala</a>
+                    <a class='w3-bar-item w3-button' href='../69/index_en.html'>Introduction to Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../70/index_en.html'>Introduction to Spring Boot with Java</a>
+                    <a class='w3-bar-item w3-button' href='../57/index_en.html'>Introduction to Math</a>
+                    <a class='w3-bar-item w3-button' href='../49/index_en.html'>Introduction to Bioinformatics</a>
+                    <a class='w3-bar-item w3-button' href='../58/index_en.html'>Python OOP</a>
+                    <a class='w3-bar-item w3-button' href='../55/index_en.html'>Introduction to Node.js</a>
+                    <a class='w3-bar-item w3-button' href='../54/index_en.html'>Practicing Algorithms with Python</a>
+                </div>
+                <div class='w3-col l3 m6 w3-hide-medium'>
+                    <a class='w3-bar-item w3-button' href='../59/index_en.html'>Python for Science</a>
+                    <a class='w3-bar-item w3-button' href='../47/index_en.html'>Algorithmic Thinking for Developers</a>
+                    <a class='w3-bar-item w3-button' href='../45/index_en.html'>Introduction to Ktor</a>
+                    <a class='w3-bar-item w3-button' href='../65/index_en.html'>JavaScript Core</a>
+                    <a class='w3-bar-item w3-button' href='../60/index_en.html'>Introduction to MongoDB</a>
+                    <a class='w3-bar-item w3-button' href='../62/index_en.html'>Data Analysis in Bioinformatics</a>
+                    <a class='w3-bar-item w3-button' href='../79/index_en.html'>Chatbots and Dialogue Systems</a>
+                    <a class='w3-bar-item w3-button' href='../61/index_en.html'>SQL for Data Analysis</a>
+                    <a class='w3-bar-item w3-button' href='../85/index_en.html'>Introduction to Calculus</a>
+                    <a class='w3-bar-item w3-button' href='../71/index_en.html'>Bioinformatics Core</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_references' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6 w3-hide-medium w3-hide-small'></div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_exercises' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m12'></div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<!--/Top menu--><!--Left menu sidebar-->
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+    <nav>
+        <h2 class='left'><span class='left_h2'><b>Introduction to HTML</b></h2>
+        <a target='_top' href='index_en.html'>HTML basics</a>
+        <a target='_top' href='tags-and-attributes_en.html'>Tags and Attributes</a>
+        <a target='_top' href='html-page-structure_en.html'>HTML page structure</a>
+        <a target='_top' href='comments_en.html'>Comments</a>
+        <a target='_top' href='code-style_en.html'>Code style</a>
+        <a target='_top' href='links_en.html'>Links</a>
+        <a target='_top' href='html-quotations_en.html'>HTML Quotations</a>
+        <a target='_top' href='headings-paragraphs-comments_en.html'>Headings, Paragraphs, Comments</a>
+        <a target='_top' href='i-tag_en.html'>The &lt;i&gt; tag</a>
+        <a target='_top' href='samp-kbd-code-tags_en.html'>&lt;samp&gt;, &lt;kbd&gt;, &lt;code&gt;</a>
+        <a target='_top' href='abbr-address-bdo-tags_en.html'>&lt;abbr&gt;, &lt;address&gt;, &lt;bdo&gt;</a>
+        <a target='_top' href='block-level-elements_en.html'>Block-level elements</a>
+        <a target='_top' href='inline-elements_en.html'>Inline elements</a>
+        <a target='_top' href='layout-elements_en.html'>Layout elements</a>
+        <a target='_top' href='html-attributes-id-and-class_en.html'>HTML attributes id and class</a>
+        <a target='_top' href='connecting-css-to-html_en.html'>Connecting CSS to HTML</a>
+        <a target='_top' href='dom_en.html'>DOM</a>
+        <a target='_top' href='images_en.html'>Images</a>
+        <a target='_top' href='audio_en.html'>Audio</a>
+        <a target='_top' href='video_en.html'>Video</a>
+        <a target='_top' href='tag-embed_en.html'>Tag Embed</a>
+        <a target='_top' href='intro-to-html-forms_en.html'>Intro to HTML forms</a>
+        <a target='_top' href='buttons_en.html'>Buttons</a>
+        <a target='_top' href='iframe-and-frameset_en.html'>Iframe and frameset</a>
+        <a target='_top' href='the-lang-attribute_en.html'>The lang attribute</a>
+        <a target='_top' href='intro-to-tables_en.html'>Tables</a>
+        <div class='tut_overview'>
+            <a target='_top' href='intro-to-tables_en.html'>Intro to Tables</a>
+            <a target='_top' href='rows-cells-captions_en.html'>Rows, cells, captions</a>
+            <a target='_top' href='merging-cells_en.html'>Tables: Merging cells</a>
+            <a target='_top' href='sizing-tables_en.html'>Sizing tables</a>
+            <a target='_top' href='table-alignment_en.html'>Table Alignment</a>
+            <a target='_top' href='table-sizing-and-alignment_en.html'>Table sizing and alignment</a>
+            <a target='_top' href='visibility_en.html'>Visibility</a>
+            <a target='_top' href='responsive-tables_en.html'>Responsive Tables</a>
+        </div>
+        <a target='_top' href='intro-to-lists_en.html'>Lists</a>
+        <div class='tut_overview'>
+            <a target='_top' href='intro-to-lists_en.html'>Intro to Lists</a>
+            <a target='_top' href='ordered-list-and-types_en.html'>Ordered list and types</a>
+            <a target='_top' href='unordered-list-and-types_en.html'>Unordered list and types</a>
+            <a target='_top' href='pseudo-classes_en.html'>Pseudo-classes</a>
+            <a target='_top' href='list-style_en.html'>List style</a>
+        </div>
+        <a target='_top' href='images-and-text_en.html'>Images and Text</a>
+        <a target='_top' href='html-progress-and-meter_en.html'>HTML progress and meter</a>
+        <a target='_top' href='connecting-javascript-to-html_en.html'>Connecting JavaScript to HTML</a>
+        <a target='_top' href='the-dialog-tag_en.html'>The Dialog tag</a>
+        <a target='_top' href='layout-grids_en.html'>Layout grids</a>
+        <a target='_top' href='the-html-seo-optimization_en.html'>The HTML SEO optimization</a>
+        <br>
+        <h2 class='left'><span class='left_h2'><b>Introduction to CSS</b></span></h2>
+        <a target='_top' href='what-is-css_en.html'>What is CSS</a>
+        <a target='_top' href='basic-syntax_en.html'>Basic syntax</a>
+        <a target='_top' href='css-selectors_en.html'>CSS Selectors</a>
+        <a target='_top' href='relative-units_en.html'>Relative units</a>
+        <a target='_top' href='absolute-units_en.html'>Absolute units</a>
+        <a target='_top' href='position_en.html'>Position</a>
+        <a target='_top' href='float_en.html'>Float</a>
+        <a target='_top' href='clear_en.html'>Clear</a>
+        <a target='_top' href='positioning-properties_en.html'>Positioning properties</a>
+        <a target='_top' href='z-index_en.html'>z-index</a>
+        <a target='_top' href='margin-and-padding_en.html'>Margin and Padding</a>
+        <a target='_top' href='width-and-height_en.html'>Width and Height</a>
+        <a target='_top' href='border_en.html'>Border</a>
+        <a target='_top' href='overflow_en.html'>Overflow</a>
+        <a target='_top' href='colors-in-CSS_en.html'>Colors in CSS</a>
+        <a target='_top' href='background_en.html'>Background</a>
+        <a target='_top' href='using-fonts_en.html'>Using Fonts</a>
+        <a target='_top' href='line-height_en.html'>Line-height</a>
+        <a target='_top' href='text-alignment_en.html'>Text Alignment</a>
+        <a target='_top' href='google-fonts_en.html'>Google Fonts</a>
+        <a target='_top' href='introduction-to-flexbox_en.html'>Introduction to Flexbox</a>
+        <a target='_top' href='orientation-and-display-order_en.html'>Orientation and Display order</a>
+        <a target='_top' href='flexibility-growth-and-contraction-ratio_en.html'>Flexibility, growth and contraction ratio</a>
+        <a target='_top' href='axis-alignment_en.html'>Axis alignment</a>
+        <a target='_top' href='comments_en.html'>Comments</a>
+        <a target='_top' href='code-style_en.html'>Code style</a>
+        <a target='_top' href='media-queries_en.html'>Media queries</a>
+        <a target='_top' href='visibility_en.html'>Visibility</a>
+        <a target='_top' href='transform_en.html'>Transform</a>
+        <a target='_top' href='backface-visibility_en.html'>Backface-visibility</a>
+        <a target='_top' href='transitions_en.html'>Transitions</a>
+        <a target='_top' href='introduction-to-animation_en.html'>Introduction to Animation</a>
+        <a target='_top' href='pseudo-classes_en.html'>Pseudo-classes</a>
+        <a target='_top' href='attribute-selectors-and-universal-selector_en.html'>Attribute selectors and Universal selector</a>
+        <a target='_top' href='combinators_en.html'>Combinators</a>
+        <a target='_top' href='pseudo-elements_en.html'>Pseudo-elements</a>
+        <a target='_top' href='contextual-selectors_en.html'>Contextual selectors</a>
+        <a target='_top' href='specificity_en.html'>Specificity</a>
+      <br><br>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--/Left menu sidebar--><!--CONTENT-->
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+    <div class='w3-row w3-white'>
+        <div class='w3-col l10 m12' id='main'>
+          <div class="adver_adup">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- adup_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>            <a href='index_en.html'><img src='../svg/html5_icon.svg' alt='HTML5 Lessons for beginners ' class='w3-left' title='HTML5 for beginners. Hyperskill in English' style='width: 120px; padding: 10px'></a><p class='w3-right'>
+    <a href='index.html' title='Go to Ukrainian language'>Ua</a>
+</p>
+<article>
+    <h1>Introduction to HTML. Basics</h1>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='../index_en.html'>&#10094; Home</a>
+        <a class='w3-right w3-btn' href='tags-and-attributes_en.html'>Next &#10095;</a>
+    </div>
+    <hr>
+    <h3>Theory</h3>
+    <h2>§1. What is HTML?</h2>
+    <p>HTML is a language used to create web pages: it manages their structure and content. HTML is an abbreviation, it stands for <strong>HyperText Markup Language</strong>. Hypertext refers to text information that is connected to other texts through links, weaving together this interconnected spiderweb of pages.</p>
+    <p>Here is a simple visualization of what hypertext is. It should look more than familiar to you, an experienced Internet user.</p>
+    <p>Markup language helps the browser recognize text information and serve it to the reader in a convenient form. There are other hypertext markup languages, but the vast majority of pages on the Internet are written in HTML.</p>
+    <hr>
+    <h2>§2. Short history</h2>
+    <p>HTML was developed by Tim Berners-Lee, a member of the Swiss scientific laboratory CERN. The release of the first HTML version is attributed to 1989. In 1991 the language was supplemented and began to be used to transfer hypertext on the Internet. Initially, HTML was created for data exchange between scientists within the same institution.</p>
+    <p>If you are curious, you can still visit <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" rel="nofollow">the first HTML site</a> created on August 6, 1991. For many years it had not been available, but in 2016 the site was restored.</p>
+    <hr>
+    <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>§3. HTML today</h2>
+    <p>Today's sites written in HTML look a lot different from the first one. You probably stumble upon them every day — look at this one, for example:</p>
+    <img src="../images/example_site.jpeg" alt="Запуск програми" class="w3-center w3-image">
+    <p class="w3-center"><i>An example is a screenshot of the Greenpeace website (<a href="https://www.greenpeace.org" target="_blank" rel="nofollow">https://www.greenpeace.org)</a></i></p>
+    <p>You can make sure that HTML is indeed responsible for the structure of the page by opening its source code. It's very easy to do: right-click and find the <b>View Page Source</b> line or simply use the <b>CTRL+U</b> key combination (option + command + U for Mac), and you'll see something like this:</p>
+    <img src="../images/example_view_page_source.png" alt="Запуск програми" class="w3-center w3-image">
+    <p>Billions of people see the results of their browser's interpretation of HTML documents every day on their computers and mobile devices. Even though the main readers of HTML are browsers, any person can easily understand its structure since this language is simple and logical, yet knowing it well often helps a great deal in today's world.</p>
+    <h2>§4. Advantages of HTML</h2>
+    <p>HTML has gained great popularity due to its undeniable advantages:</p>
+    <ul>
+        <li>The language is easy to learn and use;</li>
+        <li>It is supported by all common browsers;</li>
+        <li>It can be integrated with programming languages.</li>
+    </ul>
+    <p>Tim Berners-Lee, the creator of HTML, once said: "The Web turned data into the gold of the 21st century". Expanding this metaphor, we can say that HTML is a primary tool for mining and storing the precious metal.</p>
+    <hr>
+    <p>You can also view <a href="https://hyperskill.org/learn/step/6434" target="_blank" rel="nofollow">Lesson on hyperskill.org</a>.</p>
+    <hr>
+    <h2>Practical tasks and answers</h2>
+    <p>Tasks and answer options are given. The correct option is highlighted in <span style="color:blue">blue</span> color.</p>
+    <h3>№1. Facts</h3>
+    <p><b>Question:</b> Choose the facts about HTML:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">It is supported by all common browsers &#x2714;</span></li>
+        <li>Most sites do not use HTML</li>
+        <li><span style="color:blue">It can be integrated with a programming language &#x2714;</span></li>
+    </ul>
+    <p><b>Explanation.</b> The statement "Most sites do not use HTML" is incorrect as HTML is the standard markup language used to create web pages.</p>
+    <hr>
+    <h3>№2. HTML acronym</h3>
+    <p><b>Question:</b> What does the acronym HTML mean?</p>
+    <p>Select one option from the list:</p>
+    <ul>
+        <li><span style="color:blue">HyperText Markup Language &#x2714;</span></li>
+        <li>HyperTest Markup Language</li>
+        <li>HyperTagged Markup Language</li>
+        <li>HyperText Markdown Language</li>
+    </ul>
+    <hr>
+    <h3>№3. The responsibilities of HTML</h3>
+    <p><b>Question:</b> HTML is responsible for…</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">the structure of a web page &#x2714;</span></li>
+        <li>the network communication between servers</li>
+        <li><span style="color:blue">the content of web pages &#x2714;</span></li>
+    </ul>
+    <p><b>Explanation.</b> HTML is not responsible for the network communication between servers. That is typically handled by other technologies such as HTTP and networking protocols.</p>
+    <hr>
+    <h3>№4. Diving Into HTML Basics!</h3>
+    <p><b>Question:</b> HTML is a fundamental part of web development. Select the options which relate to HTML and its usage:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue"><span class="h-codespan">&lt;head&gt;&lt;/head&gt;</span><br>
+            and<br>
+            <span class="h-codespan">&lt;body&gt;&lt;/body&gt;</span> &#x2714;</span></li>
+            are primary containers in HTML document structure
+        <li>HTML is mainly used for interacting with databases and performing back-end functions</li>
+        <li><span style="color:blue">HTML stands for Hyper Text Markup Language &#x2714;</span></li>
+        <li><span style="color:blue">HTML can be used to structure sections of web pages &#x2714;</span></li>
+        <li>HTML is a programming language that includes loops, conditional statements, and function definition</li>
+    </ul>
+    <hr>
+    <h3>№5. Unmasking HTML's Role in Web Dev</h3>
+    <p><b>Question:</b> What does HTML do and what are its features in the web development context? Choose all that apply.</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li>HTML is able to interact with databases, manage files, and manipulate data.</li>
+        <li><span style="color:blue">HTML uses markup symbols or codes inserted in a file intended for display on a browser page. The web browser reads the HTML and renders it into visible or audible web pages. &#x2714;</span></li>
+        <li>HTML is a programming language that means it has conditions, loops, and objects.</li>
+        <li><span style="color:blue">HTML allows embedding images and videos in a webpage and can be used to create interactive forms. &#x2714;</span></li>
+        <li><span style="color:blue">HTML stands for Hyper Text Markup Language, describes the structure of web content, and it's mainly used to build and structure the parts of a webpage. &#x2714;</span></li>
+    </ul>
+    <p><b>Explanation.</b> The statement "HTML is a programming language that means it has conditions, loops, and objects" is incorrect. HTML is a markup language and not a programming language. It does not have conditions, loops, or objects. Additionally, the statement "HTML is able to interact with databases, manage files, and manipulate data" is also incorrect as HTML is not capable of performing these tasks.</p>
+    <hr>
+    <h3>№6. Copying the first line</h3>
+    <p><b>Question:</b> Open the source code of the <a href="https://stackoverflow.com/" target="_blank" rel="nofollow">Stack Overflow homepage</a> and copy the text you see in the first line.</p>
+    <p>Tip: Do not include any line breaks or extra spaces.</p>
+    <p>Enter a short text: <span style="color:blue">&lt;!DOCTYPE html&gt; &#x2714;</span></p>
+    <hr>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='../index_en.html'>&#10094; Home</a>
+        <a class='w3-right w3-btn' href='tags-and-attributes_en.html'>Next &#10095;</a>
+    </div>
+</article>
+<div class="adver_addown">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+<!--Right sidebar-->
+<div class='w3-col l2 m12' id='right'>
+    <div class='sidesection w3-light-gray' style='padding-bottom: 5px'>
+        <h4><a href='../colors/colors_picker_en.html'>COLOR PICKER</a></h4>
+        <a href='../colors/colors_picker_en.html'><img src='../images/colorpicker.gif' alt='colorpicker'></a>
+    </div>
+    <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:100%'>
+        <div class='w3-container w3-blue-grey'>
+            <h5 class="shadow-black-1" title="All online textbooks on the site">TUTORIALS</h5>
+        </div>
+        <div class='w3-border'>
+            <a href='../html/index_en.html' class='btn-rightbar'>HTML</a>
+            <a href='../css/index_en.html' class='btn-rightbar'>CSS</a>
+            <a href='../css/css_rwd_intro_en.html' class='btn-rightbar'>RWD</a>
+            <a href='../bootstrap/bootstrap_ver_en.html' class='btn-rightbar'>Bootstrap</a>
+            <a href='../w3css/index_en.html' class='btn-rightbar'>W3.CSS</a>
+            <a href='../colors/index_en.html' class='btn-rightbar'>Colors</a>
+            <a href='../icons/index_en.html' class='btn-rightbar'>Icons</a>
+            <a href='../graphics/index_en.html' class='btn-rightbar'>Graphics</a>
+            <a href='../graphics/svg_intro_en.html' class='btn-rightbar'>SVG Graphics</a>
+            <a href='../graphics/canvas_intro_en.html' class='btn-rightbar'>Canvas Graphics</a>
+            <a href='../howto/index_en.html' class='btn-rightbar'>How To</a>
+            <a href='../sass/index_en.html' class='btn-rightbar'>Sass</a>
+        </div>
+    </div>
+    <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:100%'>
+        <div class='w3-container w3-blue-grey'>
+            <h5 class="shadow-black-1" title="All online textbooks on the site">HTML Charsets</h5>
+        </div>
+        <div class='w3-border'>
+            <a href='../charsets/index_en.html' class='btn-rightbar'>Character Sets</a>
+            <a href='../charsets/ref_html_ascii_en.html' class='btn-rightbar'>ASCII Reference</a>
+            <a href='../charsets/ref_html_ansi_en.html' class='btn-rightbar'>Win-1252 (ANSI)</a>
+            <a href='../charsets/ref_html_8859_en.html' class='btn-rightbar'>ISO-8859-1</a>
+            <a href='../charsets/ref_html_symbols_en.html' class='btn-rightbar'>HTML Symbols</a>
+            <a href='../charsets/ref_html_utf8_en.html' class='btn-rightbar'>Unicode (UTF-8)</a>
+        </div>
+    </div>
+  <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px;background:#eee'>Place for your advertisement!</div>
+<div class="adver2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="1902033594" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adver3">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar2 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7441711750" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div></div>
+<!--/Right sidebar-->
+</div><!--FOOTER-->
+<div id='footer' class='footer w3-container w3-white'>
+  <hr>
+  <div class='w3-row-padding w3-center w3-small' style='margin:0 -16px'>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' onclick='displayError();return false' style='white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px'>CONTACTS</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' target='_blank' onclick='printPage();return false;' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>PRINT PAGE</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../blog/index.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>BLOG</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../about/index_en.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ABOUT</a>
+    </div>
+  </div>
+  <hr>
+  <div class='w3-padding w3-margin-bottom' id='err_form' style='display:none;position:relative;background-color: #DDE7EA;'>
+    <span onclick="this.parentElement.style.display='none'" class='w3-button w3-display-topright w3-large'>&times;</span>
+      <h2>Contacts</h2>
+      <p>If you want to report a bug, as well as make an offer for the site, add an ad or advertisement on the site, do not hesitate to email the admin:</p>
+      <p>w3schoolsua@gmail.com</p>
+  </div>
+  <div class='w3-row w3-center w3-small'>
+      <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  </div>
+  <hr>
+  <div class='w3-center w3-small w3-opacity'>This site is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using HyperskillUA, you agree to have read and accepted our <a href='https://w3schoolsua.github.io/about/about_copyright_en.html'>terms of use</a>, <a href='https://w3schoolsua.github.io/about/about_privacy_en.html'>cookie and privacy policy</a>.<br>
+You can also use the Ukrainian version of the site <a href='../index.html'><strong>HyperSkill українською</strong></a>.<br>
+    <a href='https://w3schoolsua.github.io/w3css/index_en.html'>Powered by W3.CSS</a>.<br><br>
+    <a href='../index_en.html'><img style='width:110px;height:28px;border:0' src='../images/w3schoolscom_gray.gif' alt='W3Schools'></a>
+  </div>
+  <br><br>
+    <div class="adver_adfooter">
+    <!--web--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!--/web-->
+    <!--w3--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script><!--/w3-->
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+</div>
+<script src='../lib/w3schools_footer.js'></script>
+<!--[if lt IE 9]>
+<script src='../cdn/html5shiv/3.7.3/html5shiv.js'></script>
+<script src='../cdn/respond/1.4.2/respond.min.js'></script>
+<![endif]-->
+<!--FOOTER-->
+</html>
