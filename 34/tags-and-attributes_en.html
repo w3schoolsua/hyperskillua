@@ -11,7 +11,7 @@
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
 <meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'><title>Tags and Attributes. Introduction to HTML. Lessons for beginners. Tutorial from Hyperskill</title>
-<meta name='description' content='Tags and Attributes. Theory. . Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
+<meta name='description' content='Tags and Attributes. Theory. Paired tags. Unpaired tags. Nested tags. Tag attributes. Conclusion. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index_en.html'>HyperSkillEN<span class='dotcom w3-hide-small'>.TheBest</span></a>
     <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">SIMPLE THE BEST SITE FOR DEVELOPERS</div>
@@ -250,7 +250,7 @@
     <!-- adup_gorizontal -->
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>            <a href='index_en.html'><img src='../svg/html5_icon.svg' alt='HTML5 Lessons for beginners ' class='w3-left' title='HTML5 for beginners. Hyperskill in English' style='width: 120px; padding: 10px'></a><p class='w3-right'>
+</div>            <a href='index_en.html'><img src='../svg/HTML5_icon.svg' alt='HTML5 Lessons for beginners ' class='w3-left' title='HTML5 for beginners. Hyperskill in English' style='width: 120px; padding: 10px'></a><p class='w3-right'>
     <a href='tags-and-attributes.html' title='Go to Ukrainian language'>Ua</a>
 </p>
 <article>
@@ -262,7 +262,7 @@
     <hr>
     <h3>Theory</h3>
     <p>HTML documents consist of words that contain instructions on how to display a web page properly. These instructions are called tags. They indicate which block to display.</p>
-    <p>When a browser receives an HTML document, it analyzes the tags and uses them to form elements that we can see and interact with. In other words, tags are the bricks that build a web page. The current HTML specification includes about 100 tags. Take a look at the complete list of all existing tags by W3 Schools. It will take time to memorize them all!</p>
+    <p>When a browser receives an HTML document, it analyzes the tags and uses them to form elements that we can see and interact with. In other words, tags are the bricks that build a web page. The current HTML specification includes about 100 tags. Take a look at the <a href="https://w3schoolsua.github.io/tags/index_en.html" target="_blank">complete list of all existing tags by W3SchoolsEN.TheBest</a>. It will take time to memorize them all!</p>
     <p>Tag syntax is very simple. The name of an element is written between the <code class="w3-codespan">&lt;</code> and <code class="w3-codespan">&gt;</code> symbols. Tag names are case-insensitive, but it is considered good practice to write them in lowercase.</p>
     <p>All tags in HTML are divided into two main types: paired and unpaired. Let's consider them both in more detail.</p>
     <div class="w3-info">You can use <a href="https://codepen.io/pen/" target="_blank" rel="nofollow">CodePen</a> or <a href="https://w3schoolsua.github.io/tryiteditor/index.html" target="_blank">TryIt Editor</a> to try out all examples by yourself.</div>
@@ -360,38 +360,52 @@
         <li>&lt;img src=image.jpg&gt;</li>
     </ul>
     <hr>
-
-    
-    <h3>№4. Diving Into HTML Basics!</h3>
-    <p><b>Question:</b> HTML is a fundamental part of web development. Select the options which relate to HTML and its usage:</p>
-    <p>Select one or more options from the list:</p>
+    <h3>№4. Nested tags</h3>
+    <p><b>Question:</b> What code do you need to write to get a result like in the image below?</p>
+    <p>Hello, <b>learner</b>!<br>How is it going?</p>
+    <p>Select one option from the list:</p>
     <ul>
-        <li><span style="color:blue"><span class="h-codespan">&lt;head&gt;&lt;/head&gt;</span><br>
-            and<br>
-            <span class="h-codespan">&lt;body&gt;&lt;/body&gt;</span> &#x2714;</span></li>
-            are primary containers in HTML document structure
-        <li>HTML is mainly used for interacting with databases and performing back-end functions</li>
-        <li><span style="color:blue">HTML stands for Hyper Text Markup Language &#x2714;</span></li>
-        <li><span style="color:blue">HTML can be used to structure sections of web pages &#x2714;</span></li>
-        <li>HTML is a programming language that includes loops, conditional statements, and function definition</li>
+        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/p&gt;&lt;/b&gt;</li>
+        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/b&gt;&lt;/p&gt;</li>
+        <li><span style="color:blue">&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;!&lt;br&gt;How is it going?&lt;/p&gt; &#x2714;</span></li>
+        <li>&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;! How is it going?&lt;/p&gt;</li>
     </ul>
     <hr>
-    <h3>№5. Unmasking HTML's Role in Web Dev</h3>
-    <p><b>Question:</b> What does HTML do and what are its features in the web development context? Choose all that apply.</p>
+    <h3>№5. Paragraph of text</h3>
+    <p><b>Question:</b> Recall which tag is used to write paragraphs of text and display a text on a web page. Highlight some parts of the text in bold using the <code class="w3-codespan">&lt;b&gt;</code> tag. Finally, add a horizontal line to the page. Add only one paragraph with a text.</p>
+    <div class="w3-light-blue w3-padding">In this and further tasks, you will see the code validation check. This test will check the syntactic correctness of your code. It will help you find the incorrectly nested tags, forgotten closing tags, missed brackets, quotes, and others.</div>
+    <p>Write HTML and CSS code:</p>
+    <div class="w3-border">&lt;p&gt;In this and further tasks, you will see the &lt;b&gt;code&lt;/b&gt; validation check. This test will check the syntactic correctness of your code. It will help you find the incorrectly nested tags, forgotten closing tags, missed brackets, quotes, and others.&lt;p&gt;<br>&lt;hr&gt;</div>
+    <hr>
+    <h3>№6. h1 tag</h3>
+    <p><b>Question:</b> Include the following text <b>I like to learn new things!</b> in the paired header tag <code class="w3-codespan">&lt;h1&gt;</code> of the first level.</p>
+    <p>Enter a short text: <span style="color:blue"><span class="h-codespan">&lt;h1&gt;I like to learn new things!&lt;/h1&gt;</span> &#x2714;</span></p>
+    <hr>
+    <h3>№7. Drawing HTML elements</h3>
+    <p><b>Question:</b> What helps a browser understand which elements of a web page to render?</p>
+    <p>Select one option from the list:</p>
+    <ul>
+        <li><span style="color:blue">tags &#x2714;</li>
+        <li>attributes</li>
+        <li>values</li>
+        <li>properties</li>
+    </ul>
+    <hr>
+    <h3>№8. Decoding the HTML img Element</h3>
+    <p><b>Question:</b> Consider the following HTML code snippet. Which statements are accurate regarding tags and attributes?</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;img src='example.jpg' alt='Example Image' class='responsive' /&gt;
+        </div>
+    </div>
     <p>Select one or more options from the list:</p>
     <ul>
-        <li>HTML is able to interact with databases, manage files, and manipulate data.</li>
-        <li><span style="color:blue">HTML uses markup symbols or codes inserted in a file intended for display on a browser page. The web browser reads the HTML and renders it into visible or audible web pages. &#x2714;</span></li>
-        <li>HTML is a programming language that means it has conditions, loops, and objects.</li>
-        <li><span style="color:blue">HTML allows embedding images and videos in a webpage and can be used to create interactive forms. &#x2714;</span></li>
-        <li><span style="color:blue">HTML stands for Hyper Text Markup Language, describes the structure of web content, and it's mainly used to build and structure the parts of a webpage. &#x2714;</span></li>
+        <li><span style="color:blue">The 'src' attribute specifies the URL of an image, the 'alt' attribute provides alternative text, and the 'class' attribute assigns a CSS class to the element &#x2714;</li>
+        <li><span style="color:blue">The element is a self-closing tag with three attributes: src, alt, and class &#x2714;</li>
+        <li>The 'src' attribute assigns a CSS class, the 'alt' attribute specifies a link, and the 'class' attribute provides alternative text</li>
+        <li>The element is an opening tag with three attributes: src, alt, and class</li>
+        <li>The element is an opening tag without any attributes and should be followed by a closing tag</li>
     </ul>
-    <p><b>Explanation.</b> The statement "HTML is a programming language that means it has conditions, loops, and objects" is incorrect. HTML is a markup language and not a programming language. It does not have conditions, loops, or objects. Additionally, the statement "HTML is able to interact with databases, manage files, and manipulate data" is also incorrect as HTML is not capable of performing these tasks.</p>
-    <hr>
-    <h3>№6. Copying the first line</h3>
-    <p><b>Question:</b> Open the source code of the <a href="https://stackoverflow.com/" target="_blank" rel="nofollow">Stack Overflow homepage</a> and copy the text you see in the first line.</p>
-    <p>Tip: Do not include any line breaks or extra spaces.</p>
-    <p>Enter a short text: <span style="color:blue">&lt;!DOCTYPE html&gt; &#x2714;</span></p>
     <hr>
     <div class='w3-clear nextprev'>
         <a class='w3-left w3-btn' href='index_en.html'>&#10094; Prev</a>
@@ -452,7 +466,7 @@
 <!--/Right sidebar-->
 </div><!--FOOTER-->
 <div id='footer' class='footer w3-container w3-white'>
-  <hr>
+    <hr>
   <div class='w3-row-padding w3-center w3-small' style='margin:0 -16px'>
     <div class='w3-col l3 m3 s12'>
       <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' onclick='displayError();return false' style='white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px'>CONTACTS</a>
@@ -467,7 +481,6 @@
       <a class='w3-button w3-light-grey w3-block' href='../about/index_en.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ABOUT</a>
     </div>
   </div>
-  <hr>
   <div class='w3-padding w3-margin-bottom' id='err_form' style='display:none;position:relative;background-color: #DDE7EA;'>
     <span onclick="this.parentElement.style.display='none'" class='w3-button w3-display-topright w3-large'>&times;</span>
       <h2>Contacts</h2>
