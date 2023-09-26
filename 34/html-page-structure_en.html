@@ -10,8 +10,8 @@
 <meta property='og:image:type' content='image/png'>
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
-<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'><title>Tags and Attributes. Introduction to HTML. Lessons for beginners. Tutorial from Hyperskill</title>
-<meta name='description' content='Tags and Attributes. Theory. Paired tags. Unpaired tags. Nested tags. Tag attributes. Conclusion. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
+<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'><title>HTML page structure. Introduction to HTML. Lessons for beginners. Tutorial from Hyperskill</title>
+<meta name='description' content='HTML page structure. Theory. Basic tags in HTML. Basic HTML Page Structure. Conclusion. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index_en.html'>HyperSkillEN<span class='dotcom w3-hide-small'>.TheBest</span></a>
     <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">SIMPLE THE BEST SITE FOR DEVELOPERS</div>
@@ -251,165 +251,297 @@
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index_en.html'><img src='../svg/HTML5_icon.svg' alt='HTML5 Lessons for beginners ' class='w3-left' title='HTML5 for beginners. Hyperskill in English' style='width: 120px; padding: 10px'></a><p class='w3-right'>
-    <a href='tags-and-attributes.html' title='Go to Ukrainian language'>Ua</a>
+    <a href='html-page-structure.html' title='Go to Ukrainian language'>Ua</a>
 </p>
 <article>
-    <h1>Tags and Attributes</h1>
+    <h1>HTML page structure</h1>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='index_en.html'>&#10094; Prev</a>
-        <a class='w3-right w3-btn' href='html-page-structure_en.html'>Next &#10095;</a>
+        <a class='w3-left w3-btn' href='tags-and-attributes_en.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments_en.html'>Next &#10095;</a>
     </div>
     <hr>
     <h3>Theory</h3>
-    <p>HTML documents consist of words that contain instructions on how to display a web page properly. These instructions are called tags. They indicate which block to display.</p>
-    <p>When a browser receives an HTML document, it analyzes the tags and uses them to form elements that we can see and interact with. In other words, tags are the bricks that build a web page. The current HTML specification includes about 100 tags. Take a look at the <a href="https://w3schoolsua.github.io/tags/index_en.html" target="_blank">complete list of all existing tags by W3SchoolsEN.TheBest</a>. It will take time to memorize them all!</p>
-    <p>Tag syntax is very simple. The name of an element is written between the <code class="w3-codespan">&lt;</code> and <code class="w3-codespan">&gt;</code> symbols. Tag names are case-insensitive, but it is considered good practice to write them in lowercase.</p>
-    <p>All tags in HTML are divided into two main types: paired and unpaired. Let's consider them both in more detail.</p>
-    <div class="w3-info">You can use <a href="https://codepen.io/pen/" target="_blank" rel="nofollow">CodePen</a> or <a href="https://w3schoolsua.github.io/tryiteditor/index.html" target="_blank">TryIt Editor</a> to try out all examples by yourself.</div>
+    <p>Programming is not as mechanical and alien as it may seem: in many respects, it is similar to the human world. This is very easy to notice if you look at the structure of HTML pages, which contains elements like <code class="w3-codespan">&lt;head&gt;</code> and <code class="w3-codespan">&lt;body&gt;</code>. Making a site is thus a process of creation, and as a creator, you need to be familiar with all the necessary building blocks. There is a lot to learn, but any lot starts with the essential basics: please welcome on stage, HTML tags.</p>
     <hr>
-    <h2>§1. Paired tags</h2>
-    <p>Paired HTML tags consist of two instructions — an <b>opening</b> tag (also called a <b>starting</b> tag) that marks the beginning of a block, and a <b>closing</b> tag that looks the same but with an additional slash <span class="h-codespan">/</span>.</p>
-    <p>As an example, we will consider the <code class="w3-codespan">&lt;p&gt;</code> tag. It represents a text paragraph:</p>
+    <h2>§1. Basic tags in HTML</h2>
+    <p>Among numerous HTML tags that form the logical structure of a page, some are considered the base. The structure can be divided into three main sections: &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;.</p>
+    <p>Take a look at the code of a simple HTML page:</p>
     <div class='w3-example'>
         <div class='w3-code notranslate htmlHigh'>
-            &lt;p&gt;Some kind of a text&lt;/p&gt;
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
         </div>
     </div>
-    <p>Here, <code class="w3-codespan">&lt;p&gt;</code> is a starting tag, <span class="h-codespan">Some kind of a text</span> is the content, and <code class="w3-codespan">&lt;/p&gt;</code> is a closing tag.</p>
-    <p>The tags are basically containers where we can put (enclose) something. Paired HTML tags usually contain either other tags or some information, for instance, text.</p>
+    <p>If you save this code in the HTML format (.html) and open it in your browser, the page will look like this:</p>
+    <img src="../images/simple_page.png" alt="Example html page" class="w3-image w3-card-4 img-center">
+    <p>This looks quite basic, but with HTML you can do much more: customize the structure of the text, manage its visual presentation, and display paragraphs, forms, pictures, titles, and tables. HyperText Markup Language allows you to format texts, which makes them friendlier to Internet users. It is much more convenient to read text with clear and logical markup rather than plow through an unstructured text.</p>
+    <p>Let's get back to the code from the previous example and consider the listed tags in more detail.</p>
+    <ul>
+        <li>element <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> specifies the type of the current document: <b>DTD (Document Type Definition)</b>. It is necessary that the browser understands according to which HTML standard to display the web page. As you see, this is one of the tags that aren't paired;</li>
+        <li>the <code class="w3-codespan">&lt;meta&gt;</code> tag with attribute charset specifies document encoding. If it is not specified, some browsers may display obscure characters instead of the text;</li>
+        <li>the <code class="w3-codespan">&lt;html&gt;</code> tag indicates that it is an HTML document;</li>
+        <li>the <code class="w3-codespan">&lt;head&gt;</code> tag is designed to store elements that help the browser and search engines to work with data;</li>
+        <li>the <code class="w3-codespan">&lt;title&gt;</code> contains the HTML document header. Even though this tag is not mandatory, it is still present on almost all web pages on the Internet;</li>
+        <li>the <code class="w3-codespan">&lt;body&gt;</code> tag defines the page content area. It wraps the content displayed in the main browser window;</li>
+        <li>the <code class="w3-codespan">&lt;h1&gt;</code> tag holds the page title within the body, and the <code class="w3-codespan">&lt;p&gt;</code> tag is responsible for the paragraphs. These tags are not the main sections and are provided here as an example, but you're likely to find them useful in the future as you move from basic to artsy.</li>
+    </ul>
     <hr>
-    <h2>§2. Unpaired tags</h2>
-    <p>Unpaired tags have no content inside. They form graphic HTML elements or symbols on a page. So, unpaired HTML tags have only an opening tag.</p>
-    <p>Here is an example of an unpaired tag:</p>
-    <p class="h-codespan">&lt;hr&gt;</p>
-    <p>A browser will draw a horizontal line once it detects this tag. Another example of an unpaired tag is <code class="w3-codespan">&lt;br&gt;</code> that defines a single line break.</p>
+    <h2>§2. Basic HTML Page Structure</h2>
+    <p>Here is a visualization of the basic HTML page structure:</p>
+    <img src="../svg/html-page-structure.svg" alt="Basic HTML Page Structure" class="w3-image w3-card-4 img-center">
+    <p>As you can see, this structure bears a resemblance to our anatomy. Hopefully, this analogy will help you understand HTML better.</p>
     <hr>
     <div class="adver_adinfeed">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>§3. Nested tags</h2>
-    <p>Tags can be also nested:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;p&gt;You have learned HTML &lt;b&gt;tags&lt;/b&gt; &lt;br&gt;Congratulations!&lt;/p&gt;
-        </div>
-    </div>
-    <p>Here, <code class="w3-codespan">&lt;b&gt;</code> is used to bold a word.</p>
-    <p>This HTML line is rendered as:</p>
-    <p style="background-color: #eee">You have learned HTML <b>tags</b> <br>Congratulations!</p>
-    <p class="w3-warning">A nested tag must be closed before closing the initial one.</p>
-    <p>The outer tag is called a <b>parent element</b>, and the inner tag is a <b>child element</b>.</p>
+</div>    <h2>§3. Conclusion</h2>
+    <p>Surely, both humans and web pages are much more complex and show a lot of variations. Modern pages can be very large and may contain a lot of different tags inside <code class="w3-codespan">&lt;body&gt;</code>, but their basic structure always remains the same. Come to think of it, this is also so very human.</p>
     <hr>
-    <h2>§4. Tag attributes</h2>
-    <p>To extend the capabilities of individual tags and manage them easier, we can use attributes. Attributes are clarifications for the browser on how to display a tag.</p>
-    <p>Each HTML attribute consists of names and values. The following example shows the syntax of attributes:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;a href="https://hyperskill.org"&gt;The link&lt;/a&gt;
-        </div>
-    </div>
-    <p>Here, the <code class="w3-codespan">&lt;a&gt;</code> tag means a link, <code class="w3-codespan">href</code> is the name of an attribute, and <code class="w3-codespan">"https://hyperskill.org"</code> is the value. The attribute is assigned to a value with an equals sign <code class="w3-codespan">=</code>. HTML allows you to specify attribute values without quotes if they consist of one word. However, using quotes is a good practice. The value of an attribute can be enclosed in double or single quotes (<code class="w3-codespan">""</code> or <code class="w3-codespan">''</code>).</p>
-    <p>Another important feature of the HTML attribute syntax is that an attribute must be written in the angle brackets:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;img src="image.png"&gt;
-        </div>
-    </div>
-    <p>In this example, an image is added to a web page with the unpaired <code class="w3-codespan">&lt;img&gt;</code> tag. A link to the file is specified in the <code class="w3-codespan">src</code> attribute. The value of the attribute is the reference to the desired image.</p>
-    <p>There are many attributes out there. It can be worth your while <a href="https://w3schoolsua.github.io/tags/ref_attributes_en.html" target="_blank">checking them out</a>.</p>
-    <p>You can also view the <a href="https://w3schoolsua.github.io/tags/index_en.html" target="_blank">complete guide to HTML tags</a>.</p>
-    <hr>
-    <h2>§5. Conclusion</h2>
-    <p>In this topic, we have covered several useful tags and some attributes. Tags provide information to the browser about the structure of a web page. Remember that the name of a tag is enclosed between <code class="w3-codespan">&lt;</code> and <code class="w3-codespan">&gt;</code> in lowercase. They are subdivided into opening and closing, paired and unpaired. Each subtype has its own purpose. Tag attributes also play a vital role. They refine tags and provide additional information about tags and help your browser. HTML comprises a good number of tags and attributes; some are common, some are not. But remember — practice makes perfect!</p>
-    <hr>
-    <p>You can also view the <a href="https://hyperskill.org/learn/step/7536" target="_blank" rel="nofollow">Lesson on hyperskill.org</a>.</p>
+    <p>You can also view the <a href="https://hyperskill.org/learn/step/6491" target="_blank" rel="nofollow">Lesson on hyperskill.org</a>.</p>
     <hr>
     <h2>Practical tasks and answers</h2>
     <p>Tasks and answer options are given. The correct option is highlighted in <span style="color:blue">blue</span> color.</p>
-    <h3>№1. The name of a tag</h3>
-    <p><b>Question:</b> Fill the phrase. Tag names are case-insensitive, but it is considered good practice to write them in ...</p>
-    <p>Select one option from the list:</p>
-    <ul>
-        <li>uppercase</li>
-        <li>lowercase or uppercase</li>
-        <li>camelCase</li>
-        <li><span style="color:blue">lowercase &#x2714;</span></li>
-        <li>uppercase and under_score</li>
-        <li>under_score</li>
-    </ul>
-    <p><b>Explanation.</b> Tag names are case-insensitive, but it is considered good practice to write them in lowercase.</p>
-    <hr>
-    <h3>№2. Tags</h3>
-    <p><b>Question:</b> Select all opening tags.</p>
-    <p>Select one or more options from the list:</p>
-    <ul>
-        <li><span style="color:blue">&lt;a&gt; &#x2714;</span></li>
-        <li><span style="color:blue">&lt;p&gt; &#x2714;</span></li>
-        <li>&lt;/p&gt;</li>
-        <li>href="#"</li>
-    </ul>
-    <hr>
-    <h3>№3. Good syntax</h3>
-    <p><b>Question:</b> Select the correctly written tag with the correct attribute:</p>
-    <p>Select one option from the list:</p>
-    <ul>
-        <li>&lt;img src="image.jpg"&gt;&lt;/img&gt;</li>
-        <li>&lt;img src"img.jpg"&gt;&lt;/img&gt;</li>
-        <li><span style="color:blue">&lt;img src="img.jpg"&gt; &#x2714;</span></li>
-        <li>&lt;img src=image.jpg&gt;</li>
-    </ul>
-    <hr>
-    <h3>№4. Nested tags</h3>
-    <p><b>Question:</b> What code do you need to write to get a result like in the image below?</p>
-    <p>Hello, <b>learner</b>!<br>How is it going?</p>
-    <p>Select one option from the list:</p>
-    <ul>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/p&gt;&lt;/b&gt;</li>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/b&gt;&lt;/p&gt;</li>
-        <li><span style="color:blue">&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;!&lt;br&gt;How is it going?&lt;/p&gt; &#x2714;</span></li>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;! How is it going?&lt;/p&gt;</li>
-    </ul>
-    <hr>
-    <h3>№5. Paragraph of text</h3>
-    <p><b>Question:</b> Recall which tag is used to write paragraphs of text and display a text on a web page. Highlight some parts of the text in bold using the <code class="w3-codespan">&lt;b&gt;</code> tag. Finally, add a horizontal line to the page. Add only one paragraph with a text.</p>
-    <div class="w3-light-blue w3-padding">In this and further tasks, you will see the code validation check. This test will check the syntactic correctness of your code. It will help you find the incorrectly nested tags, forgotten closing tags, missed brackets, quotes, and others.</div>
-    <p>Write HTML and CSS code:</p>
-    <div class="w3-border">&lt;p&gt;In this and further tasks, you will see the &lt;b&gt;code&lt;/b&gt; validation check. This test will check the syntactic correctness of your code. It will help you find the incorrectly nested tags, forgotten closing tags, missed brackets, quotes, and others.&lt;p&gt;<br>&lt;hr&gt;</div>
-    <hr>
-    <h3>№6. h1 tag</h3>
-    <p><b>Question:</b> Include the following text <b>I like to learn new things!</b> in the paired header tag <code class="w3-codespan">&lt;h1&gt;</code> of the first level.</p>
-    <p>Enter a short text: <span style="color:blue"><span class="h-codespan">&lt;h1&gt;I like to learn new things!&lt;/h1&gt;</span> &#x2714;</span></p>
-    <hr>
-    <h3>№7. Drawing HTML elements</h3>
-    <p><b>Question:</b> What helps a browser understand which elements of a web page to render?</p>
-    <p>Select one option from the list:</p>
-    <ul>
-        <li><span style="color:blue">tags &#x2714;</span></li>
-        <li>attributes</li>
-        <li>values</li>
-        <li>properties</li>
-    </ul>
-    <hr>
-    <h3>№8. Decoding the HTML img Element</h3>
-    <p><b>Question:</b> Consider the following HTML code snippet. Which statements are accurate regarding tags and attributes?</p>
+    <h3>№1. A missed tag</h3>
+    <p><b>Question:</b> There is a missing element in the code below:</p>
     <div class='w3-example'>
         <div class='w3-code notranslate htmlHigh'>
-            &lt;img src='example.jpg' alt='Example Image' class='responsive' /&gt;
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;❓&gt;Science News&lt;/❓&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Science News&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Astrophysicists have shown the first black hole photo in history&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Corsica "cat-fox" could be new species, say experts&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Chemists have created a strong anti-cancer drug&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+        </div>
+    </div>
+    <p>Enter the name of a missing element.</p>
+    <p>Enter a short text: <span style="color:blue">title &#x2714;</span></p>
+    <hr>
+    <h3>№2. Basic tags</h3>
+    <p><b>Question:</b> Write a page that matches that screenshot:</p>
+    <img src="../images/ucarecdn.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
+    <p>The text of the web page can be copied from here:</p>
+    <ul>
+        <li>Cafe "Sweet"</li>
+        <li>Buy Cakes Online</li>
+        <li>We are happy to implement any of your plans and make a cake worthy of your celebration.</li>
+    </ul>
+    <p><b>Hint.</b> Check that the characters you entered are correct and make sure there are no extra spaces anywhere.</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Cafe "Sweet"&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Buy Cakes Online&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;We are happy to implement any of your plans and make a cake worthy of your celebration.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№3. Start tags</h3>
+    <p><b>Question:</b> Specify all start tags:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">&lt;p&gt; &#x2714;</li>
+        <li>&lt;/title&gt;</li>
+        <li>&lt;/p&gt;</li>
+        <li><span style="color:blue">&lt;body&gt; &#x2714;</li>
+        <li><span style="color:blue">&lt;h1&gt; &#x2714;</li>
+    </ul>
+    <hr>
+    <h3>№4. Cracking the HTML Page Structure!</h3>
+    <p><b>Question:</b> Given the knowledge of tags and attributes, which of the following represents a correct and more comprehensive structure of an HTML page with meta data and doctype included?</p>
+    <p>Select one option from the list:</p>
+    <div class='w3-example'>
+        <h3>Example #1</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            <!DOCTYPE html>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3>Example #2</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3><span style="color:blue">Example #3 &#x2714;</span></h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3>Example #4</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№5. Write a page</h3>
+    <p><b>Question:</b> Write a page that matches that screenshot:</p>
+    <img src="../images/ucarecdn1.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
+    <p>The text of the web page can be copied from here:</p>
+    <ul>
+        <li>Events</li>
+        <li>Let&#8217;s have a look</li>
+        <li>What&#8217;s On In Toronto</li>
+        <li>Select the date you are interested in.</li>
+    </ul>
+    <p>Check that the characters you entered are correct and make sure there are no extra spaces anywhere.</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Events&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Let&#8217;s have a look&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;What&#8217;s On In Toronto&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Select the date you are interested in.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№6. Document Type Definition</h3>
+    <p><b>Question:</b> What should you write at the beginning of an HTML page so that the browser understands that HTML5 is used to display the web page?</p>
+    <p>Enter a short text: <span style="color:blue"><span class="h-codespan">&lt;!DOCTYPE html&gt;</span> &#x2714;</span></p>
+    <hr>
+    <h3>№7. End tags</h3>
+    <p><b>Question:</b> Specify all end tags:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;body&gt;</li>
+        <li><span style="color:blue">&lt;/p&gt; &#x2714;</span></li>
+        <li>&lt;html&gt;</li>
+        <li><span style="color:blue">&lt;/body&gt; &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№8. DTD</h3>
+    <p><b>Question:</b> What does DTD stand for?</p>
+    <p>Select one option from the list:</p>
+    <ul>
+        <li>Data Transfer Device</li>
+        <li>Document Type Descriptor</li>
+        <li>Digital Topographic Data</li>
+        <li>Database Table Definition</li>
+        <li>Data Type Definition</li>
+        <li><span style="color:blue">Document Type Definition &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№9. What Fills in the Blank Spaces?</h3>
+    <p><b>Question:</b> Given the following code snippet, choose the options that correctly complete the HTML page structure while following the semantic guidelines for properly nesting HTML elements:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;__1__<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Sample Page&lt;/title&gt;<br>
+            &nbsp;&nbsp;__2__<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to the Sample Page&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a sample HTML page.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
         </div>
     </div>
     <p>Select one or more options from the list:</p>
     <ul>
-        <li><span style="color:blue">The 'src' attribute specifies the URL of an image, the 'alt' attribute provides alternative text, and the 'class' attribute assigns a CSS class to the element &#x2714;</span></li>
-        <li><span style="color:blue">The element is a self-closing tag with three attributes: src, alt, and class &#x2714;</span></li>
-        <li>The 'src' attribute assigns a CSS class, the 'alt' attribute specifies a link, and the 'class' attribute provides alternative text</li>
-        <li>The element is an opening tag with three attributes: src, alt, and class</li>
-        <li>The element is an opening tag without any attributes and should be followed by a closing tag</li>
+        <li><span style="color:blue">&lt;head&gt; &#x2714;</span></li>
+        <li>&lt;/body&gt;</li>
+        <li>&lt;/html&gt;</li>
+        <li><span style="color:blue">&lt;/head&gt; &#x2714;</span></li>
+        <li>&lt;title&gt;</li>
+    </ul>
+    <h3>№10. Dissecting a Basic HTML Structure</h3>
+    <p><b>Question:</b> Given the basic HTML structure below, which of the following statements are correct?</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">'DOCTYPE html' is an information tag, letting the browser know that the type of document it's about to process is HTML. &#x2714;</span></li>
+        <li>'p' tags are used to determine the style of text.</li>
+        <li><span style="color:blue">'h1' tag defines the most important heading in the document. &#x2714;</span></li>
+        <li><span style="color:blue">'Page Title' is the title of the HTML document which is usually displayed on the title bar or tab of the browser. &#x2714;</span></li>
+        <li>The text 'This is a Heading' and 'This is a paragraph' will not be visible in the web page, because they are enclosed within the head tag.</li>
     </ul>
     <hr>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='index_en.html'>&#10094; Prev</a>
-        <a class='w3-right w3-btn' href='html-page-structure_en.html'>Next &#10095;</a>
+        <a class='w3-left w3-btn' href='tags-and-attributes_en.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments_en.html'>Next &#10095;</a>
     </div>
 </article>
 <div class="adver_addown">

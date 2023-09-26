@@ -10,8 +10,8 @@
 <meta property='og:image:type' content='image/png'>
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
-<meta property='og:description' content='Hyperskill українською пропонує безкоштовні онлайн-уроки, навчальні та довідкові матеріали, завдання та вправи на більшості мовах програмування та створення веб-сайтів. Охоплює найбільш популярні технології, такі як HTML, CSS, JavaScript, PHP, Python, SQL, Java, Kotlin, Go та багато інших'><title>Теги та атрибути. Введення в HTML. Уроки для початківців. Підручники Hyperskill українською</title>
-<meta name='description' content='Введення в HTML. Теги та атрибути. Теорія. Парні і непарні теги. Вкладені теги. Атрибути тегів. Висновок. Практичні завдання та відповіді. Безплатні уроки онлайн з відповідями на завдання для новачків, школярів та студентів із Hyperskill українською мовою.'>
+<meta property='og:description' content='Hyperskill українською пропонує безкоштовні онлайн-уроки, навчальні та довідкові матеріали, завдання та вправи на більшості мовах програмування та створення веб-сайтів. Охоплює найбільш популярні технології, такі як HTML, CSS, JavaScript, PHP, Python, SQL, Java, Kotlin, Go та багато інших'><title>Структура HTML сторінки. Введення в HTML. Уроки для початківців. Підручники Hyperskill українською</title>
+<meta name='description' content='Структура сторінки HTML. Теорія. Основні теги в HTML. Базова структура сторінки HTML. Висновок. Практичні завдання та відповіді. Безплатні уроки онлайн з відповідями на завдання для новачків, школярів та студентів із Hyperskill українською мовою.'>
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>HyperSkillUA<span class='dotcom w3-hide-small'>.українською</span></a>
     <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">ПРОСТО НАЙКРАЩИЙ САЙТ ДЛЯ РОЗРОБНИКІВ</div>
@@ -251,166 +251,297 @@
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index.html'><img src='../svg/HTML5_icon.svg' alt='HTML5. Уроки для початківців. Hyperskill українською' class='w3-left' title='Уроки HTML5 для початківців. Hyperskill українською' style='width:120px;padding: 10px'></a><p class='w3-right'>
-    <a href='tags-and-attributes_en.html' title='Перейти на англійську мову'>En</a>
+    <a href='html-page-structure_en.html' title='Перейти на англійську мову'>En</a>
 </p>
 <article>
-    <h1>Теги та атрибути</h1>
+    <h1>Структура HTML сторінки</h1>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='index.html'>&#10094; Prev</a>
-        <a class='w3-right w3-btn' href='html-page-structure.html'>Next &#10095;</a>
+        <a class='w3-left w3-btn' href='tags-and-attributes.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments.html'>Next &#10095;</a>
     </div>
     <hr>
     <h3>Теорія</h3>
-    <p>Документи HTML складаються зі слів, які містять інструкції щодо правильного відображення вебсторінки. Ці інструкції називаються тегами. Вони вказують, який блок відображати.</p>
-    <p>Коли браузер отримує документ HTML, він аналізує теги та використовує їх для формування елементів, які ми бачимо та з якими можемо взаємодіяти. Іншими словами, теги - це цеглинки, які будують вебсторінку. Поточна специфікація HTML5 включає 107 тегів. Подивіться на
-        <a href="https://w3schoolsua.github.io/tags/index.html" target="_blank">повний список усіх існуючих тегів на W3SchoolsUA (українською)</a>. Щоб запам&#8217;ятати їх усі, потрібен час!</p>
-    <p>Синтаксис тегів дуже простий. Ім&#8217;я елемента записується між символами <code class="w3-codespan">&lt;</code> та <code class="w3-codespan">&gt;</code>. Назви тегів нечутливі до регістру, але вважається хорошою практикою писати їх малими літерами (в нижньому регістрі).</p>
-    <p>Усі теги в HTML поділяються на два основних типи: парні та непарні. Розглянемо їх обидва докладніше.</p>
-    <div class="w3-info">Ви можете використовувати онлайн-редактори коду <a href="https://codepen.io/pen/" target="_blank" rel="nofollow">CodePen</a> або <a href="https://w3schoolsua.github.io/tryiteditor/index.html" target="_blank">TryIt Editor</a>, щоб випробувати всі приклади самостійно.</div>
+    <p>Програмування не таке механічне і чуже, як може здатися: багато в чому воно схоже на світ людини. Це дуже легко помітити, якщо подивитися на структуру HTML-сторінок, яка містить такі елементи, як <code class="w3-codespan">&lt;head&gt;</code> та <code class="w3-codespan">&lt;body&gt;</code>. Таким чином, створення сайту – це процес створення, і як творець ви повинні бути знайомі з усіма необхідними будівельними блоками. Потрібно багато чому навчитися, але будь-яка справа починається з основ: ласкаво просимо на сцену, теги HTML.</p>
     <hr>
-    <h2>§1. Парні теги</h2>
-    <p>Парні теги HTML складаються з двох інструкцій — <b>відкриваючого</b> тегу (також називається <b>початковим</b> тегом), який позначає початок блоку, і <b>закриваючого</b> тегу, який виглядає так само, але з додатковою косою рискою <span class="h-codespan">/</span> (слешом).</p>
-    <p>Як приклад ми розглянемо тег <code class="w3-codespan">&lt;p&gt;</code>. Він являє собою абзац (параграф) тексту:</p>
+    <h2>§1. Основні теги в HTML</h2>
+    <p>Серед багатьох тегів HTML, які формують логічну структуру сторінки, деякі вважаються основою. Структуру можна розділити на три основні секції: &lt;html&gt;, &lt;head&gt; і &lt;body&gt;.</p>
+    <p>Погляньте на код простої HTML-сторінки:</p>
     <div class='w3-example'>
         <div class='w3-code notranslate htmlHigh'>
-            &lt;p&gt;Україна - понад усе!&lt;/p&gt;
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
         </div>
     </div>
-    <p>Тут <code class="w3-codespan">&lt;p&gt;</code> є початковим тегом, <span class="h-codespan">Україна - понад усе!</span> є вмістом, а <code class="w3-codespan">&lt;/p&gt;</code> є закриваючим тегом.</p>
-    <p><strong>Теги</strong> — це в основному контейнери, куди ми можемо щось помістити (вкласти). Парні теги HTML зазвичай містять або інші теги, або деяку інформацію, наприклад, текст.</p>
+    <p>Якщо ви збережете цей код у форматі HTML (.html) і відкриєте його у своєму браузері, сторінка матиме такий вигляд:</p>
+    <img src="../images/simple_page.png" alt="Приклад html сторінки" class="w3-image w3-card-4 img-center">
+    <p>Це виглядає досить просто, але з HTML ви можете робити набагато більше: налаштовувати структуру тексту, керувати його візуальним представленням і відображати параграфи, форми, малюнки, заголовки та таблиці. HyperText Markup Language дозволяє форматувати тексти, що робить їх зручнішими для користувачів Інтернету. Набагато зручніше читати текст із чіткою та логічною розміткою, а не гортати неструктурований текст.</p>
+    <p>Давайте повернемося до коду з попереднього прикладу та розглянемо перелічені теги більш детально.</p>
+    <ul>
+        <li>елемент <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> визначає тип поточного документа: <b>DTD (Document Type Definition)</b>. Необхідно, щоб браузер розумів, відповідно до якого стандарту HTML відображати вебсторінку. Як бачите, це один із непарних тегів;</li>
+        <li>тег <code class="w3-codespan">&lt;meta&gt;</code> із атрибутом charset визначає кодування документа. Якщо його не вказано, деякі браузери можуть відображати незрозумілі символи замість тексту;</li>
+        <li>тег <code class="w3-codespan">&lt;html&gt;</code> вказує, що це документ HTML;</li>
+        <li>тег <code class="w3-codespan">&lt;head&gt;</code> призначений для зберігання елементів, які допомагають браузеру та пошуковим системам працювати з даними;</li>
+        <li><code class="w3-codespan">&lt;title&gt;</code> містить заголовок документа HTML. Не зважаючи на те, що цей тег не є обов&#8217;язковим, він все одно присутній майже на всіх вебсторінках в Інтернеті;</li>
+        <li>тег <code class="w3-codespan">&lt;body&gt;</code> визначає область вмісту сторінки. Він обгортає вміст, який відображається в головному вікні браузера;</li>
+        <li>тег <code class="w3-codespan">&lt;h1&gt;</code> містить заголовок сторінки в тілі, а тег <code class="w3-codespan">&lt;p&gt;</code> відповідає за параграфи. Ці теги не є основними розділами та наведені тут як приклад, але ви, ймовірно, знайдете їх в майбутньому, коли будете переходите від базового рівня до складнішого.</li>
+    </ul>
     <hr>
-    <h2>§2. Непарні теги</h2>
-    <p>Непарні теги не містять вмісту. Вони утворюють графічні елементи HTML або символи на сторінці. Отже, непарні теги HTML мають лише відкриваючий тег.</p>
-    <p>Ось приклад непарного тегу:</p>
-    <p class="h-codespan">&lt;hr&gt;</p>
-    <p>Браузер намалює горизонтальну лінію, коли виявить цей тег. Іншим прикладом непарного тегу є <code class="w3-codespan">&lt;br&gt;</code>, який визначає один розрив рядка.</p>
+    <h2>§2. Базова структура сторінки HTML</h2>
+    <p>Ось візуалізація базової структури HTML-сторінки:</p>
+    <img src="../svg/html-page-structure.svg" alt="Basic HTML Page Structure" class="w3-image w3-card-4 img-center">
+    <p>Як бачите, ця структура має схожість з нашою анатомією. Сподіваємось, ця аналогія допоможе вам краще зрозуміти HTML.</p>
     <hr>
     <div class="adver_adinfeed">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>§3. Вкладені теги</h2>
-    <p>Теги також можуть бути вкладеними:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;p&gt;Ви вивчили HTML &lt;b&gt;теги&lt;/b&gt; &lt;br&gt;Вітаємо!&lt;/p&gt;
-        </div>
-    </div>
-    <p>Тут <code class="w3-codespan">&lt;b&gt;</code> використовується для виділення слова жирним (від слова &quot;bold&quot;) шрифтом.</p>
-    <p>Цей рядок HTML відображається як:</p>
-    <p style="background-color: #eee">Ви вивчили HTML <b>теги</b><br>Вітаємо!</p>
-    <p class="w3-warning">Вкладений тег потрібно закрити перед закриттям початкового.</p>
-    <p>Зовнішній тег називається <b>батьківським елементом</b>, а внутрішній тег — <b>дочірнім елементом</b>.</p>
+</div>    <h2>§3. Висновок</h2>
+    <p>Звичайно, як люди, так і вебсторінки набагато складніші та мають багато варіацій. Сучасні сторінки можуть бути дуже великими та містити багато різних тегів усередині <code class="w3-codespan">&lt;body&gt;</code>, але їх основна структура завжди залишається незмінною. Якщо подумати, це теж дуже по-людськи.</p>
     <hr>
-    <h2>§4. Атрибути тегів</h2>
-    <p>Щоб розширити можливості окремих тегів і легше ними керувати, ми можемо використовувати атрибути. <strong>Атрибути</strong> – це пояснення для браузера щодо того, як відображати теги.</p>
-    <p>Кожен атрибут HTML складається з імен і значень. У наступному прикладі показано синтаксис атрибутів:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;a href="https://hyperskill.org"&gt;Посилання&lt;/a&gt;
-        </div>
-    </div>
-    <p>Тут тег <code class="w3-codespan">&lt;a&gt;</code> означає посилання, <code class="w3-codespan">href</code> — ім&#8217;я атрибута, а <code class="w3-codespan">"https://hyperskill.org"</code> є значенням. Атрибуту присвоюється значення зі знаком рівності <code class="w3-codespan">=</code>. HTML дозволяє вказувати значення атрибутів без лапок, якщо вони складаються з одного слова. Однак використання лапок є хорошою практикою (рекомендується!). Значення атрибута можна взяти в подвійні або одинарні лапки: (<code class="w3-codespan">""</code> або <code class="w3-codespan">''</code>).</p>
-    <p>Ще одна важлива особливість синтаксису атрибутів HTML полягає в тому, що атрибут має бути записаний у кутових дужках:</p>
-    <div class='w3-example'>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;img src="image.png"&gt;
-        </div>
-    </div>
-    <p>У цьому прикладі зображення додається до вебсторінки за допомогою непарного тегу <code class="w3-codespan">&lt;img&gt;</code>. Посилання на файл вказано в атрибуті <code class="w3-codespan">src</code>. Значенням атрибута є посилання на потрібне зображення.</p>
-    <p>Є багато атрибутів. Можливо, варто <a href="https://w3schoolsua.github.io/tags/ref_attributes.html" target="_blank">перевірити їх</a>.</p>
-    <p>Ви також можете переглянути <a href="https://w3schoolsua.github.io/tags/index.html" target="_blank">повний довідник із тегів HTML</a>.</p>
-    <hr>
-    <h2>§5. Висновок</h2>
-    <p>У цій темі ми розглянули кілька корисних тегів і деяких атрибутів. Теги надають браузеру інформацію про структуру вебсторінки. Пам&#8217;ятайте, що назва тегу укладена між <code class="w3-codespan">&lt;</code> та <code class="w3-codespan">&gt;</code> у нижньому регістрі. Вони поділяються на відкриваючі та закриваючі, парні та непарні. Кожен підвид має своє призначення. Атрибути тегів також відіграють важливу роль. Вони вдосконалюють теги, надають додаткову інформацію про теги та допомагають вашому браузеру &quot;зрозуміти&quot;, що знаходиться на вебсторінці. HTML містить велику кількість тегів і атрибутів; деякі з них поширені, інші – ні. Але пам&#8217;ятайте — практика робить досконалим!</p>
-    <hr>
-    <p>Ви також можете переглянути <a href="https://hyperskill.org/learn/step/7536" target="_blank" rel="nofollow">Урок на hyperskill.org</a>.</p>
+    <p>Ви також можете переглянути <a href="https://hyperskill.org/learn/step/6491" target="_blank" rel="nofollow">Урок на hyperskill.org</a>.</p>
     <hr>
     <h2>Практичні завдання та відповіді</h2>
     <p>Подаються завдання та варіанти відповідей. Правильний варіант виділено <span style="color:blue">синім</span> кольором.</p>
-    <h3>№1. Ім&#8217;я тега</h3>
-    <p><b>Запитання:</b> Заповніть фразу. Назви тегів нечутливі до регістру, але вважається хорошою практикою писати їх...</p>
-    <p>Виберіть один варіант зі списку:</p>
-    <ul>
-        <li>uppercase (верхній регістр)</li>
-        <li>lowercase or uppercase (малі чи великі літери)</li>
-        <li>camelCase</li>
-        <li><span style="color:blue">lowercase (нижній регістр) &#x2714;</span></li>
-        <li>uppercase and under_score (верхній регістр та підкреслення)</li>
-        <li>under_score (підкреслення)</li>
-    </ul>
-    <p><b>Пояснення.</b> Назви тегів нечутливі до регістру, але вважається хорошою практикою писати їх малими літерами (в нижньому регістрі).</p>
-    <hr>
-    <h3>№2. Теги</h3>
-    <p><b>Запитання:</b> Виберіть усі відкриваючі теги.</p>
-    <p>Виберіть один або кілька варіантів зі списку:</p>
-    <ul>
-        <li><span style="color:blue">&lt;a&gt; &#x2714;</span></li>
-        <li><span style="color:blue">&lt;p&gt; &#x2714;</span></li>
-        <li>&lt;/p&gt;</li>
-        <li>href="#"</li>
-    </ul>
-    <hr>
-    <h3>№3. Хороший синтаксис</h3>
-    <p><b>Питання:</b> Виберіть правильно написаний тег із правильним атрибутом:</p>
-    <p>Виберіть один варіант зі списку:</p>
-    <ul>
-        <li>&lt;img src="image.jpg"&gt;&lt;/img&gt;</li>
-        <li>&lt;img src"img.jpg"&gt;&lt;/img&gt;</li>
-        <li><span style="color:blue">&lt;img src="img.jpg"&gt; &#x2714;</span></li>
-        <li>&lt;img src=image.jpg&gt;</li>
-    </ul>
-    <hr>
-    <h3>№4. Вкладені теги</h3>
-    <p><b>Питання:</b> Який код потрібно написати, щоб отримати результат, як на зображенні нижче?</p>
-    <p>Hello, <b>learner</b>!<br>How is it going?</p>
-    <p>Виберіть один варіант зі списку:</p>
-    <ul>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/p&gt;&lt;/b&gt;</li>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner!&lt;br&gt;How is it going?&lt;/b&gt;&lt;/p&gt;</li>
-        <li><span style="color:blue">&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;!&lt;br&gt;How is it going?&lt;/p&gt; &#x2714;</span></li>
-        <li>&lt;p&gt;Hello, &lt;b&gt;learner&lt;/b&gt;! How is it going?&lt;/p&gt;</li>
-    </ul>
-    <hr>
-    <h3>№5. Параграф тексту</h3>
-    <p><b>Питання:</b> Пригадайте, який тег використовується для написання параграфів (абзаців) тексту та відображення тексту на веб-сторінці. Виділіть деякі частини тексту жирним шрифтом за допомогою тегу <code class="w3-codespan">&lt;b&gt;</code>. Нарешті, додайте горизонтальну лінію на сторінку. Додайте лише один параграф із текстом.</p>
-    <div class="w3-light-blue w3-padding">У цьому та наступних завданнях ви побачите перевірку коду. Цей тест перевірить синтаксичну правильність вашого коду. Це допоможе вам знайти неправильно вкладені теги, забуті закриваючі теги, пропущені дужки, лапки та інше.</div>
-    <p>Напишіть код HTML та CSS:</p>
-    <div class="w3-border"><p>У цьому та наступних завданнях ви побачите перевірку підтвердження <b>коду</b>. Цей тест перевірить синтаксичну правильність вашого коду. Це допоможе вам знайти неправильно вкладені теги, забуті закриваючі теги, пропущені дужки, лапки та інше.&lt;p&gt;<br>&lt;hr&gt;</div>
-    <hr>
-    <h3>№6. Тег h1</h3>
-    <p><b>Запитання:</b> Додайте наступний текст <b>I like to learn new things!</b> у парному тегу заголовка <code class="w3-codespan">&lt;h1&gt;</code> першого рівня.</p>
-    <p>Введіть короткий текст: <span style="color:blue"><span class="h-codespan">&lt;h1&gt;I like to learn new things!&lt;/h1&gt;</span> &#x2714;</span></p>
-    <hr>
-    <h3>№7. Малювання елементів HTML</h3>
-    <p><b>Питання:</b> що допомагає веббраузеру зрозуміти, які елементи вебсторінки відображати?</p>
-    <p>Виберіть один варіант зі списку:</p>
-    <ul>
-        <li><span style="color:blue">теги &#x2714;</span></li>
-        <li>атрибути</li>
-        <li>значення</li>
-        <li>властивості</li>
-    </ul>
-    <hr>
-    <h3>№8. Декодування HTML елемента img</h3>
-    <p><b>Питання:</b> Розгляньте наступний фрагмент HTML-коду. Які твердження є точними щодо тегів і атрибутів?</p>
+    <h3>№1. Пропущений тег</h3>
+    <p><b>Питання:</b> у наведеному нижче коді відсутній елемент:</p>
     <div class='w3-example'>
         <div class='w3-code notranslate htmlHigh'>
-            &lt;img src='example.jpg' alt='Example Image' class='responsive' /&gt;
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;❓&gt;Science News&lt;/❓&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Science News&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Astrophysicists have shown the first black hole photo in history&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Corsica "cat-fox" could be new species, say experts&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Chemists have created a strong anti-cancer drug&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>Введіть назву відсутнього елемента.</p>
+    <p>Введіть короткий текст: <span style="color:blue">title &#x2714;</span></p>
+    <hr>
+    <h3>№2. Основні теги</h3>
+    <p><b>Питання:</b> Напишіть сторінку, яка відповідає знімку екрана:</p>
+    <img src="../images/ucarecdn.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
+    <p>Текст вебсторінки можна скопіювати звідси:</p>
+    <ul>
+        <li>Cafe "Sweet"</li>
+        <li>Buy Cakes Online</li>
+        <li>We are happy to implement any of your plans and make a cake worthy of your celebration.</li>
+    </ul>
+    <p><b>Підказка.</b> Перевірте правильність введених символів і переконайтеся, що ніде немає зайвих пробілів.</p>
+    <div class='w3-example'>
+        <h3>Правильний код:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Cafe "Sweet"&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Buy Cakes Online&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;We are happy to implement any of your plans and make a cake worthy of your celebration.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№3. Початкові теги</h3>
+    <p><b>Питання:</b> Укажіть усі початкові теги:</p>
+    <p>Виберіть один або кілька варіантів зі списку:</p>
+    <ul>
+        <li><span style="color:blue">&lt;p&gt; &#x2714;</li>
+        <li>&lt;/title&gt;</li>
+        <li>&lt;/p&gt;</li>
+        <li><span style="color:blue">&lt;body&gt; &#x2714;</li>
+        <li><span style="color:blue">&lt;h1&gt; &#x2714;</li>
+    </ul>
+    <hr>
+    <h3>№4. Злом структури сторінки HTML!</h3>
+    <p><b>Запитання:</b> враховуючи знання про теги та атрибути, що з наведеного нижче представляє правильну та більш повну структуру сторінки HTML із включеними метаданими та типом документа?</p>
+    <p>Виберіть один варіант зі списку:</p>
+    <div class='w3-example'>
+        <h3>Приклад #1</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            <!DOCTYPE html>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3>Приклад #2</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3><span style="color:blue">Приклад #3 &#x2714;</span></h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <div class='w3-example'>
+        <h3>Приклад #4</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name='keywords' content='HTML, CSS'&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hello, World!<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№5. Написати сторінку</h3>
+    <p><b>Питання:</b> Напишіть сторінку, яка відповідає знімку екрана:</p>
+    <img src="../images/ucarecdn1.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
+    <p>Текст веб-сторінки можна скопіювати звідси:</p>
+    <ul>
+        <li>Events</li>
+        <li>Let&#8217;s have a look</li>
+        <li>What&#8217;s On In Toronto</li>
+        <li>Select the date you are interested in.</li>
+    </ul>
+    <p>Перевірте правильність введених символів і переконайтеся, що ніде немає зайвих пробілів.</p>
+    <div class='w3-example'>
+        <h3>Правильний код:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Events&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Let&#8217;s have a look&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;What&#8217;s On In Toronto&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Select the date you are interested in.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№6. Визначення типу документа</h3>
+    <p><b>Питання:</b> Що слід написати на початку сторінки HTML, щоб веббраузер зрозумів, що для відображення вебсторінки використовується HTML5?</p>
+    <p>Введіть короткий текст: <span style="color:blue"><span class="h-codespan">&lt;!DOCTYPE html&gt;</span> &#x2714;</span></p>
+    <hr>
+    <h3>№7. Кінцеві теги</h3>
+    <p><b>Питання:</b> Укажіть усі кінцеві теги:</p>
+    <p>Виберіть один або кілька варіантів зі списку:</p>
+    <ul>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;body&gt;</li>
+        <li><span style="color:blue">&lt;/p&gt; &#x2714;</span></li>
+        <li>&lt;html&gt;</li>
+        <li><span style="color:blue">&lt;/body&gt; &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№8. DTD</h3>
+    <p><b>Запитання:</b> Що означає DTD?</p>
+    <p>Виберіть один варіант зі списку:</p>
+    <ul>
+        <li>Data Transfer Device</li>
+        <li>Document Type Descriptor</li>
+        <li>Digital Topographic Data</li>
+        <li>Database Table Definition</li>
+        <li>Data Type Definition</li>
+        <li><span style="color:blue">Document Type Definition &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№9. Що заповнює порожні місця?</h3>
+    <p><b>Запитання:</b> враховуючи наведений нижче фрагмент коду, виберіть параметри, які правильно завершують структуру HTML-сторінки, дотримуючись семантичних вказівок щодо правильного вкладення елементів HTML:</p>
+    <div class='w3-example'>
+        <h3>Правильний код:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;__1__<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Sample Page&lt;/title&gt;<br>
+            &nbsp;&nbsp;__2__<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to the Sample Page&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a sample HTML page.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
         </div>
     </div>
     <p>Виберіть один або кілька варіантів зі списку:</p>
     <ul>
-        <li><span style="color:blue">Атрибут 'src' визначає URL-адресу зображення, атрибут 'alt' надає альтернативний текст, а атрибут 'class' призначає клас CSS елементу &#x2714;</span></li>
-        <li><span style="color:blue">Елемент є самозакриваючим тегом із трьома атрибутами: src, alt та class &#x2714;</span></li>
-        <li>Атрибут 'src' призначає клас CSS, атрибут 'alt' визначає посилання, а атрибут 'class' надає альтернативний текст</li>
-        <li>Елемент є початковим тегом із трьома атрибутами: src, alt та class</li>
-        <li>Елемент є початковим тегом без будь-яких атрибутів, після якого слід закривати тег</li>
+        <li><span style="color:blue">&lt;head&gt; &#x2714;</span></li>
+        <li>&lt;/body&gt;</li>
+        <li>&lt;/html&gt;</li>
+        <li><span style="color:blue">&lt;/head&gt; &#x2714;</span></li>
+        <li>&lt;title&gt;</li>
+    </ul>
+    <h3>№10. Розбір базової структури HTML</h3>
+    <p><b>Питання:</b> враховуючи базову структуру HTML нижче, яке з наведених нижче тверджень є правильним?</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>Виберіть один або кілька варіантів зі списку:</p>
+    <ul>
+        <li><span style="color:blue">'DOCTYPE html' is an information tag, letting the browser know that the type of document it's about to process is HTML. &#x2714;</span></li>
+        <li>'p' tags are used to determine the style of text.</li>
+        <li><span style="color:blue">'h1' tag defines the most important heading in the document. &#x2714;</span></li>
+        <li><span style="color:blue">'Page Title' is the title of the HTML document which is usually displayed on the title bar or tab of the browser. &#x2714;</span></li>
+        <li>The text 'This is a Heading' and 'This is a paragraph' will not be visible in the web page, because they are enclosed within the head tag.</li>
     </ul>
     <hr>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='index.html'>&#10094; Prev</a>
-        <a class='w3-right w3-btn' href='html-page-structure.html'>Next &#10095;</a>
+        <a class='w3-left w3-btn' href='tags-and-attributes.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments.html'>Next &#10095;</a>
     </div>
 </article>
 <div class="adver_addown">
