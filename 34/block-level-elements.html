@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang='uk'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<link rel='icon' href='../favicon.ico' type='image/x-icon'>
+<link rel='stylesheet' href='../styles/w3.css'>
+<link rel='stylesheet' href='../styles/external.css'>
+<meta property="og:title" content='Уроки Hyperskill з відповідями на тестові завдання'>
+<meta property='og:description' content='Hyperskill українською пропонує безкоштовні онлайн-уроки, навчальні та довідкові матеріали, завдання та вправи на більшості мовах програмування та створення веб-сайтів. Охоплює найбільш популярні технології, такі як HTML, CSS, JavaScript, PHP, Python, SQL, Java, Kotlin, Go та багато інших'>
+<meta property='og:image' content='../images/w3schools_logo_436_2.png'>
+<meta property='og:image:type' content='image/png'>
+<meta property='og:image:width' content='436'>
+<meta property='og:image:height' content='228'><link rel='alternate' hreflang='x-default' href='block-level-elements.html' />
+<link rel='alternate' hreflang='en' href='block-level-elements_en.html' />
+<title>Елементи блокового рівня. Введення в HTML. Уроки для початківців. Підручники Hyperskill українською</title>
+<meta name='description' content='Елементи блокового рівня в HTML. Теорія. Що таке елементи HTML? Елементи рівня блоку (блокові). Особливості елементів блокового рівня. Висновок. Практичні завдання та відповіді. Безплатні уроки онлайн з відповідями на завдання для новачків, школярів та студентів із Hyperskill українською мовою.'>
+<div class='w3-container top'>
+    <a class='w3schools-logo notranslate' href='../index.html'>HyperSkillUA<span class='dotcom w3-hide-small'>.українською</span></a>
+    <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">ПРОСТО НАЙКРАЩИЙ САЙТ ДЛЯ РОЗРОБНИКІВ</div>
+</div>
+<div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
+    <!--W3SchoolsUA-Google-Search-->
+    <script async src='https://cse.google.com/cse.js?cx=751c3d18bb8a64f00'></script><div class='gcse-search'></div>
+    <!--/W3SchoolsUA-Google-Search-->
+</div>
+<!--Top menu-->
+<div class='w3-card-2 topnav notranslate' id='topnav'>
+    <div style='overflow:auto;'>
+        <div class='w3-bar w3-left' style='width:100%;overflow:hidden;height:44px'>
+            <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Меню'></a>
+            <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../index.html' title='main'></a>
+            <a class='w3-bar-item w3-button' href='../34/index.html' title='HTML Tutorial'>HTML/CSS</a>
+            <a class='w3-bar-item w3-button' href='../32/index.html' title='JavaScript Tutorial'>JAVASCRIPT</a>
+            <a class='w3-bar-item w3-button' href='../31/index.html' title='SQL Tutorial'>SQL</a>
+            <a class='w3-bar-item w3-button' href='../8/index.html' title='Java Tutorial'>JAVA</a>
+            <a class='w3-bar-item w3-button' href='../6/index.html' title='Python Tutorial'>PYTHON</a>
+            <a class='w3-bar-item w3-button' href='../25/index.html' title='How To'>Golang</a>
+            <a class='w3-bar-item w3-button' href='../28/index.html' title='W3.CSS Tutorial'>Data Science</a>
+            <a class='w3-bar-item w3-button' href='../11/index.html' title='jQuery Tutorial'>Django</a>
+            <a class='w3-bar-item w3-button w3-right' target='_blank' href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' title='Завантажити книги безкоштовно із Google диска'>Книги</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='open_search(this)' title='Пошук'>&#128269;</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='changecodetheme(this)' title='Темна тема'>&#9681;</a>
+            <a class='w3-bar-item w3-button' id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Більше підручників'>Більше <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+        </div>
+        <div id='nav_tutorials' class='w3-bar-block w3-card-2' style='display:none;'>
+            <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style='position:absolute;right:0;font-weight:bold;'>&times;</span>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'>
+                    <h3>Підручники:</h3>
+                    <a class='w3-bar-item w3-button' href='../8/index.html'>Введення в Java</a>
+                    <a class='w3-bar-item w3-button' href='../2/index.html'>Python Ядро</a>
+                    <a class='w3-bar-item w3-button' href='../18/index.html'>Kotlin Ядро</a>
+                    <a class='w3-bar-item w3-button' href='../6/index.html'>Введення в Python</a>
+                    <a class='w3-bar-item w3-button' href='../5/index.html'>Frontend Ядро</a>
+                    <a class='w3-bar-item w3-button' href='../3/index.html'>Kotlin Розробник</a>
+                    <a class='w3-bar-item w3-button' href='../12/index.html'>Java Backend Розробник</a>
+                    <a class='w3-bar-item w3-button' href='../17/index.html'>Java Розробник</a>
+                    <a class='w3-bar-item w3-button' href='../32/index.html'>Введення в JavaScript</a>
+                    <a class='w3-bar-item w3-button' href='../25/index.html'>Введення в Go</a>
+                    <a class='w3-bar-item w3-button' href='../15/index.html'>Java Ядро</a>
+                    <a class='w3-bar-item w3-button' href='../28/index.html'>Введення в Data Science</a>
+                    <a class='w3-bar-item w3-button' href='../31/index.html'>Введення в SQL</a>
+                    <div class='w3-hide-large w3-hide-small'>
+                        <a class='w3-bar-item w3-button' href='../9/index.html'>Java Desktop Application Розробник</a>
+                        <a class='w3-bar-item w3-button' href='../26/index.html'>Введення в Командний рядок і оболонку Unix</a>
+                        <a class='w3-bar-item w3-button' href='../30/index.html'>SQL із Python</a>
+                        <a class='w3-bar-item w3-button' href='../38/index.html'>Spring Security для розробників Java Backend</a>
+                        <a class='w3-bar-item w3-button' href='../16/index.html'>Розробка Android з Kotlin</a>
+                        <a class='w3-bar-item w3-button' href='../11/index.html'>Введення в Django</a>
+                        <a class='w3-bar-item w3-button' href='../42/index.html'>Алгоритми машинного навчання з нуля</a>
+                        <a class='w3-bar-item w3-button' href='../34/index.html'>Введення в HTML та CSS</a>
+                        <a class='w3-bar-item w3-button' href='../29/index.html'>Flask Розробник</a>
+                        <a class='w3-bar-item w3-button' href='../10/index.html'>Введення в обробку природної мови</a>
+                        <a class='w3-bar-item w3-button' href='../41/index.html'>Введення в Комп&#8217;ютерні алгоритми та Структури даних</a>
+                        <a class='w3-bar-item w3-button' href='../27/index.html'>Введення в Лінійну алгебру</a>
+                        <a class='w3-bar-item w3-button' href='../48/index.html'>Введення в Git</a>
+                    </div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../9/index.html'>Java Desktop Application Розробник</a>
+                    <a class='w3-bar-item w3-button' href='../26/index.html'>Введення в Командний рядок і оболонку Unix</a>
+                    <a class='w3-bar-item w3-button' href='../30/index.html'>SQL із Python</a>
+                    <a class='w3-bar-item w3-button' href='../38/index.html'>Spring Security для розробників Java Backend</a>
+                    <a class='w3-bar-item w3-button' href='../16/index.html'>Розробка Android з Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../11/index.html'>Введення в Django</a>
+                    <a class='w3-bar-item w3-button' href='../42/index.html'>Алгоритми машинного навчання з нуля</a>
+                    <a class='w3-bar-item w3-button' href='../34/index.html'>Введення в HTML та CSS</a>
+                    <a class='w3-bar-item w3-button' href='../29/index.html'>Flask Розробник</a>
+                    <a class='w3-bar-item w3-button' href='../10/index.html'>Введення в обробку природної мови</a>
+                    <a class='w3-bar-item w3-button' href='../41/index.html'>Введення в Комп&#8217;ютерні алгоритми та Структури даних</a>
+                    <a class='w3-bar-item w3-button' href='../27/index.html'>Введення в Лінійну алгебру</a>
+                    <a class='w3-bar-item w3-button' href='../48/index.html'>Введення в Git</a>
+                    <div class='w3-hide-small'><br class='w3-hide-medium w3_hide-small'><br class='w3-hide-medium w3_hide-small'></div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../33/index.html'>Математика для Машинного навчання</a>
+                    <a class='w3-bar-item w3-button' href='../35/index.html'>Розширена Java</a>
+                    <a class='w3-bar-item w3-button' href='../40/index.html'>SQL для Backend розробників</a>
+                    <a class='w3-bar-item w3-button' href='../44/index.html'>Pandas для Аналізу даних</a>
+                    <a class='w3-bar-item w3-button' href='../37/index.html'>Kotlin Backend Розробник зі Spring Boot</a>
+                    <a class='w3-bar-item w3-button' href='../50/index.html'>Основні навички для Backend розробників</a>
+                    <a class='w3-bar-item w3-button' href='../23/index.html'>Введення в Scala</a>
+                    <a class='w3-bar-item w3-button' href='../69/index.html'>Введення в Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../70/index.html'>Введення в Spring Boot із Java</a>
+                    <a class='w3-bar-item w3-button' href='../57/index.html'>Введення в Математику</a>
+                    <a class='w3-bar-item w3-button' href='../49/index.html'>Введення в Біоінформатику</a>
+                    <a class='w3-bar-item w3-button' href='../58/index.html'>Python ООП</a>
+                    <a class='w3-bar-item w3-button' href='../55/index.html'>Введення в Node.js</a>
+                    <a class='w3-bar-item w3-button' href='../54/index.html'>Практика алгоритмів із Python</a>
+                </div>
+                <div class='w3-col l3 m6 w3-hide-medium'>
+                    <a class='w3-bar-item w3-button' href='../59/index.html'>Python для науки</a>
+                    <a class='w3-bar-item w3-button' href='../47/index.html'>Алгоритмічне мислення для розробників</a>
+                    <a class='w3-bar-item w3-button' href='../45/index.html'>Введення в Ktor</a>
+                    <a class='w3-bar-item w3-button' href='../65/index.html'>JavaScript Ядро</a>
+                    <a class='w3-bar-item w3-button' href='../60/index.html'>Введення в MongoDB</a>
+                    <a class='w3-bar-item w3-button' href='../62/index.html'>Аналіз даних в Біоінформатиці</a>
+                    <a class='w3-bar-item w3-button' href='../79/index.html'>Чатботи та системи діалогу</a>
+                    <a class='w3-bar-item w3-button' href='../61/index.html'>SQL для Аналізу даних</a>
+                    <a class='w3-bar-item w3-button' href='../85/index.html'>Введення в Calculus</a>
+                    <a class='w3-bar-item w3-button' href='../71/index.html'>Біоінформатика Ядро</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_references' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6 w3-hide-medium w3-hide-small'></div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_exercises' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m12'></div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<!--/Top menu--><!--Left menu sidebar-->
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+    <div id='leftmenuinner'>
+        <div id='leftmenuinnerinner'>
+            <nav>
+                <h2 class='left'><span class='left_h2'><b>Введення в HTML</b></h2>
+                <a target='_top' href='index.html'>HTML Основи</a>
+                <a target='_top' href='tags-and-attributes.html'>Теги та атрибути</a>
+                <a target='_top' href='html-page-structure.html'>Структура HTML сторінки</a>
+                <a target='_top' href='block-level-elements.html'>Елементи блочного рівня</a>
+                <a target='_top' href='inline-elements.html'>Вбудовані елементи</a>
+                <a target='_top' href='layout-elements.html'>Елементи макета</a>
+                <a target='_top' href='html-attributes-id-and-class.html'>HTML атрибути id та class</a>
+                <a target='_top' href='connecting-css-to-html.html'>Підключення CSS до HTML</a>
+                <a target='_top' href='comments.html'>Коментарі</a>
+                <a target='_top' href='code-style.html'>Стиль коду</a>
+                <a target='_top' href='links.html'>Посилання</a>
+                <a target='_top' href='html-quotations.html'>HTML Лапки</a>
+                <a target='_top' href='headings-paragraphs-comments.html'>Заголовки, параграфи, коментарі</a>
+                <a target='_top' href='i-tag.html'>Тег &lt;i&gt;</a>
+                <a target='_top' href='samp-kbd-code-tags.html'>&lt;samp&gt;, &lt;kbd&gt;, &lt;code&gt;</a>
+                <a target='_top' href='abbr-address-bdo-tags.html'>&lt;abbr&gt;, &lt;address&gt;, &lt;bdo&gt;</a>
+                <a target='_top' href='dom.html'>DOM</a>
+                <a target='_top' href='images.html'>Зображення</a>
+                <a target='_top' href='audio.html'>Аудіо</a>
+                <a target='_top' href='video.html'>Відео</a>
+                <a target='_top' href='tag-embed.html'>Тег Embed</a>
+                <a target='_top' href='intro-to-html-forms.html'>Введення в HTML форми</a>
+                <a target='_top' href='buttons.html'>Кнопки</a>
+                <a target='_top' href='iframe-and-frameset.html'>Iframe та frameset</a>
+                <a target='_top' href='the-lang-attribute.html'>Атрибут lang</a>
+                <a target='_top' href='intro-to-tables.html'>Таблиці</a>
+                <div class='tut_overview'>
+                    <a target='_top' href='intro-to-tables.html'>Введення в таблиці</a>
+                    <a target='_top' href='rows-cells-captions.html'>Рядки, клітинки, підписи</a>
+                    <a target='_top' href='merging-cells.html'>Таблиці: об&#8217;єднання клітинок</a>
+                    <a target='_top' href='sizing-tables.html'>Розміри таблиці</a>
+                    <a target='_top' href='table-alignment.html'>Вирівнювання таблиці</a>
+                    <a target='_top' href='table-sizing-and-alignment.html'>Розмір таблиці та вирівнювання</a>
+                    <a target='_top' href='visibility.html'>Видимість</a>
+                    <a target='_top' href='responsive-tables.html'>Адаптивні таблиці</a>
+                </div>
+                <a target='_top' href='intro-to-lists.html'>Списки</a>
+                <div class='tut_overview'>
+                    <a target='_top' href='intro-to-lists.html'>Введення в списки</a>
+                    <a target='_top' href='ordered-list-and-types.html'>Впорядкований список і типи</a>
+                    <a target='_top' href='unordered-list-and-types.html'>Невпорядкований список і типи</a>
+                    <a target='_top' href='pseudo-classes.html'>Псевдокласи</a>
+                    <a target='_top' href='list-style.html'>Стиль списку</a>
+                </div>
+                <a target='_top' href='images-and-text.html'>Зображення і текст</a>
+                <a target='_top' href='html-progress-and-meter.html'>Прогрес і лічильник HTML</a>
+                <a target='_top' href='connecting-javascript-to-html.html'>Підключення JavaScript до HTML</a>
+                <a target='_top' href='the-dialog-tag.html'>Тег Dialog</a>
+                <a target='_top' href='layout-grids.html'>Сітки макета</a>
+                <a target='_top' href='the-html-seo-optimization.html'>HTML SEO оптимізація</a>
+                <br>
+                <h2 class='left'><span class='left_h2'><b>Введення в CSS</b></span></h2>
+                <a target='_top' href='what-is-css.html'>Що таке CSS</a>
+                <a target='_top' href='basic-syntax.html'>Базовий синтаксис</a>
+                <a target='_top' href='css-selectors.html'>CSS Селектори</a>
+                <a target='_top' href='relative-units.html'>Відносні одиниці</a>
+                <a target='_top' href='absolute-units.html'>Абсолютні одиниці</a>
+                <a target='_top' href='position.html'>Позиція</a>
+                <a target='_top' href='float.html'>Float</a>
+                <a target='_top' href='clear.html'>Clear</a>
+                <a target='_top' href='positioning-properties.html'>Властивості позиціонування</a>
+                <a target='_top' href='z-index.html'>z-index</a>
+                <a target='_top' href='margin-and-padding.html'>Margin та Padding</a>
+                <a target='_top' href='width-and-height.html'>Width та Height</a>
+                <a target='_top' href='border.html'>Border</a>
+                <a target='_top' href='overflow.html'>Overflow</a>
+                <a target='_top' href='colors-in-CSS.html'>Кольори в CSS</a>
+                <a target='_top' href='background.html'>Background</a>
+                <a target='_top' href='using-fonts.html'>Використання шрифтів</a>
+                <a target='_top' href='line-height.html'>Висота рядка</a>
+                <a target='_top' href='text-alignment.html'>Вирівнювання тексту</a>
+                <a target='_top' href='google-fonts.html'>Google шрифти</a>
+                <a target='_top' href='introduction-to-flexbox.html'>Введення в Flexbox</a>
+                <a target='_top' href='orientation-and-display-order.html'>Орієнтація та порядок відображення</a>
+                <a target='_top' href='flexibility-growth-and-contraction-ratio.html'>Гнучкість, співвідношення зростання і скорочення</a>
+                <a target='_top' href='axis-alignment.html'>Вирівнювання осей</a>
+                <a target='_top' href='comments.html'>Коментарі</a>
+                <a target='_top' href='code-style.html'>Стиль коду</a>
+                <a target='_top' href='media-queries.html'>Медіазапити</a>
+                <a target='_top' href='visibility.html'>Видимість</a>
+                <a target='_top' href='transform.html'>Трансформації</a>
+                <a target='_top' href='backface-visibility.html'>Backface-visibility</a>
+                <a target='_top' href='transitions.html'>Переходи</a>
+                <a target='_top' href='introduction-to-animation.html'>Введення в анімацію</a>
+                <a target='_top' href='pseudo-classes.html'>Псевдокласи</a>
+                <a target='_top' href='attribute-selectors-and-universal-selector.html'>Селектори атрибутів і універсальний селектор</a>
+                <a target='_top' href='combinators.html'>Комбінатори</a>
+                <a target='_top' href='pseudo-elements.html'>Псевдоелементи</a>
+                <a target='_top' href='contextual-selectors.html'>Контекстні селектори</a>
+                <a target='_top' href='specificity.html'>Специфіка</a>
+                <br><br>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--/Left menu sidebar--><!--CONTENT-->
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+    <div class='w3-row w3-white'>
+        <div class='w3-col l10 m12' id='main'>
+          <div class="adver_adup">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- adup_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>            <a href='index.html'><img src='../svg/HTML5_icon.svg' alt='HTML5. Уроки для початківців. Hyperskill українською' class='w3-left' title='Уроки HTML5 для початківців. Hyperskill українською' style='width:120px;padding: 10px'></a><p class='w3-right'>
+    <a href='block-level-elements_en.html' title='Перейти на англійську мову'>En</a>
+</p>
+<article>
+    <h1>Елементи блокового рівня</h1>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='html-page-structure.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='inline-elements.html'>Next &#10095;</a>
+    </div>
+    <hr>
+    <h3>Теорія</h3>
+    <p>У цій темі ми розглянемо форматування вебсторінки. Ви дізнаєтеся, для чого потрібні HTML-елементи на рівні блоків (блокові елементи), якими властивостями вони володіють і як їх найбільш ефективно використовувати для створення структури HTML-коду.</p>
+    <hr>
+    <h2>§1. Що таке елементи HTML?</h2>
+    <p>Як відомо, файли HTML можна відкривати у браузерах. Отримавши документ HTML, браузер зчитує теги в ньому та використовує їх для створення сторінки HTML, яку користувачі бачать на екранах своїх моніторів.</p>
+    <p>Усе, що ви бачите на сторінці у засобі перегляду у своєму браузері, — це елементи HTML. І саме в цьому полягає різниця між тегами HTML та елементами HTML: елементи – це те, що бачить користувач на сторінці веббраузера, а теги – це те, що пише розробник під час створення документа HTML.</p>
+    <p class="w3-info">Варто пам&#8217;ятати, що не всі теги HTML є елементами. Наприклад, інструкція <span class="h-codespan">DOCTYPE</span>, необхідна для правильної інтерпретації коду браузером, і теги в заголовку документа HTML не є елементами.</p>
+    <p>Є два основних типи елементів сторінки: елементи <strong>блокового рівня</strong> та <strong>вбудовані</strong> елементи. Обидва типи мають свої особливості.</p>
+    <hr>
+    <h2>§2. Елементи рівня блоку (блокові)</h2>
+    <p><strong>Елементи рівня блоків</strong> здебільшого використовуються для створення структури вебсторінок або логічного поділу документа HTML на частини. Ось кілька прикладів блокових елементів:</p>
+    <p>Елемент <code class="w3-codespan">&lt;div&gt;</code> є універсальним роздільником вмісту. Він використовується для групування подібних елементів HTML. Щоразу, коли ви хочете розділити розділи вебсторінки, ви можете використовувати елемент <b>div</b>. Однак існують інші семантичні елементи HTML, які можна використовувати для певного позиціонування елементів на вебсторінці, про які ви дізнаєтесь пізніше, і вам слід використовувати семантичні елементи, коли це можливо, щоб покращити доступність. Але тепер давайте подивимося, як можна створити розділ за допомогою елемента <code class="w3-codespan">&lt;div&gt;</code>:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;h1&gt;Елемент h1 всередині div&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;Елемент p також всередині div&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </div>
+    </div>
+    <p><code class="w3-codespan">&lt;h1&gt;</code> - <code class="w3-codespan">&lt;h6&gt;</code> є тегами заголовків:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;h1&gt;Рівень заголовка 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Рівень заголовка 2&lt;/h2&gt;<br>
+            &lt;h3&gt;Рівень заголовка 3&lt;/h3&gt;<br>
+            &lt;h4&gt;Рівень заголовка 4&lt;/h4&gt;<br>
+            &lt;h5&gt;Рівень заголовка 5&lt;/h5&gt;<br>
+            &lt;h6&gt;Рівень заголовка 6&lt;/h6&gt;
+        </div>
+    </div>
+    <p>Результат буде відображено в браузері наступним чином:</p>
+    <div class="w3-padding">
+        <h2>Рівень заголовка 1</h2>
+        <h3>Рівень заголовка 2</h3>
+        <h4>Рівень заголовка 3</h4>
+        <h5>Рівень заголовка 4</h5>
+        <h6>Рівень заголовка 5</h6>
+        <h6 style="font-size: small">Рівень заголовка 6</h6>
+    </div>
+    <p>Як бачите, ці теги полегшують ідентифікацію заголовків, які передають рівень важливості тексту.</p>
+    <p class="w3-info">Рекомендується використовувати лише один тег <code class="w3-codespan">&lt;h1&gt;</code> на вебсторінці – це має бути заголовок, який відображає основну тему сторінки.</p>
+    <p>Елемент <code class="w3-codespan">&lt;p&gt;</code> визначає параграф тексту:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;p&gt;Це параграф тексту.&lt;/p&gt;<br>
+            &lt;p&gt;А це інший параграф тексту.&lt;/p&gt;
+        </div>
+    </div>
+    <p>Ось як це виглядає в браузері:</p>
+    <div class="w3-padding">
+        <p>Це параграф тексту.</p>
+        <p>А це інший параграф тексту.</p>
+    </div>
+    <p>Текст, укладений у цей тег, не виділяється жирним шрифтом, на відміну від регістру <code class="w3-codespan">&lt;h1&gt;</code>-<code class="w3-codespan">&lt;h6&gt;</code>.</p>
+    <p>Елемент <code class="w3-codespan">&lt;pre&gt;</code> визначає блок форматованого тексту:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;pre&gt;<br>
+            ..........／＞  フ<br>
+            .........|  _  _ |<br>
+            .......／` ミ＿xノ<br>
+            ....../     |<br>
+            ...../  ヽ   ﾉ<br>
+            ....│  | | |<br>
+            ／￣|   | | |<br>
+            | (￣ヽ＿_ヽ_)__)<br>
+            .＼二つ<br>
+            &lt;/pre&gt;
+        </div>
+    </div>
+    <p>За замовчуванням будь-яка кількість пробілів у рядку коду відображається як один пробіл на вебсторінці. Тег <code class="w3-codespan">&lt;pre&gt;</code> відображає текст так, як ви хочете, з усіма пробілами, вставленими між символами:</p>
+    <pre>
+..........／＞  フ
+.........|  _  _ |
+.......／` ミ＿xノ
+....../     |
+...../  ヽ   ﾉ
+....│  | | |
+／￣|   | | |
+| (￣ヽ＿_ヽ_)__)
+.＼二つ
+</pre>
+    <p>Елемент <code class="w3-codespan">&lt;hr&gt;</code> створює горизонтальну лінію:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;hr&gt;
+        </div>
+    </div>
+    <p>Тепер подивимося, як це відображається в браузері:</p>
+    <div class="w3-padding"><hr style="height:20px;border-color: #000;border-width: 2px;"></div>
+    <p>Це далеко не повний список елементів блокового рівня – напевно є ще багато, що <a href="https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content#Elements" target="_blank">потрібно знати</a> на
+        <a href="https://developer.mozilla.org/" target="_blank">developer.mozilla.org</a>.</p>
+    <hr>
+    <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>§3. Особливості елементів блокового рівня</h2>
+    <p>Наведені нижче особливості характерні для елементів рівня блоку:</p>
+    <ol>
+        <li>Вони можуть містити як вбудовані елементи, так і інші елементи рівня блоку.</li>
+        <li>Браузери відображають їх із розривом рядка до та після елемента. Подивіться на поведінку елементів блокового рівня та порівняйте її з поведінкою вбудованих елементів, щоб краще зрозуміти цю функцію:</li>
+        <br>
+        <img src="../images/block-level-elements.jpg" alt="Блокові елементи на вебсторінці" class="w3-image w3-card-4 img-center">
+        <br>
+        <li>Елементи рівня блоку займають всю доступну ширину. Тобто, якщо елемент розташований усередині <code class="w3-codespan">&lt;body&gt;</code>, він займатиме всю ширину вебсторінки. Якщо елемент рівня блоку знаходиться всередині іншого елемента рівня блоку, він використовуватиме всю ширину батьківського елемента.<br>Щоб перевірити це, просто натисніть <kbd>Ctrl+Shift+I</kbd> або <kbd >Cmd+Opt+I</kbd> на вебсторінці та наведіть курсор миші на об&#8217;єкт. У браузері прямокутники різної висоти та ширини будуть виділені кольором. Це область, яку займають вибрані вами елементи:</li>
+        <img src="../images/block-level-elements.gif" alt="Block-level-elements" class="w3-image w3-card-4 img-center">
+        <br>
+        <li>Висота елемента рівня блоку автоматично обчислюється браузером на основі вмісту блоку.</li>
+    </ol>
+    <p>Елементи на рівні блоку поводяться так, тому що діють як контейнери, у яких зберігається весь їхній вміст.</p>
+    <hr>
+    <h2>§4. Висновок</h2>
+    <p>Ми обговорили основні функції блокових HTML-елементів. Варто зазначити, що розрізнення між блоковими елементами та вбудованими елементами використовувалося аж до версії HTML 4.0. У HTML 5 ці концепції були замінені більш складним набором категорій вмісту: тепер кожен елемент HTML повинен відповідати правилам, які визначають, яка інформація може зберігатися в ньому. Ми розглянемо це трохи пізніше. Тепер давайте переглянемо те, що ми навчилися до цього часу, трохи попрактикувавшись, оскільки ці знання обов&#8217;язково колись стануть вам у нагоді.</p>
+    <hr>
+    <p>Ви також можете переглянути <a href="https://hyperskill.org/learn/step/7271" target="_blank" rel="nofollow">Урок на hyperskill.org</a>.</p>
+    <hr>
+    <h2>Практичні завдання та відповіді</h2>
+    <p>Подаються завдання та варіанти відповідей. Правильний варіант виділено <span style="color:blue">синім</span> кольором.</p>
+    <h3>№1. A missing block-level element</h3>
+    <p><b>Запитання:</b> Analyze the code below and enter the name of the missing tag without brackets:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;News&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;News&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;❓&gt;Brain-Computer Interface from Elon Musk&lt;/h2&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Neuralink Corporation is an American neurotechnology company founded by Elon Musk and others...&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>Enter a short text: <span style="color:blue">h2 &#x2714;</span></p>
+    <hr>
+    <h3>№2. A universal container</h3>
+    <p><b>Запитання:</b> Write a web page like the one in the screenshot. Place all text paragraphs in a universal container for grouping the content:</p>
+    <img src="../images/block-level-elements-test1.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
+    <p>The text of the web page can be copied from here:</p>
+    <ul>
+        <li>A panagram</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>In ultrices rutrum porttitor.</li>
+        <li>Nullam auctor mi nec fringilla pulvinar.</li>
+    </ul>
+    <p><b>Tip:</b> Check that the characters you entered are correct and make sure you have not put any extra spaces.</p>
+    <p><b>Hint:</b> For universal container for grouping the content use <code class="w3-codespan">&lt;div&gt;</code> around <code class="w3-codespan">&lt;body&gt;</code> tag content.</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;A panagram&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;In ultrices rutrum porttitor.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Nullam auctor mi nec fringilla pulvinar.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№3. Block elements</h3>
+    <p><b>Запитання:</b> Which of the following is not a block-level element from the list?</p>
+    <p>Select one option from the list:</p>
+    <ul>
+        <li>div</li>
+        <li><span style="color:blue">button &#x2714;</span></li>
+        <li>pre</li>
+        <li>p</li>
+    </ul>
+    <p><b>Explanation.</b> The answer is button. <code class="w3-codespan">div</code>, <code class="w3-codespan">pre</code>, and <code class="w3-codespan">p</code> are all block-level elements in HTML, which means they take up the full width of their parent container and create a new line after the element. However, button is an inline element by default, which means it does not create a new line and only takes up as much width as necessary to display its content. However, it is possible to change the display property of button to make it behave like a block-level element.</p>
+    <hr>
+    <h3>№4. Tags</h3>
+    <p><b>Запитання:</b> Match the names of tags with their functionality:</p>
+    <p>Match the items from left and right columns:</p>
+    <ul>
+        <li><span style="color:blue">&lt;p&gt; - defines a paragraph of text &#x2714;</span></li>
+        <li><span style="color:blue">&lt;h1&gt; - is a heading tag &#x2714;</span></li>
+        <li><span style="color:blue">&lt;div&gt; - is a universal content divider &#x2714;</span></li>
+        <li><span style="color:blue">&lt;paragraph&gt; - this tag does not exist in HTML &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№5. Block Party: Spot the Block-levels!</h3>
+    <p><b>Запитання:</b> Considering the HTML page structure, which groups of HTML elements are block-level elements and which are NOT block-level elements?</p>
+    <p>Select one option from the list:</p>
+    <ul>
+        <li>Block-level: &lt;div&gt;, &lt;h1&gt;. Not block-level: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;</li>
+        <li>Block-level: &lt;a&gt;, &lt;span&gt;. Not block-level: &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</li>
+        <li>Block-level: &lt;h1&gt;, &lt;p&gt;. Not block-level: &lt;span&gt;, &lt;div&gt;, &lt;a&gt;</li>
+        <li>Block-level: &lt;p&gt;, &lt;a&gt;, &lt;div&gt;, &lt;h1&gt;. Not block-level: &lt;span&gt;</li>
+        <li><span style="color:blue">Block-level: &lt;div&gt;, &lt;h1&gt;, &lt;p&gt;. Not block-level: &lt;span&gt;, &lt;a&gt; &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№6. Features</h3>
+    <p><b>Запитання:</b> What are the features of block-level elements?</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">Before and after such elements, the browser adds a line break &#x2714;</span></li>
+        <li><span style="color:blue">You can put both inline and other block-level elements in them &#x2714;</span></li>
+        <li>You can put only inline elements in them</li>
+        <li>You can put only other block-level elements in them</li>
+    </ul>
+    <p><b>Explanation.</b> So the correct options are: Before and after such elements, the browser adds a line break; You can put both inline and other block-level elements in them. Block-level elements take up the full width of their parent container and create a new line after the element. They can contain both inline and other block-level elements. Examples of block-level elements include div, p, h1-h6, ul, ol, li, table, form, and many others.</p>
+    <hr>
+    <h3>№7. Block-level elements</h3>
+    <p><b>Запитання:</b> Select block-level elements:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">&lt;p&gt; &#x2714;</span></li>
+        <li><span style="color:blue">&lt;div&gt; &#x2714;</span></li>
+        <li><span style="color:blue">&lt;h1&gt; &#x2714;</span></li>
+        <li>&lt;a&gt;</li>
+    </ul>
+    <hr>
+    <h3>№8. A story about yourself</h3>
+    <p><b>Запитання:</b> Let's get acquainted! Tell us a little about yourself: create a markup HTML file, write whatever you like, and put your text in the &lt;p&gt; tag. Don't forget to make a title for your story and put it in &lt;h1&gt;. Find a tag to wrap <b>a long quote</b> in and add your favorite quote to the story.</p>
+    <p>If you do not want to write about yourself, you can use random text.</p>
+    <p>Write HTML and CSS code:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html lang='en'&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset='utf-8'&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;The Best Quotes&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;The best quotes of the site&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quote from former world boxing champion and Kyiv mayor Vitaliy Klitschko:&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;And today, not everyone can watch tomorrow. Rather, not only everyone can watch, but few can do it...&lt;/blockquote&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quote from the admin:&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;God forbid that I never have much money! Because if I have a lot of money, I will do such things, God forbid!&lt;/blockquote&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№9. Navigation bar</h3>
+    <p><b>Запитання:</b> Suppose you decide to create a site, and now you are facing the task of making a navigation menu for it. Find a tag in which you can wrap the elements needed to navigate the site.</p>
+    <p>Enter a short text: <span style="color:blue">nav &#x2714;</span></p>
+    <hr>
+    <h3>№10. Hello, World!</h3>
+    <p><b>Запитання:</b> In the body of the document, write the text Hello, world! and enclose it in the top level heading tag.</p>
+    <p><b>Tip:</b> Be careful: there should be no extra characters in your code, be it multiple spaces or other misprints.</p>
+    <p>Write HTML and CSS code:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Greetings&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='html-page-structure.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='inline-elements.html'>Next &#10095;</a>
+    </div>
+</article>
+<div class="adver_addown">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+<!--Right sidebar-->
+<div class='w3-col l2 m12' id='right'>
+    <div class='sidesection w3-light-gray' style='padding-bottom: 5px'>
+        <h4><a href='https://w3schoolsua.github.io/colors/colors_picker.html'>ПАЛІТРА КОЛЬОРІВ</a></h4>
+        <a href='https://w3schoolsua.github.io/colors/colors_picker.html'><img src='../images/colorpicker.gif' alt='Палітра кольорів'></a>
+    </div>
+    <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:100%'>
+        <div class='w3-container w3-blue-grey'>
+            <h5 class="shadow-black-1" title="Всі онлайн-підручники на сайті">ПІДРУЧНИКИ</h5>
+        </div>
+        <div class='w3-border'>
+            <a href='https://w3schoolsua.github.io/html/index.html' class='btn-rightbar'>HTML</a>
+            <a href='https://w3schoolsua.github.io/css/index.html' class='btn-rightbar'>CSS</a>
+            <a href='https://w3schoolsua.github.io/css/css_rwd_intro.html' class='btn-rightbar'>RWD</a>
+            <a href='https://w3schoolsua.github.io/bootstrap/bootstrap_ver.html' class='btn-rightbar'>Bootstrap</a>
+            <a href='https://w3schoolsua.github.io/w3css/index.html' class='btn-rightbar'>W3.CSS</a>
+            <a href='https://w3schoolsua.github.io/colors/index.html' class='btn-rightbar'>Кольори</a>
+            <a href='https://w3schoolsua.github.io/icons/index.html' class='btn-rightbar'>Іконки</a>
+            <a href='https://w3schoolsua.github.io/graphics/index.html' class='btn-rightbar'>Графіка</a>
+            <a href='https://w3schoolsua.github.io/graphics/svg_intro.html' class='btn-rightbar'>Графіка SVG</a>
+            <a href='https://w3schoolsua.github.io/graphics/canvas_intro.html' class='btn-rightbar'>Графіка Canvas</a>
+            <a href='https://w3schoolsua.github.io/howto/index.html' class='btn-rightbar'>Як зробити?</a>
+            <a href='https://w3schoolsua.github.io/sass/index.html' class='btn-rightbar'>Sass</a>
+        </div>
+    </div>
+    <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px;background:#eee'>Місце для вашої реклами!</div>
+<div class="adver2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="1902033594" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adver4">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_square_rightbar -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="6653465929" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adver3">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar2 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7441711750" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div></div>
+<!--/Right sidebar-->
+</div><!--FOOTER-->
+<div id='footer' class='footer w3-container w3-white'>
+  <hr>
+  <div class='w3-row-padding w3-center w3-small' style='margin:0 -16px'>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' onclick='displayError();return false' style='white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px'>ЗВОРОТНІЙ ЗВ&rsquo;ЯЗОК</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' target='_blank' onclick='printPage();return false;' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ДРУК СТОРІНКИ</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../blog/index.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>БЛОГ</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../about/index.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ПРО САЙТ</a>
+    </div>
+  </div>
+  <div class='w3-padding w3-margin-bottom' id='err_form' style='display:none;position:relative;background-color: #DDE7EA;'>
+    <span onclick="this.parentElement.style.display='none'" class='w3-button w3-display-topright w3-large'>&times;</span>
+      <h2>Зв&rsquo;язок з адміном</h2>
+      <p>Якщо ви хочете повідомити про помилку, а також внести пропозиції про роботу сайту, додати оголошення, рекламу на сайт і т.п., відправте адміну електронного листа на email:</p>
+      <p>w3schoolsua@gmail.com</p>
+  </div>
+  <div class='w3-row w3-center w3-small'>
+        <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    </div>
+  <hr>
+  <div class='w3-center w3-small w3-opacity'>Цей сайт оптимізований для навчання і тестування. Приклади можуть бути спрощені для поліпшення читання і базового розуміння. Навчальні посібники, посилання і приклади постійно переглядаються, щоб уникнути помилок, але ми не можемо гарантувати повну правильність і працездатність всього контенту. Використовуючи цей сайт, ви погоджуєтеся з тим, що прочитали й прийняли <a href='../about/about_copyright.html'>умови використання</a>, <a href='../about/about_privacy.html'>cookie і політику конфіденційності</a>.<br>
+    Також доступна версія сайту <a href='../index_en.html' title='HyperSkill англійською'><a href='../index_en.html'><strong>HyperSkillEn.TheBest</strong></a></a> англійською мовою.<br>
+    <a href='../w3css/index.html'>Сайт створений і працює на фреймворку W3.CSS</a>.<br>
+      Ви можете використовувати інші авторитетні ресурси по навчанню веб-розробці та програмуванню:<br>
+      <a href='https://www.w3schools.com/' target='_blank'>W3Schools</a>&nbsp;|&nbsp;<a href='https://developer.mozilla.org/en-US/?retiredLocale=uk' target='_blank'>MDNWebDocs</a>&nbsp;|&nbsp;<a href='https://learn.microsoft.com/uk-ua/' target='_blank'>MicrosoftLearn</a>&nbsp;|&nbsp;<a href='https://hyperskill.org/' target='_blank'>HyperSkill</a>&nbsp;|&nbsp;<a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>&nbsp;|&nbsp;<a href='https://www.freecodecamp.org/' target='_blank'>FreeCodeCamp</a>&nbsp;|&nbsp;<a href='https://www.coursera.org/' target='_blank'>Coursera</a>&nbsp;|&nbsp;<a href='https://www.udacity.com/' target='_blank'>Udacity</a>&nbsp;|&nbsp;<a href='https://code.org/' target='_blank'>Code.org</a>&nbsp;|&nbsp;<a href='https://www.sololearn.com/' target='_blank'>SoloLearn</a>&nbsp;|&nbsp;<a href='https://developer.ibm.com/' target='_blank'>IBMDeveloper</a>&nbsp;|&nbsp;<a href='https://www.codewars.com/' target='_blank'>CodeWars</a>
+      <br><br>
+    <a href='../index.html'><img style='width:110px;height:28px;border:0' src='../images/w3schoolscom_gray.gif' alt='W3Schools.com'></a>
+  </div>
+    <br><br>
+    <div class="adver_adfooter">
+    <!--web--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!--/web-->
+    <!--w3--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script><!--/w3-->
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+</div>
+<script src='../lib/w3schools_footer.js'></script>
+<!--[if lt IE 9]>
+<script src='../cdn/html5shiv/3.7.3/html5shiv.js'></script>
+<script src='../cdn/respond/1.4.2/respond.min.js'></script>
+<![endif]-->
+<!--FOOTER-->
+</html>
