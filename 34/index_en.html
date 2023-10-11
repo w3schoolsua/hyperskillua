@@ -6,11 +6,12 @@
 <link rel='icon' href='../favicon.ico' type='image/x-icon'>
 <link rel='stylesheet' href='../styles/w3.css'>
 <link rel='stylesheet' href='../styles/external.css'>
+<meta property="og:title" content="Hyperskill lessons with answers to test tasks">
+<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'>
 <meta property='og:image' content='../images/w3schools_logo_436_2.png'>
 <meta property='og:image:type' content='image/png'>
 <meta property='og:image:width' content='436'>
-<meta property='og:image:height' content='228'>
-<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'><title>HTML basics. What is HTML? Short history. Lessons for beginners. Tutorial from Hyperskill</title>
+<meta property='og:image:height' content='228'><title>HTML basics. What is HTML? Short history. Lessons for beginners. Tutorial from Hyperskill</title>
 <meta name='description' content='HTML basics. Theory. What is HTML? Short history. HTML today. Advantages of HTML. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index_en.html'>HyperSkillEN<span class='dotcom w3-hide-small'>.TheBest</span></a>
@@ -149,6 +150,11 @@
         <a target='_top' href='index_en.html'>HTML basics</a>
         <a target='_top' href='tags-and-attributes_en.html'>Tags and Attributes</a>
         <a target='_top' href='html-page-structure_en.html'>HTML page structure</a>
+        <a target='_top' href='block-level-elements_en.html'>Block-level elements</a>
+        <a target='_top' href='inline-elements_en.html'>Inline elements</a>
+        <a target='_top' href='layout-elements_en.html'>Layout elements</a>
+        <a target='_top' href='html-attributes-id-and-class_en.html'>HTML attributes id and class</a>
+        <a target='_top' href='connecting-css-to-html_en.html'>Connecting CSS to HTML</a>
         <a target='_top' href='comments_en.html'>Comments</a>
         <a target='_top' href='code-style_en.html'>Code style</a>
         <a target='_top' href='links_en.html'>Links</a>
@@ -157,11 +163,6 @@
         <a target='_top' href='i-tag_en.html'>The &lt;i&gt; tag</a>
         <a target='_top' href='samp-kbd-code-tags_en.html'>&lt;samp&gt;, &lt;kbd&gt;, &lt;code&gt;</a>
         <a target='_top' href='abbr-address-bdo-tags_en.html'>&lt;abbr&gt;, &lt;address&gt;, &lt;bdo&gt;</a>
-        <a target='_top' href='block-level-elements_en.html'>Block-level elements</a>
-        <a target='_top' href='inline-elements_en.html'>Inline elements</a>
-        <a target='_top' href='layout-elements_en.html'>Layout elements</a>
-        <a target='_top' href='html-attributes-id-and-class_en.html'>HTML attributes id and class</a>
-        <a target='_top' href='connecting-css-to-html_en.html'>Connecting CSS to HTML</a>
         <a target='_top' href='dom_en.html'>DOM</a>
         <a target='_top' href='images_en.html'>Images</a>
         <a target='_top' href='audio_en.html'>Audio</a>
@@ -413,7 +414,7 @@
 <!--/Right sidebar-->
 </div><!--FOOTER-->
 <div id='footer' class='footer w3-container w3-white'>
-  <hr>
+    <hr>
   <div class='w3-row-padding w3-center w3-small' style='margin:0 -16px'>
     <div class='w3-col l3 m3 s12'>
       <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' onclick='displayError();return false' style='white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px'>CONTACTS</a>
@@ -428,7 +429,6 @@
       <a class='w3-button w3-light-grey w3-block' href='../about/index_en.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ABOUT</a>
     </div>
   </div>
-  <hr>
   <div class='w3-padding w3-margin-bottom' id='err_form' style='display:none;position:relative;background-color: #DDE7EA;'>
     <span onclick="this.parentElement.style.display='none'" class='w3-button w3-display-topright w3-large'>&times;</span>
       <h2>Contacts</h2>
@@ -444,7 +444,10 @@
   <hr>
   <div class='w3-center w3-small w3-opacity'>This site is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using HyperskillUA, you agree to have read and accepted our <a href='https://w3schoolsua.github.io/about/about_copyright_en.html'>terms of use</a>, <a href='https://w3schoolsua.github.io/about/about_privacy_en.html'>cookie and privacy policy</a>.<br>
 You can also use the Ukrainian version of the site <a href='../index.html'><strong>HyperSkill українською</strong></a>.<br>
-    <a href='https://w3schoolsua.github.io/w3css/index_en.html'>Powered by W3.CSS</a>.<br><br>
+    <a href='https://w3schoolsua.github.io/w3css/index_en.html'>Powered by W3.CSS</a>.<br>
+    You can use other reputable web development and programming learning resources:<br>
+    <a href='https://www.w3schools.com/' target='_blank'>W3Schools</a>&nbsp;|&nbsp;<a href='https://developer.mozilla.org/en-US/?retiredLocale=uk' target='_blank'>MDNWebDocs</a>&nbsp;|&nbsp;<a href='https://learn.microsoft.com/uk-ua/' target='_blank'>MicrosoftLearn</a>&nbsp;|&nbsp;<a href='https://hyperskill.org/' target='_blank'>HyperSkill</a>&nbsp;|&nbsp;<a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>&nbsp;|&nbsp;<a href='https://www.freecodecamp.org/' target='_blank'>FreeCodeCamp</a>&nbsp;|&nbsp;<a href='https://www.coursera.org/' target='_blank'>Coursera</a>&nbsp;|&nbsp;<a href='https://www.udacity.com/' target='_blank'>Udacity</a>&nbsp;|&nbsp;<a href='https://code.org/' target='_blank'>Code.org</a>&nbsp;|&nbsp;<a href='https://www.sololearn.com/' target='_blank'>SoloLearn</a>&nbsp;|&nbsp;<a href='https://developer.ibm.com/' target='_blank'>IBMDeveloper</a>&nbsp;|&nbsp;<a href='https://www.codewars.com/' target='_blank'>CodeWars</a>
+    <br><br>
     <a href='../index_en.html'><img style='width:110px;height:28px;border:0' src='../images/w3schoolscom_gray.gif' alt='W3Schools'></a>
   </div>
   <br><br>
