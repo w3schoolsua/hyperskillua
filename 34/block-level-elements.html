@@ -383,8 +383,8 @@
     <hr>
     <h2>Практичні завдання та відповіді</h2>
     <p>Подаються завдання та варіанти відповідей. Правильний варіант виділено <span style="color:blue">синім</span> кольором.</p>
-    <h3>№1. A missing block-level element</h3>
-    <p><b>Запитання:</b> Analyze the code below and enter the name of the missing tag without brackets:</p>
+    <h3>№1. Відсутній елемент рівня блоку</h3>
+    <p><b>Запитання:</b> Проаналізуйте наведений нижче код і введіть назву відсутнього тегу без дужок:</p>
     <div class='w3-example'>
         <div class='w3-code notranslate htmlHigh'>
             &lt;!DOCTYPE html&gt;<br>
@@ -395,28 +395,28 @@
             &nbsp;&nbsp;&lt;/head&gt;<br>
             &nbsp;&nbsp;&lt;body&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;News&lt;/h1&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;❓&gt;Brain-Computer Interface from Elon Musk&lt;/h2&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Neuralink Corporation is an American neurotechnology company founded by Elon Musk and others...&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;❓&gt;Інтерфейс «мозок-комп&#8217;ютер» від Ілона Маска&lt;/h2&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Neuralink Corporation — американська нейротехнологічна компанія, заснована Ілоном Маском та іншими...&lt;/p&gt;<br>
             &nbsp;&nbsp;&lt;/body&gt;<br>
             &lt;/html&gt;
         </div>
     </div>
-    <p>Enter a short text: <span style="color:blue">h2 &#x2714;</span></p>
+    <p>Введіть короткий текст: <span style="color:blue">h2 &#x2714;</span></p>
     <hr>
-    <h3>№2. A universal container</h3>
-    <p><b>Запитання:</b> Write a web page like the one in the screenshot. Place all text paragraphs in a universal container for grouping the content:</p>
-    <img src="../images/block-level-elements-test1.png" alt="Basic HTML Page" class="w3-image w3-card-4 img-center">
-    <p>The text of the web page can be copied from here:</p>
+    <h3>№2. Універсальний контейнер</h3>
+    <p><b>Запитання:</b> напишіть вебсторінку, як на знімку екрана. Помістіть усі параграфи тексту в універсальний контейнер для групування вмісту:</p>
+    <img src="../images/block-level-elements-test1.png" alt="Блокові елементи на HTML сторінці" class="w3-image w3-card-4 img-center">
+    <p>Текст вебсторінки можна скопіювати звідси:</p>
     <ul>
         <li>A panagram</li>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
         <li>In ultrices rutrum porttitor.</li>
         <li>Nullam auctor mi nec fringilla pulvinar.</li>
     </ul>
-    <p><b>Tip:</b> Check that the characters you entered are correct and make sure you have not put any extra spaces.</p>
-    <p><b>Hint:</b> For universal container for grouping the content use <code class="w3-codespan">&lt;div&gt;</code> around <code class="w3-codespan">&lt;body&gt;</code> tag content.</p>
+    <p><b>Порада:</b> Переконайтеся, що введені символи правильні, і переконайтеся, що ви не додали зайвих пробілів.</p>
+    <p><b>Підказка:</b> для універсального контейнера для групування вмісту використовуйте <code class="w3-codespan">&lt;div&gt;</code> навколо тегу <code class="w3-codespan">&lt;body&gt;</code>.</p>
     <div class='w3-example'>
-        <h3>Correct code:</h3>
+        <h3>Правильний код:</h3>
         <div class='w3-code notranslate htmlHigh'>
             &lt;!DOCTYPE html&gt;<br>
             &lt;html&gt;<br>
@@ -435,30 +435,30 @@
         </div>
     </div>
     <hr>
-    <h3>№3. Block elements</h3>
-    <p><b>Запитання:</b> Which of the following is not a block-level element from the list?</p>
-    <p>Select one option from the list:</p>
+    <h3>№3. Блокові елементи</h3>
+    <p><b>Запитання:</b> Що з наведеного не є блоковим елементом зі списку?</p>
+    <p>Виберіть один варіант зі списку:</p>
     <ul>
         <li>div</li>
         <li><span style="color:blue">button &#x2714;</span></li>
         <li>pre</li>
         <li>p</li>
     </ul>
-    <p><b>Explanation.</b> The answer is button. <code class="w3-codespan">div</code>, <code class="w3-codespan">pre</code>, and <code class="w3-codespan">p</code> are all block-level elements in HTML, which means they take up the full width of their parent container and create a new line after the element. However, button is an inline element by default, which means it does not create a new line and only takes up as much width as necessary to display its content. However, it is possible to change the display property of button to make it behave like a block-level element.</p>
+    <p><b>Пояснення.</b> Правильна відповідь є - button (кнопка). <code class="w3-codespan">div</code>, <code class="w3-codespan">pre</code> та <code class="w3-codespan">p</code> — це всі блокові елементи в HTML, що означає, що вони займають повну ширину свого батьківського контейнера та створюють новий рядок після елемента. Однак за замовчуванням button (кнопка) є вбудованим елементом, що означає, що вона не створює новий рядок і займає стільки ширини, скільки необхідно для відображення її вмісту. Однак можна змінити властивість відображення кнопки, щоб вона поводилася як блоковий елемент.</p>
     <hr>
-    <h3>№4. Tags</h3>
-    <p><b>Запитання:</b> Match the names of tags with their functionality:</p>
-    <p>Match the items from left and right columns:</p>
+    <h3>№4. Теги</h3>
+    <p><b>Запитання:</b> Установіть відповідність між назвами тегів та їх функціями:</p>
+    <p>Поєднайте елементи з лівого та правого стовпців:</p>
     <ul>
-        <li><span style="color:blue">&lt;p&gt; - defines a paragraph of text &#x2714;</span></li>
-        <li><span style="color:blue">&lt;h1&gt; - is a heading tag &#x2714;</span></li>
-        <li><span style="color:blue">&lt;div&gt; - is a universal content divider &#x2714;</span></li>
-        <li><span style="color:blue">&lt;paragraph&gt; - this tag does not exist in HTML &#x2714;</span></li>
+        <li><span style="color:blue">&lt;p&gt; - визначає параграф тексту &#x2714;</span></li>
+        <li><span style="color:blue">&lt;h1&gt; - є тегом заголовка &#x2714;</span></li>
+        <li><span style="color:blue">&lt;div&gt; - є універсальним роздільником вмісту &#x2714;</span></li>
+        <li><span style="color:blue">&lt;paragraph&gt; - цей тег не існує в HTML &#x2714;</span></li>
     </ul>
     <hr>
-    <h3>№5. Block Party: Spot the Block-levels!</h3>
-    <p><b>Запитання:</b> Considering the HTML page structure, which groups of HTML elements are block-level elements and which are NOT block-level elements?</p>
-    <p>Select one option from the list:</p>
+    <h3>№5. Block Party: знайдіть рівні блоків!</h3>
+    <p><b>Запитання:</b> З огляду на структуру сторінки HTML, які групи елементів HTML є елементами рівня блоку, а які НЕ є елементами рівня блоку?</p>
+    <p>Виберіть один варіант зі списку:</p>
     <ul>
         <li>Block-level: &lt;div&gt;, &lt;h1&gt;. Not block-level: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;</li>
         <li>Block-level: &lt;a&gt;, &lt;span&gt;. Not block-level: &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</li>
@@ -467,20 +467,20 @@
         <li><span style="color:blue">Block-level: &lt;div&gt;, &lt;h1&gt;, &lt;p&gt;. Not block-level: &lt;span&gt;, &lt;a&gt; &#x2714;</span></li>
     </ul>
     <hr>
-    <h3>№6. Features</h3>
-    <p><b>Запитання:</b> What are the features of block-level elements?</p>
-    <p>Select one or more options from the list:</p>
+    <h3>№6. Особливості</h3>
+    <p><b>Запитання:</b> Які особливості блокових елементів?</p>
+    <p>Виберіть один або кілька варіантів зі списку:</p>
     <ul>
-        <li><span style="color:blue">Before and after such elements, the browser adds a line break &#x2714;</span></li>
-        <li><span style="color:blue">You can put both inline and other block-level elements in them &#x2714;</span></li>
-        <li>You can put only inline elements in them</li>
-        <li>You can put only other block-level elements in them</li>
+        <li><span style="color:blue">Перед і після таких елементів браузер додає розрив рядка &#x2714;</span></li>
+        <li><span style="color:blue">У них можна розмістити як вбудовані, так і інші елементи рівня блоку &#x2714;</span></li>
+        <li>У них можна розміщувати лише вбудовані елементи</li>
+        <li>Ви можете розмістити в них лише інші блокові елементи</li>
     </ul>
-    <p><b>Explanation.</b> So the correct options are: Before and after such elements, the browser adds a line break; You can put both inline and other block-level elements in them. Block-level elements take up the full width of their parent container and create a new line after the element. They can contain both inline and other block-level elements. Examples of block-level elements include div, p, h1-h6, ul, ol, li, table, form, and many others.</p>
+    <p><b>Пояснення.</b> Отже, правильні варіанти: перед і після таких елементів браузер додає розрив рядка; У них можна розмістити як вбудовані, так і інші елементи рівня блоку. Елементи рівня блоку займають всю ширину свого батьківського контейнера та створюють новий рядок після елемента. Вони можуть містити як вбудовані, так і інші елементи рівня блоку. Приклади блокових елементів включають div, p, h1-h6, ul, ol, li, table, form та багато інших.</p>
     <hr>
-    <h3>№7. Block-level elements</h3>
-    <p><b>Запитання:</b> Select block-level elements:</p>
-    <p>Select one or more options from the list:</p>
+    <h3>№7. Елементи рівня блоку</h3>
+    <p><b>Запитання:</b> Виберіть елементи рівня блоку:</p>
+    <p>Виберіть один або кілька варіантів зі списку:</p>
     <ul>
         <li><span style="color:blue">&lt;p&gt; &#x2714;</span></li>
         <li><span style="color:blue">&lt;div&gt; &#x2714;</span></li>
@@ -488,40 +488,40 @@
         <li>&lt;a&gt;</li>
     </ul>
     <hr>
-    <h3>№8. A story about yourself</h3>
-    <p><b>Запитання:</b> Let's get acquainted! Tell us a little about yourself: create a markup HTML file, write whatever you like, and put your text in the &lt;p&gt; tag. Don't forget to make a title for your story and put it in &lt;h1&gt;. Find a tag to wrap <b>a long quote</b> in and add your favorite quote to the story.</p>
-    <p>If you do not want to write about yourself, you can use random text.</p>
-    <p>Write HTML and CSS code:</p>
+    <h3>№8. Розповідь про себе</h3>
+    <p><b>Запитання:</b> Давайте знайомитись! Розкажіть нам трохи про себе: створіть HTML-файл розмітки, напишіть, що завгодно, і вставте текст у тег &lt;p&gt;. Не забудьте створити назву для вашої історії та помістити її в &lt;h1&gt;. Знайдіть тег, щоб обернути <b>довгу цитату</b> та додати свою улюблену цитату до історії.</p>
+    <p>Якщо ви не хочете писати про себе, ви можете використовувати довільний текст.</p>
+    <p>Напишіть код HTML і CSS:</p>
     <div class='w3-example'>
-        <h3>Correct code:</h3>
+        <h3>Правильний код:</h3>
         <div class='w3-code notranslate htmlHigh'>
             &lt;!DOCTYPE html&gt;<br>
             &lt;html lang='en'&gt;<br>
             &nbsp;&nbsp;&lt;head&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset='utf-8'&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;The Best Quotes&lt;/title&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Найкращі цитати&lt;/title&gt;<br>
             &nbsp;&nbsp;&lt;/head&gt;<br>
             &nbsp;&nbsp;&lt;body&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;The best quotes of the site&lt;/h1&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quote from former world boxing champion and Kyiv mayor Vitaliy Klitschko:&lt;/p&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;And today, not everyone can watch tomorrow. Rather, not only everyone can watch, but few can do it...&lt;/blockquote&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quote from the admin:&lt;/p&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;God forbid that I never have much money! Because if I have a lot of money, I will do such things, God forbid!&lt;/blockquote&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Найкращі цитати на сайті&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Цитата колишнього чемпіона світу з боксу та мера Києва Віталія Кличка:&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;А сьогодні в завтрашній день не всі можуть дивитися. Точніше дивитися можуть не тільки лише всі, мало хто може це зробити....&lt;/blockquote&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Цитата від адміна:&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;Дай Боже, щоб у мене ніколи не було багато грошей! Бо якщо у мене буде багато грошей, я таких справ нароблю, що не дай Боже!..&lt;/blockquote&gt;<br>
             &nbsp;&nbsp;&lt;/body&gt;<br>
             &lt;/html&gt;
         </div>
     </div>
     <hr>
-    <h3>№9. Navigation bar</h3>
-    <p><b>Запитання:</b> Suppose you decide to create a site, and now you are facing the task of making a navigation menu for it. Find a tag in which you can wrap the elements needed to navigate the site.</p>
-    <p>Enter a short text: <span style="color:blue">nav &#x2714;</span></p>
+    <h3>№9. Панель навігації</h3>
+    <p><b>Запитання:</b> Припустимо, ви вирішили створити сайт, і тепер перед вами стоїть завдання зробити для нього меню навігації. Знайдіть тег, у який можна помістити елементи, необхідні для навігації сайтом.</p>
+    <p>Введіть короткий текст: <span style="color:blue">nav &#x2714;</span></p>
     <hr>
     <h3>№10. Hello, World!</h3>
-    <p><b>Запитання:</b> In the body of the document, write the text Hello, world! and enclose it in the top level heading tag.</p>
-    <p><b>Tip:</b> Be careful: there should be no extra characters in your code, be it multiple spaces or other misprints.</p>
-    <p>Write HTML and CSS code:</p>
+    <p><b>Запитання:</b> У тілі документа напишіть текст Hello, world! і вкладіть його в тег заголовка верхнього рівня.</p>
+    <p><b>Порада.</b> Будьте обережні: у вашому коді не повинно бути зайвих символів, будь то пробіли чи інші помилки.</p>
+    <p>Напишіть код HTML і CSS:</p>
     <div class='w3-example'>
-        <h3>Correct code:</h3>
+        <h3>Правильний код:</h3>
         <div class='w3-code notranslate htmlHigh'>
             &lt;!DOCTYPE html&gt;<br>
             &lt;html&gt;<br>
