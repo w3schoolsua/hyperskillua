@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<link rel='icon' href='../favicon.ico' type='image/x-icon'>
+<link rel='stylesheet' href='../styles/w3.css'>
+<link rel='stylesheet' href='../styles/external.css'>
+<meta property="og:title" content="Hyperskill lessons with answers to test tasks">
+<meta property='og:description' content='Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Java, Kotlin and more'>
+<meta property='og:image' content='../images/w3schools_logo_436_2.png'>
+<meta property='og:image:type' content='image/png'>
+<meta property='og:image:width' content='436'>
+<meta property='og:image:height' content='228'><link rel='alternate' hreflang='x-default' href='inline-elements_en.html' />
+<link rel='alternate' hreflang='uk' href='inline-elements.html' />
+<title>Inline elements. Introduction to HTML. Lessons for beginners. Tutorial from Hyperskill</title>
+<meta name='description' content='Inline elements. Theory. The &lt;a&gt; tag. The &lt;span&gt; tag. The &lt;button&gt; tag. The &lt;b&gt; tag. The &lt;sub&gt; tag. The &lt;sup&gt; tag. Inline elements features. Conclusion. Practical tasks and answers. Free online lessons with answers to tasks for beginners, high school students from Hyperskill in English'>
+<div class='w3-container top'>
+    <a class='w3schools-logo notranslate' href='../index_en.html'>HyperSkillEN<span class='dotcom w3-hide-small'>.TheBest</span></a>
+    <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">SIMPLE THE BEST SITE FOR DEVELOPERS</div>
+</div>
+<div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
+    <!--W3SchoolsUA-Google-Search-->
+    <script async src='https://cse.google.com/cse.js?cx=751c3d18bb8a64f00'></script><div class='gcse-search'></div>
+    <!--/W3SchoolsUA-Google-Search-->
+</div>
+<!--Top menu-->
+<div class='w3-card-2 topnav notranslate' id='topnav'>
+    <div style='overflow:auto;'>
+        <div class='w3-bar w3-left' style='width:100%;overflow:hidden;height:44px'>
+            <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Меню'></a>
+            <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../index_en.html' title='main'></a>
+            <a class='w3-bar-item w3-button' href='../34/index_en.html' title='HTML Tutorial'>HTML/CSS</a>
+            <a class='w3-bar-item w3-button' href='../32/index_en.html' title='JavaScript Tutorial'>JAVASCRIPT</a>
+            <a class='w3-bar-item w3-button' href='../31/index_en.html' title='SQL Tutorial'>SQL</a>
+            <a class='w3-bar-item w3-button' href='../8/index_en.html' title='Java Tutorial'>JAVA</a>
+            <a class='w3-bar-item w3-button' href='../6/index_en.html' title='Python Tutorial'>PYTHON</a>
+            <a class='w3-bar-item w3-button' href='../25/index_en.html' title='How To'>Golang</a>
+            <a class='w3-bar-item w3-button' href='../28/index_en.html' title='W3.CSS Tutorial'>Data Science</a>
+            <a class='w3-bar-item w3-button' href='../11/index_en.html' title='jQuery Tutorial'>Django</a>
+            <a class='w3-bar-item w3-button w3-right' target='_blank' href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' title='Download books for free from Google drive'>Books</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='open_search(this)' title='Search'>&#128269;</a>
+            <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='changecodetheme(this)' title='Dark theme'>&#9681;</a>
+            <a class='w3-bar-item w3-button' id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='More tutorials'>More <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+        </div>
+        <div id='nav_tutorials' class='w3-bar-block w3-card-2' style='display:none;'>
+            <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style='position:absolute;right:0;font-weight:bold;'>&times;</span>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'>
+                    <h3>Tutorials:</h3>
+                    <a class='w3-bar-item w3-button' href='../8/index_en.html'>Introduction to Java</a>
+                    <a class='w3-bar-item w3-button' href='../2/index_en.html'>Python Core</a>
+                    <a class='w3-bar-item w3-button' href='../18/index_en.html'>Kotlin Core</a>
+                    <a class='w3-bar-item w3-button' href='../6/index_en.html'>Introduction to Python</a>
+                    <a class='w3-bar-item w3-button' href='../5/index_en.html'>Frontend Core</a>
+                    <a class='w3-bar-item w3-button' href='../3/index_en.html'>Kotlin Developer</a>
+                    <a class='w3-bar-item w3-button' href='../12/index_en.html'>Java Backend Developer</a>
+                    <a class='w3-bar-item w3-button' href='../17/index_en.html'>Java Developer</a>
+                    <a class='w3-bar-item w3-button' href='../32/index_en.html'>Introduction to JavaScript</a>
+                    <a class='w3-bar-item w3-button' href='../25/index_en.html'>Introduction to Go</a>
+                    <a class='w3-bar-item w3-button' href='../15/index_en.html'>Java Core</a>
+                    <a class='w3-bar-item w3-button' href='../28/index_en.html'>Introduction to Data Science</a>
+                    <a class='w3-bar-item w3-button' href='../31/index_en.html'>Introduction to SQL</a>
+                    <div class='w3-hide-large w3-hide-small'>
+                        <a class='w3-bar-item w3-button' href='../9/index_en.html'>Java Desktop Application Developer</a>
+                        <a class='w3-bar-item w3-button' href='../26/index_en.html'>Introduction to Command Line and Unix Shell</a>
+                        <a class='w3-bar-item w3-button' href='../30/index_en.html'>SQL with Python</a>
+                        <a class='w3-bar-item w3-button' href='../38/index_en.html'>Spring Security for Java Backend Developers</a>
+                        <a class='w3-bar-item w3-button' href='../16/index_en.html'>Android Development with Kotlin</a>
+                        <a class='w3-bar-item w3-button' href='../11/index_en.html'>Introduction to Django</a>
+                        <a class='w3-bar-item w3-button' href='../42/index_en.html'>Machine Learning Algorithms from Scratch</a>
+                        <a class='w3-bar-item w3-button' href='../34/index_en.html'>Introduction to HTML and CSS</a>
+                        <a class='w3-bar-item w3-button' href='../29/index_en.html'>Flask Developer</a>
+                        <a class='w3-bar-item w3-button' href='../10/index_en.html'>Introduction to Natural Language Processing</a>
+                        <a class='w3-bar-item w3-button' href='../41/index_en.html'>Introduction to Computer Algorithms and Data Structures</a>
+                        <a class='w3-bar-item w3-button' href='../27/index_en.html'>Introduction to Linear Algebra</a>
+                        <a class='w3-bar-item w3-button' href='../48/index_en.html'>Introduction to Git</a>
+                    </div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../9/index_en.html'>Java Desktop Application Developer</a>
+                    <a class='w3-bar-item w3-button' href='../26/index_en.html'>Introduction to Command Line and Unix Shell</a>
+                    <a class='w3-bar-item w3-button' href='../30/index_en.html'>SQL with Python</a>
+                    <a class='w3-bar-item w3-button' href='../38/index_en.html'>Spring Security for Java Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../16/index_en.html'>Android Development with Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../11/index_en.html'>Introduction to Django</a>
+                    <a class='w3-bar-item w3-button' href='../42/index_en.html'>Machine Learning Algorithms from Scratch</a>
+                    <a class='w3-bar-item w3-button' href='../34/index_en.html'>Introduction to HTML and CSS</a>
+                    <a class='w3-bar-item w3-button' href='../29/index_en.html'>Flask Developer</a>
+                    <a class='w3-bar-item w3-button' href='../10/index_en.html'>Introduction to Natural Language Processing</a>
+                    <a class='w3-bar-item w3-button' href='../41/index_en.html'>Introduction to Computer Algorithms and Data Structures</a>
+                    <a class='w3-bar-item w3-button' href='../27/index_en.html'>Introduction to Linear Algebra</a>
+                    <a class='w3-bar-item w3-button' href='../48/index_en.html'>Introduction to Git</a>
+                    <div class='w3-hide-small'><br class='w3-hide-medium w3_hide-small'><br class='w3-hide-medium w3_hide-small'></div>
+                </div>
+                <div class='w3-col l3 m6'>
+                    <a class='w3-bar-item w3-button' href='../33/index_en.html'>Math for Machine Learning</a>
+                    <a class='w3-bar-item w3-button' href='../35/index_en.html'>Advanced Java</a>
+                    <a class='w3-bar-item w3-button' href='../40/index_en.html'>SQL for Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../44/index_en.html'>Pandas for Data Analysis</a>
+                    <a class='w3-bar-item w3-button' href='../37/index_en.html'>Kotlin Backend Developer with Spring Boot</a>
+                    <a class='w3-bar-item w3-button' href='../50/index_en.html'>Essential Skills for Backend Developers</a>
+                    <a class='w3-bar-item w3-button' href='../23/index_en.html'>Introduction to Scala</a>
+                    <a class='w3-bar-item w3-button' href='../69/index_en.html'>Introduction to Kotlin</a>
+                    <a class='w3-bar-item w3-button' href='../70/index_en.html'>Introduction to Spring Boot with Java</a>
+                    <a class='w3-bar-item w3-button' href='../57/index_en.html'>Introduction to Math</a>
+                    <a class='w3-bar-item w3-button' href='../49/index_en.html'>Introduction to Bioinformatics</a>
+                    <a class='w3-bar-item w3-button' href='../58/index_en.html'>Python OOP</a>
+                    <a class='w3-bar-item w3-button' href='../55/index_en.html'>Introduction to Node.js</a>
+                    <a class='w3-bar-item w3-button' href='../54/index_en.html'>Practicing Algorithms with Python</a>
+                </div>
+                <div class='w3-col l3 m6 w3-hide-medium'>
+                    <a class='w3-bar-item w3-button' href='../59/index_en.html'>Python for Science</a>
+                    <a class='w3-bar-item w3-button' href='../47/index_en.html'>Algorithmic Thinking for Developers</a>
+                    <a class='w3-bar-item w3-button' href='../45/index_en.html'>Introduction to Ktor</a>
+                    <a class='w3-bar-item w3-button' href='../65/index_en.html'>JavaScript Core</a>
+                    <a class='w3-bar-item w3-button' href='../60/index_en.html'>Introduction to MongoDB</a>
+                    <a class='w3-bar-item w3-button' href='../62/index_en.html'>Data Analysis in Bioinformatics</a>
+                    <a class='w3-bar-item w3-button' href='../79/index_en.html'>Chatbots and Dialogue Systems</a>
+                    <a class='w3-bar-item w3-button' href='../61/index_en.html'>SQL for Data Analysis</a>
+                    <a class='w3-bar-item w3-button' href='../85/index_en.html'>Introduction to Calculus</a>
+                    <a class='w3-bar-item w3-button' href='../71/index_en.html'>Bioinformatics Core</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_references' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6'></div>
+                <div class='w3-col l3 m6 w3-hide-medium w3-hide-small'></div>
+            </div>
+            <br>
+        </div>
+        <div id='nav_exercises' class='w3-bar-block w3-card-2'>
+            <div class='w3-row-padding' style='padding:24px 48px'>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m6'></div>
+                <div class='w3-col l4 m12'></div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<!--/Top menu--><!--Left menu sidebar-->
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+    <nav>
+        <h2 class='left'><span class='left_h2'><b>Introduction to HTML</b></h2>
+        <a target='_top' href='index_en.html'>HTML basics</a>
+        <a target='_top' href='tags-and-attributes_en.html'>Tags and Attributes</a>
+        <a target='_top' href='html-page-structure_en.html'>HTML page structure</a>
+        <a target='_top' href='block-level-elements_en.html'>Block-level elements</a>
+        <a target='_top' href='inline-elements_en.html'>Inline elements</a>
+        <a target='_top' href='comments_en.html'>Comments</a>
+        <a target='_top' href='layout-elements_en.html'>Layout elements</a>
+        <a target='_top' href='html-attributes-id-and-class_en.html'>HTML attributes id and class</a>
+        <a target='_top' href='connecting-css-to-html_en.html'>Connecting CSS to HTML</a>
+        <a target='_top' href='code-style_en.html'>Code style</a>
+        <a target='_top' href='links_en.html'>Links</a>
+        <a target='_top' href='html-quotations_en.html'>HTML Quotations</a>
+        <a target='_top' href='headings-paragraphs-comments_en.html'>Headings, Paragraphs, Comments</a>
+        <a target='_top' href='i-tag_en.html'>The &lt;i&gt; tag</a>
+        <a target='_top' href='samp-kbd-code-tags_en.html'>&lt;samp&gt;, &lt;kbd&gt;, &lt;code&gt;</a>
+        <a target='_top' href='abbr-address-bdo-tags_en.html'>&lt;abbr&gt;, &lt;address&gt;, &lt;bdo&gt;</a>
+        <a target='_top' href='dom_en.html'>DOM</a>
+        <a target='_top' href='images_en.html'>Images</a>
+        <a target='_top' href='audio_en.html'>Audio</a>
+        <a target='_top' href='video_en.html'>Video</a>
+        <a target='_top' href='tag-embed_en.html'>Tag Embed</a>
+        <a target='_top' href='intro-to-html-forms_en.html'>Intro to HTML forms</a>
+        <a target='_top' href='buttons_en.html'>Buttons</a>
+        <a target='_top' href='iframe-and-frameset_en.html'>Iframe and frameset</a>
+        <a target='_top' href='the-lang-attribute_en.html'>The lang attribute</a>
+        <a target='_top' href='intro-to-tables_en.html'>Tables</a>
+        <div class='tut_overview'>
+            <a target='_top' href='intro-to-tables_en.html'>Intro to Tables</a>
+            <a target='_top' href='rows-cells-captions_en.html'>Rows, cells, captions</a>
+            <a target='_top' href='merging-cells_en.html'>Tables: Merging cells</a>
+            <a target='_top' href='sizing-tables_en.html'>Sizing tables</a>
+            <a target='_top' href='table-alignment_en.html'>Table Alignment</a>
+            <a target='_top' href='table-sizing-and-alignment_en.html'>Table sizing and alignment</a>
+            <a target='_top' href='visibility_en.html'>Visibility</a>
+            <a target='_top' href='responsive-tables_en.html'>Responsive Tables</a>
+        </div>
+        <a target='_top' href='intro-to-lists_en.html'>Lists</a>
+        <div class='tut_overview'>
+            <a target='_top' href='intro-to-lists_en.html'>Intro to Lists</a>
+            <a target='_top' href='ordered-list-and-types_en.html'>Ordered list and types</a>
+            <a target='_top' href='unordered-list-and-types_en.html'>Unordered list and types</a>
+            <a target='_top' href='pseudo-classes_en.html'>Pseudo-classes</a>
+            <a target='_top' href='list-style_en.html'>List style</a>
+        </div>
+        <a target='_top' href='images-and-text_en.html'>Images and Text</a>
+        <a target='_top' href='html-progress-and-meter_en.html'>HTML progress and meter</a>
+        <a target='_top' href='connecting-javascript-to-html_en.html'>Connecting JavaScript to HTML</a>
+        <a target='_top' href='the-dialog-tag_en.html'>The Dialog tag</a>
+        <a target='_top' href='layout-grids_en.html'>Layout grids</a>
+        <a target='_top' href='the-html-seo-optimization_en.html'>The HTML SEO optimization</a>
+        <br>
+        <h2 class='left'><span class='left_h2'><b>Introduction to CSS</b></span></h2>
+        <a target='_top' href='what-is-css_en.html'>What is CSS</a>
+        <a target='_top' href='basic-syntax_en.html'>Basic syntax</a>
+        <a target='_top' href='css-selectors_en.html'>CSS Selectors</a>
+        <a target='_top' href='relative-units_en.html'>Relative units</a>
+        <a target='_top' href='absolute-units_en.html'>Absolute units</a>
+        <a target='_top' href='position_en.html'>Position</a>
+        <a target='_top' href='float_en.html'>Float</a>
+        <a target='_top' href='clear_en.html'>Clear</a>
+        <a target='_top' href='positioning-properties_en.html'>Positioning properties</a>
+        <a target='_top' href='z-index_en.html'>z-index</a>
+        <a target='_top' href='margin-and-padding_en.html'>Margin and Padding</a>
+        <a target='_top' href='width-and-height_en.html'>Width and Height</a>
+        <a target='_top' href='border_en.html'>Border</a>
+        <a target='_top' href='overflow_en.html'>Overflow</a>
+        <a target='_top' href='colors-in-CSS_en.html'>Colors in CSS</a>
+        <a target='_top' href='background_en.html'>Background</a>
+        <a target='_top' href='using-fonts_en.html'>Using Fonts</a>
+        <a target='_top' href='line-height_en.html'>Line-height</a>
+        <a target='_top' href='text-alignment_en.html'>Text Alignment</a>
+        <a target='_top' href='google-fonts_en.html'>Google Fonts</a>
+        <a target='_top' href='introduction-to-flexbox_en.html'>Introduction to Flexbox</a>
+        <a target='_top' href='orientation-and-display-order_en.html'>Orientation and Display order</a>
+        <a target='_top' href='flexibility-growth-and-contraction-ratio_en.html'>Flexibility, growth and contraction ratio</a>
+        <a target='_top' href='axis-alignment_en.html'>Axis alignment</a>
+        <a target='_top' href='comments_en.html'>Comments</a>
+        <a target='_top' href='code-style_en.html'>Code style</a>
+        <a target='_top' href='media-queries_en.html'>Media queries</a>
+        <a target='_top' href='visibility_en.html'>Visibility</a>
+        <a target='_top' href='transform_en.html'>Transform</a>
+        <a target='_top' href='backface-visibility_en.html'>Backface-visibility</a>
+        <a target='_top' href='transitions_en.html'>Transitions</a>
+        <a target='_top' href='introduction-to-animation_en.html'>Introduction to Animation</a>
+        <a target='_top' href='pseudo-classes_en.html'>Pseudo-classes</a>
+        <a target='_top' href='attribute-selectors-and-universal-selector_en.html'>Attribute selectors and Universal selector</a>
+        <a target='_top' href='combinators_en.html'>Combinators</a>
+        <a target='_top' href='pseudo-elements_en.html'>Pseudo-elements</a>
+        <a target='_top' href='contextual-selectors_en.html'>Contextual selectors</a>
+        <a target='_top' href='specificity_en.html'>Specificity</a>
+      <br><br>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--/Left menu sidebar--><!--CONTENT-->
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+    <div class='w3-row w3-white'>
+        <div class='w3-col l10 m12' id='main'>
+          <div class="adver_adup">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- adup_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="5050829044" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>            <a href='index_en.html'><img src='../svg/HTML5_icon.svg' alt='HTML5 Lessons for beginners ' class='w3-left' title='HTML5 for beginners. Hyperskill in English' style='width: 120px; padding: 10px'></a><p class='w3-right'>
+    <a href='inline-elements.html' title='Go to Ukrainian language'>Ua</a>
+</p>
+<article>
+    <h1>Inline elements</h1>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='block-level-elements_en.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments_en.html'>Next &#10095;</a>
+    </div>
+    <hr>
+    <h3>Theory</h3>
+    <p>For many beginners, HTML structure can pose a challenge. Web page elements and their properties may be very confusing. To get things straight, it is enough to know the exact type of particular web page element.</p>
+    <p>In HTML 4.01 or earlier, there are two main types of page elements: <strong>block-level</strong> and <strong>inline</strong>. In HTML5, however, the elements are not just divided into block-level and inline types; they are also grouped by their meaning and purpose, representing <strong>content categories</strong>. This concept will be considered at length in the topics to come. For now, try to understand the ins and outs of inline elements.</p>
+    <p>Inline elements are elements of a document that constitute an integral part of a line. They emphasize a part of a text and give it a certain function or meaning. They usually contain one or more words.</p>
+    <p>Let's now take a look at six examples of inline elements.</p>
+    <hr>
+    <h2>§1. The &lt;a&gt; tag</h2>
+    <p>The <code class="w3-codespan">&lt;a&gt;</code> tag is probably one of the most important HTML elements. It's designed to create links. This tag is often used with the <code class="w3-codespan">href</code> attribute that indicates the path to a file/webpage. Consider a code snippet that takes us to the JetBrains website:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;a href="https://jetbrains.com"&gt;Click here to access the JetBrains website!&lt;/a&gt;
+        </div>
+    </div>
+    <p>This is what we get in the browser:</p>
+    <div class="w3-padding">
+        <a href="https://jetbrains.com" target="_blank">Click here to access the JetBrains website!</a>
+    </div>
+    <p>The text wrapped in the <code class="w3-codespan">&lt;a&gt;</code> tag is highlighted and underlined. When you click on it, the link takes you to the address specified in the <code class="w3-codespan">href</code> attribute.</p>
+    <hr>
+    <h2>§2. The &lt;span&gt; tag</h2>
+    <p>You can wrap a text or a part of it in the <code class="w3-codespan">&lt;span&gt;</code> tag:</p>
+     <div class='w3-example'>
+         <div class='w3-code notranslate htmlHigh'>
+             &lt;p&gt;For the first time &lt;span&gt;on our site&lt;/span&gt;?&lt;/p&gt;
+             &lt;span&gt;Sign up now!&lt;/span&gt;
+         </div>
+     </div>
+     <p>This tag does not affect the text representation:</p>
+    <div class="w3-padding">
+        <p>For the first time <span>on our site</span>?</p>
+        <span>Sign up now!</span>
+    </div>
+    <p>You may want to ask a question why do we need this tag? The <code class="w3-codespan">&lt;span&gt;</code> tag is used when you need to change the appearance of a text using CSS. CSS is the language that describes the web page's appearance. The Frontend Core track covers this language; in the meantime, let's continue with inline elements.</p>
+    <hr>
+    <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>§3. The &lt;button&gt; tag</h2>
+    <p>To create a clickable button, use the <code class="w3-codespan">&lt;button&gt;</code> tag. You can wrap something in this paired tag, and the text will be displayed inside the button:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;button&gt;Click&lt;/button&gt;
+        </div>
+    </div>
+    <p>It will appear like this:</p>
+    <div class="w3-padding"><button>Click</button></div>
+    <hr>
+    <h2>§4. The &lt;b&gt; tag</h2>
+    <p>This paired tag makes any text bold. The limits of the text are indicated by the <code class="w3-codespan">&lt;p&gt;</code> tag. In the example below, we have changed the outline of the person's name and surname:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;p&gt;I'm &lt;b&gt;John Doe&lt;/b&gt;, and what's your name?&lt;/p&gt;
+        </div>
+    </div>
+    <p>Now look at the result in the browser:</p>
+    <div class="w3-padding">
+        <p>I'm <b>John Doe</b>, and what's your name?</p>
+    </div>
+    <p>As you can see, this tag is very convenient and easy to use when you want to highlight an important part of the text.</p>
+    <hr>
+    <h2>§5. The &lt;sub&gt; tag</h2>
+    <p>Use this tag to create a subscript text. The text inside this paired tag is scaled down and reduced in size. Let's see how it works:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;p&gt;The formula of water is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+        </div>
+    </div>
+    <p>The result is the following:</p>
+    <div class="w3-padding"><p>The formula of water is H<sub>2</sub>O.</p></div>
+    <p>This tag comes in handy when you need to write a chemical formula.</p>
+    <hr>
+    <h2>§6. The &lt;sup&gt; tag</h2>
+    <p>This tag creates a superscript text. It is similar to the previous tag we've covered, except that the text enclosed in this tag is scaled up:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;p&gt;x&lt;sup&gt;2&lt;/sup&gt; = 4&lt;/p&gt;
+        </div>
+    </div>
+    <p>This is the result we see in a browser:</p>
+    <div class="w3-padding"><p>x<sup>2</sup> = 4</p></div>
+    <p>With <code class="w3-codespan">&lt;sup&gt;</code>, you can display mathematical equations and formulas on your web page.</p>
+    <p>This is by far not a complete list of inline elements, as there is definitely <a href="https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content#Elements" target="_blank">more to know</a>.</p>
+    <hr>
+    <h2>§7. Inline elements features</h2>
+    <p>The following features are characteristic of all inline elements:</p>
+    <ul>
+        <li>They can contain only data and other inline items. The only exception is the &lt;a&gt; tag that can also contain block-level elements.</li>
+        <li>A browser doesn&#8217;t make a line break before and after a tag. Take a look at the behavior of inline elements and compare it with that of block-level elements:</li>
+        <br>
+        <img src="../images/block-level-elements.jpg" alt="Block-level-elements" class="w3-image w3-card-4 img-center">
+        <br>
+        <li>Inline elements work only when they are enclosed in tags.</li>
+    </ul>
+    <hr>
+    <h2>§8. Conclusion</h2>
+    <p>In this topic, we have covered a small portion of inline elements. They are a great asset; you can do a lot of things with them, from creating a link to displaying a complex mathematical formula. It will take time to memorize them all, so carry on and stay focused on the practical side. Speaking of which, let's complete our code challenges!</p>
+    <hr>
+    <p>You can also view the <a href="https://hyperskill.org/learn/step/7518" target="_blank" rel="nofollow">Lesson on hyperskill.org</a>.</p>
+    <hr>
+    <h2>Practical tasks and answers</h2>
+    <p>Tasks and answer options are given. The correct option is highlighted in <span style="color:blue">blue</span> color.</p>
+    <h3>№1. Fix the bug</h3>
+    <p><b>Question:</b> You and your peer programmer are playing a game. In this game, your peer provides you with five HTML elements to choose from. You should choose only <b>one</b> such HTML element from the available elements and use the chosen element only one time. Modify the code by replacing the existing <code class="w3-codespan">&lt;p&gt;</code> tag with the chosen element such that the below-given quote is displayed on a single line <b>without any decoration</b> or <b>any effect on the line</b>.</p>
+    <p>Five available HTML elements: <code class="w3-codespan">&lt;button&gt;</code>, <code class="w3-codespan">&lt;span&gt;</code>, <code class="w3-codespan">&lt;b&gt;</code>, <code class="w3-codespan">&lt;sup&gt;</code>, <code class="w3-codespan">&lt;sub&gt;</code>.</p>
+    <p>Write HTML and CSS code:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" /&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Fix the bug&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Java is to JavaScript what car is to Carpet.&lt;/span&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№2. Adding a link</h3>
+    <p><b>Question:</b> Add a link to the document below, with the url <span class="h-codespan">https://google.com</span> and the text <span class="h-codespan">Google</span>:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Link&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://google.com"&gt;Google&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№3. Summary</h3>
+    <p><b>Question:</b> You should use the appropriate tags to complete the tasks that you are asked to do in the already written paragraphs below. Do not remove the paragraph tags, add additional tags to them.</p>
+    <p><b>Hint:</b> here is a link to the Wikipedia site - <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">https://en.wikipedia.org/wiki/Main_Page</a>.</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Summary&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="link"&gt;&lt;a href="https://en.wikipedia.org/wiki/Main_Page"&gt;Can this paragraph lead me to Wikipedia main page?&lt;/a&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="bold"&gt;&lt;b&gt;Oh, maybe you can make this paragraph bold?&lt;/b&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="subscript"&gt;Great! Can you make all the odd numbers become subscript? Here you go: &lt;sub&gt;11&lt;/sub&gt; 4 24 6 8 88.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Okay, maybe you can make next paragraph become a button?&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="button"&gt;&lt;button&gt;Click here!&lt;/button&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;em&gt;Well done!&lt;/em&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>The display result will be as follows:</p>
+    <div class="w3-padding w3-border">
+        <p id="link"><a href="https://en.wikipedia.org/wiki/Main_Page">Can this paragraph lead me to Wikipedia main page?</a></p>
+        <p id="bold"><b>Oh, maybe you can make this paragraph bold?</b></p>
+        <p id="subscript">Great! Can you make all the odd numbers become subscript? Here you go: <sub>11</sub> 4 24 6 8 88.</p>
+        <p>Okay, maybe you can make next paragraph become a button?</p>
+        <p id="button"><button>Click here!</button></p>
+        <p><em>Well done!</em></p>
+    </div>
+    <hr>
+    <h3>№4. Button</h3>
+    <p><b>Question:</b> Use an appropriate tag to make a button. Please make sure that the tag has exactly this text: <span class="h-codespan">Click here to buy one for yourself!</span></p>
+    <p>Write HTML and CSS code:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Button&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;In our time, no man can do without his own rocket. Everyone needs to fly to the lunar country house to collect potatoes there, and then have time to return to Earth and cook dinner for the family, right? Our team offers you to get acquainted with the new generation of rockets that can take you to the lunar garden in a couple of hours, so that you do not waste your precious time on the way. To contact us and purchase this beautiful vehicle, you can use the button below.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="button"&gt;&lt;button&gt;Click here to buy one for yourself!&lt;/button&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <hr>
+    <h3>№5. Inline elements</h3>
+    <p><b>Question:</b> Select all inline elements:</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">&lt;a&gt; &#x2714;</span></li>
+        <li><span style="color:blue">&lt;sup&gt; &#x2714;</span></li>
+        <li>&lt;p&gt;</li>
+        <li><span style="color:blue">&lt;b&gt; &#x2714;</span></li>
+        <li>&lt;h1&gt;</li>
+    </ul>
+    <hr>
+    <h3>№6. Functionality of tags</h3>
+    <p><b>Question:</b> Match the tags with their functionality:</p>
+    <p>Match the items from left and right columns:</p>
+    <ul>
+        <li><span style="color:blue">&lt;a&gt; - Designed to create links &#x2714;</span></li>
+        <li><span style="color:blue">&lt;b&gt; - Sets a bold font &#x2714;</span></li>
+        <li><span style="color:blue">&lt;sub&gt; - Makes text subscript &#x2714;</span></li>
+        <li><span style="color:blue">&lt;sup&gt; - Makes text superscript &#x2714;</span></li>
+        <li><span style="color:blue">&lt;emg&gt; - A non-existent tag &#x2714;</span></li>
+    </ul>
+    <hr>
+    <h3>№7. Bottom index</h3>
+    <p><b>Question:</b> Create an element &lt;p&gt; and inside create a formula that looks like this:</p>
+    <img src="../images/h2o.png" alt="Formula H2O" class="w3-image w3-card-4 img-center">
+    <p>The formula can be copied from here:</p>
+    <ul>
+        <li>H2 + 0.5O2 = H2O</li>
+    </ul>
+    <p><b>Tip:</b> Check that the characters you entered are correct and make sure you don't have extra spaces.</p>
+    <p>Write HTML and CSS code:</p>
+    <div class='w3-example'>
+        <h3>Correct code:</h3>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Formula&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt; + 0.5O&lt;sub&gt;2&lt;/sub&gt; = H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+    </div>
+    <p>The result will be:</p>
+    <div class="w3-padding w3-border">
+        <p>H<sub>2</sub> + 0.5O<sub>2</sub> = H<sub>2</sub>O</p>
+    </div>
+    <hr>
+    <h3>№8. Inline Elements: Spot the Difference!</h3>
+    <p><b>Question:</b> Given the HTML code below, identify which elements are considered as inline elements. Inline elements do not start on a new line and only take up as much width as necessary:</p>
+    <div class='w3-example'>
+        <div class='w3-code notranslate htmlHigh'>
+            &lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;span&gt;Hello, world!&lt;/span&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;Welcome to our website.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;a href='#'&gt;Click here.&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;header&gt;My Website&lt;/header&gt;<br>
+            &lt;/div&gt;
+        </div>
+    </div>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">The &lt;span&gt; tag &#x2714;</span></li>
+        <li><span style="color:blue">The &lt;a&gt; tag &#x2714;</span></li>
+        <li>The &lt;p&gt; tag</li>
+        <li>The &lt;header&gt; tag</li>
+        <li>The &lt;div&gt; tag</li>
+    </ul>
+    <hr>
+    <h3>№9. Inline Tag Mystery: Choose Right!</h3>
+    <p><b>Question:</b> Consider the fact that you have just built your HTML page structure, and now you are adding content. Which of the following combinations of HTML tags includes only inline elements? Consider the use of HTML5.</p>
+    <p>Select one or more options from the list:</p>
+    <ul>
+        <li><span style="color:blue">&lt;em&gt;&lt;b&gt;&lt;span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/em&gt; &#x2714;</span></li>
+        <li>&lt;p&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/p&gt;</li>
+        <li>&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;</li>
+        <li>&lt;strong&gt;&lt;div&gt;&lt;/div&gt;&lt;/strong&gt;</li>
+        <li><span style="color:blue">&lt;b&gt;&lt;span&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/b&gt; &#x2714;</span></li>
+    </ul>
+    <hr>
+    <div class='w3-clear nextprev'>
+        <a class='w3-left w3-btn' href='block-level-elements_en.html'>&#10094; Prev</a>
+        <a class='w3-right w3-btn' href='comments_en.html'>Next &#10095;</a>
+    </div>
+</article>
+<div class="adver_addown">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+<!--Right sidebar-->
+<div class='w3-col l2 m12' id='right'>
+    <div class='sidesection w3-light-gray' style='padding-bottom: 5px'>
+        <h4><a href='https://w3schoolsua.github.io/colors/colors_picker_en.html'>COLOR PICKER</a></h4>
+        <a href='https://w3schoolsua.github.io/colors/colors_picker_en.html'><img src='../images/colorpicker.gif' alt='colorpicker'></a>
+    </div>
+    <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:100%'>
+        <div class='w3-container w3-blue-grey'>
+            <h5 class="shadow-black-1" title="All online textbooks on the site">TUTORIALS</h5>
+        </div>
+        <div class='w3-border'>
+            <a href='https://w3schoolsua.github.io/html/index_en.html' class='btn-rightbar'>HTML</a>
+            <a href='https://w3schoolsua.github.io/css/index_en.html' class='btn-rightbar'>CSS</a>
+            <a href='https://w3schoolsua.github.io/css/css_rwd_intro_en.html' class='btn-rightbar'>RWD</a>
+            <a href='https://w3schoolsua.github.io/bootstrap/bootstrap_ver_en.html' class='btn-rightbar'>Bootstrap</a>
+            <a href='https://w3schoolsua.github.io/w3css/index_en.html' class='btn-rightbar'>W3.CSS</a>
+            <a href='https://w3schoolsua.github.io/colors/index_en.html' class='btn-rightbar'>Colors</a>
+            <a href='https://w3schoolsua.github.io/icons/index_en.html' class='btn-rightbar'>Icons</a>
+            <a href='https://w3schoolsua.github.io/graphics/index_en.html' class='btn-rightbar'>Graphics</a>
+            <a href='https://w3schoolsua.github.io/graphics/svg_intro_en.html' class='btn-rightbar'>SVG Graphics</a>
+            <a href='https://w3schoolsua.github.io/graphics/canvas_intro_en.html' class='btn-rightbar'>Canvas Graphics</a>
+            <a href='https://w3schoolsua.github.io/howto/index_en.html' class='btn-rightbar'>How To</a>
+            <a href='https://w3schoolsua.github.io/sass/index_en.html' class='btn-rightbar'>Sass</a>
+        </div>
+    </div>
+  <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px;background:#eee'>Place for your advertisement!</div>
+<div class="adver2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="1902033594" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adver4">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_square_rightbar -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="6653465929" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="adver3">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <!-- admedia_vertical_rightbar2 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7441711750" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div></div>
+<!--/Right sidebar-->
+</div><!--FOOTER-->
+<div id='footer' class='footer w3-container w3-white'>
+    <hr>
+  <div class='w3-row-padding w3-center w3-small' style='margin:0 -16px'>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' onclick='displayError();return false' style='white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px'>CONTACTS</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='javascript:void(0);' target='_blank' onclick='printPage();return false;' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>PRINT PAGE</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../blog/index.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>BLOG</a>
+    </div>
+    <div class='w3-col l3 m3 s12'>
+      <a class='w3-button w3-light-grey w3-block' href='../about/index_en.html' target='_top' style='text-decoration:none;margin-top:1px;margin-bottom:1px'>ABOUT</a>
+    </div>
+  </div>
+  <div class='w3-padding w3-margin-bottom' id='err_form' style='display:none;position:relative;background-color: #DDE7EA;'>
+    <span onclick="this.parentElement.style.display='none'" class='w3-button w3-display-topright w3-large'>&times;</span>
+      <h2>Contacts</h2>
+      <p>If you want to report a bug, as well as make an offer for the site, add an ad or advertisement on the site, do not hesitate to email the admin:</p>
+      <p>w3schoolsua@gmail.com</p>
+  </div>
+  <div class='w3-row w3-center w3-small'>
+      <div class="adver_adinfeed">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-5o+cq-k-pl+1ar" data-ad-client="ca-pub-6358227327561384" data-ad-slot="2302652563"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  </div>
+  <hr>
+  <div class='w3-center w3-small w3-opacity'>This site is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using HyperskillUA, you agree to have read and accepted our <a href='https://w3schoolsua.github.io/about/about_copyright_en.html'>terms of use</a>, <a href='https://w3schoolsua.github.io/about/about_privacy_en.html'>cookie and privacy policy</a>.<br>
+You can also use the Ukrainian version of the site <a href='../index.html'><strong>HyperSkill українською</strong></a>.<br>
+    <a href='https://w3schoolsua.github.io/w3css/index_en.html'>Powered by W3.CSS</a>.<br>
+    You can use other reputable web development and programming learning resources:<br>
+    <a href='https://www.w3schools.com/' target='_blank'>W3Schools</a>&nbsp;|&nbsp;<a href='https://developer.mozilla.org/en-US/?retiredLocale=uk' target='_blank'>MDNWebDocs</a>&nbsp;|&nbsp;<a href='https://learn.microsoft.com/uk-ua/' target='_blank'>MicrosoftLearn</a>&nbsp;|&nbsp;<a href='https://hyperskill.org/' target='_blank'>HyperSkill</a>&nbsp;|&nbsp;<a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>&nbsp;|&nbsp;<a href='https://www.freecodecamp.org/' target='_blank'>FreeCodeCamp</a>&nbsp;|&nbsp;<a href='https://www.coursera.org/' target='_blank'>Coursera</a>&nbsp;|&nbsp;<a href='https://www.udacity.com/' target='_blank'>Udacity</a>&nbsp;|&nbsp;<a href='https://code.org/' target='_blank'>Code.org</a>&nbsp;|&nbsp;<a href='https://www.sololearn.com/' target='_blank'>SoloLearn</a>&nbsp;|&nbsp;<a href='https://developer.ibm.com/' target='_blank'>IBMDeveloper</a>&nbsp;|&nbsp;<a href='https://www.codewars.com/' target='_blank'>CodeWars</a>
+    <br><br>
+    <a href='../index_en.html'><img style='width:110px;height:28px;border:0' src='../images/w3schoolscom_gray.gif' alt='W3Schools'></a>
+  </div>
+  <br><br>
+    <div class="adver_adfooter">
+    <!--web--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!--/web-->
+    <!--w3--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script><!--/w3-->
+    <!-- addown_gorizontal -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6358227327561384" data-ad-slot="7281891662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+</div>
+<script src='../lib/w3schools_footer.js'></script>
+<!--[if lt IE 9]>
+<script src='../cdn/html5shiv/3.7.3/html5shiv.js'></script>
+<script src='../cdn/respond/1.4.2/respond.min.js'></script>
+<![endif]-->
+<!--FOOTER-->
+</html>
